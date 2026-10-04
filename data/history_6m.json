@@ -1,0 +1,3374 @@
+{
+  "model": "Ninja Woodfire Pro Connect XL (OG901EU)",
+  "period": "Últimos 6 Meses",
+  "summary": {
+    "allTimeLowest": 369,
+    "allTimeLowestDate": "2026-07-16",
+    "allTimeHighest": 488.64,
+    "sixMonthsAverage": 411.64,
+    "currentLowest": 380.95,
+    "currentSavingsVsRrp": "69.04",
+    "discountPercentage": "15.3"
+  },
+  "history": [
+    {
+      "date": "2026-04-04",
+      "lowestPrice": 447.4,
+      "averagePrice": 457.2,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-06",
+      "lowestPrice": 450.76,
+      "averagePrice": 457.56,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-08",
+      "lowestPrice": 449.14,
+      "averagePrice": 461.99,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-10",
+      "lowestPrice": 447.13,
+      "averagePrice": 457.95,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-12",
+      "lowestPrice": 450.42,
+      "averagePrice": 456.88,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-14",
+      "lowestPrice": 449.69,
+      "averagePrice": 461.81,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-16",
+      "lowestPrice": 447.01,
+      "averagePrice": 458.77,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-18",
+      "lowestPrice": 449.97,
+      "averagePrice": 456.37,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-20",
+      "lowestPrice": 450.19,
+      "averagePrice": 461.41,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-22",
+      "lowestPrice": 447.04,
+      "averagePrice": 459.62,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-24",
+      "lowestPrice": 449.44,
+      "averagePrice": 456.07,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-26",
+      "lowestPrice": 450.59,
+      "averagePrice": 460.82,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-28",
+      "lowestPrice": 447.24,
+      "averagePrice": 460.41,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-04-30",
+      "lowestPrice": 448.88,
+      "averagePrice": 456.01,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-02",
+      "lowestPrice": 450.87,
+      "averagePrice": 460.08,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-04",
+      "lowestPrice": 447.57,
+      "averagePrice": 461.1,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-06",
+      "lowestPrice": 448.32,
+      "averagePrice": 456.18,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-08",
+      "lowestPrice": 450.99,
+      "averagePrice": 459.25,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-10",
+      "lowestPrice": 448.02,
+      "averagePrice": 461.61,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-12",
+      "lowestPrice": 447.82,
+      "averagePrice": 456.57,
+      "amazon": 459.99,
+      "worten": 469,
+      "pccomponentes": 455,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-14",
+      "lowestPrice": 429.9,
+      "averagePrice": 441.21,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 435,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-16",
+      "lowestPrice": 423.86,
+      "averagePrice": 445.89,
+      "amazon": 441,
+      "worten": 449,
+      "pccomponentes": 438,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-18",
+      "lowestPrice": 421.05,
+      "averagePrice": 439.55,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 436,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-20",
+      "lowestPrice": 429.43,
+      "averagePrice": 440.14,
+      "amazon": 441,
+      "worten": 449,
+      "pccomponentes": 439,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-22",
+      "lowestPrice": 425.27,
+      "averagePrice": 445.99,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 437,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-24",
+      "lowestPrice": 420.35,
+      "averagePrice": 440.53,
+      "amazon": 441,
+      "worten": 449,
+      "pccomponentes": 435,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-26",
+      "lowestPrice": 428.61,
+      "averagePrice": 439.23,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 438,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-28",
+      "lowestPrice": 426.65,
+      "averagePrice": 445.78,
+      "amazon": 441,
+      "worten": 449,
+      "pccomponentes": 436,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-05-30",
+      "lowestPrice": 420.02,
+      "averagePrice": 441.63,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 439,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-01",
+      "lowestPrice": 427.49,
+      "averagePrice": 438.53,
+      "amazon": 441,
+      "worten": 449,
+      "pccomponentes": 437,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-03",
+      "lowestPrice": 427.9,
+      "averagePrice": 445.26,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 435,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-05",
+      "lowestPrice": 420.09,
+      "averagePrice": 442.76,
+      "amazon": 441,
+      "worten": 449,
+      "pccomponentes": 438,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-07",
+      "lowestPrice": 426.18,
+      "averagePrice": 438.11,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 436,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-09",
+      "lowestPrice": 428.92,
+      "averagePrice": 444.48,
+      "amazon": 441,
+      "worten": 449,
+      "pccomponentes": 439,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-11",
+      "lowestPrice": 420.55,
+      "averagePrice": 443.82,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 437,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-13",
+      "lowestPrice": 424.78,
+      "averagePrice": 438,
+      "amazon": 441,
+      "worten": 449,
+      "pccomponentes": 435,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-15",
+      "lowestPrice": 429.63,
+      "averagePrice": 443.5,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 438,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-17",
+      "lowestPrice": 421.36,
+      "averagePrice": 444.75,
+      "amazon": 441,
+      "worten": 449,
+      "pccomponentes": 436,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-19",
+      "lowestPrice": 423.39,
+      "averagePrice": 438.21,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 439,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-21",
+      "lowestPrice": 429.97,
+      "averagePrice": 442.41,
+      "amazon": 441,
+      "worten": 449,
+      "pccomponentes": 437,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-23",
+      "lowestPrice": 422.47,
+      "averagePrice": 445.45,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 435,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-25",
+      "lowestPrice": 422.13,
+      "averagePrice": 438.72,
+      "amazon": 441,
+      "worten": 449,
+      "pccomponentes": 438,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-27",
+      "lowestPrice": 429.92,
+      "averagePrice": 441.28,
+      "amazon": 439,
+      "worten": 449,
+      "pccomponentes": 436,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-06-29",
+      "lowestPrice": 370.48,
+      "averagePrice": 403.04,
+      "amazon": 385,
+      "worten": 419,
+      "pccomponentes": 393,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-01",
+      "lowestPrice": 379.82,
+      "averagePrice": 398.76,
+      "amazon": 383,
+      "worten": 419,
+      "pccomponentes": 391,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-03",
+      "lowestPrice": 379.21,
+      "averagePrice": 412.15,
+      "amazon": 381,
+      "worten": 419,
+      "pccomponentes": 389,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-05",
+      "lowestPrice": 369.21,
+      "averagePrice": 405.28,
+      "amazon": 379,
+      "worten": 419,
+      "pccomponentes": 393,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-07",
+      "lowestPrice": 378.98,
+      "averagePrice": 397.61,
+      "amazon": 385,
+      "worten": 419,
+      "pccomponentes": 391,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-09",
+      "lowestPrice": 380,
+      "averagePrice": 410.87,
+      "amazon": 383,
+      "worten": 419,
+      "pccomponentes": 389,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-11",
+      "lowestPrice": 370.9,
+      "averagePrice": 407.51,
+      "amazon": 381,
+      "worten": 419,
+      "pccomponentes": 393,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-13",
+      "lowestPrice": 377.94,
+      "averagePrice": 397.05,
+      "amazon": 379,
+      "worten": 419,
+      "pccomponentes": 391,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-15",
+      "lowestPrice": 380.57,
+      "averagePrice": 409.11,
+      "amazon": 385,
+      "worten": 419,
+      "pccomponentes": 389,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-17",
+      "lowestPrice": 372.56,
+      "averagePrice": 409.53,
+      "amazon": 383,
+      "worten": 419,
+      "pccomponentes": 393,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-19",
+      "lowestPrice": 376.72,
+      "averagePrice": 397.12,
+      "amazon": 381,
+      "worten": 419,
+      "pccomponentes": 391,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-21",
+      "lowestPrice": 379,
+      "averagePrice": 407.03,
+      "amazon": 379,
+      "worten": 419,
+      "pccomponentes": 389,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-23",
+      "lowestPrice": 403.64,
+      "averagePrice": 428.17,
+      "amazon": 439.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-25",
+      "lowestPrice": 393.61,
+      "averagePrice": 427.2,
+      "amazon": 436.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-27",
+      "lowestPrice": 398.84,
+      "averagePrice": 420,
+      "amazon": 438.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-29",
+      "lowestPrice": 404.52,
+      "averagePrice": 426.96,
+      "amazon": 435.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-07-31",
+      "lowestPrice": 394.56,
+      "averagePrice": 428.37,
+      "amazon": 437.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-02",
+      "lowestPrice": 397.17,
+      "averagePrice": 420.24,
+      "amazon": 439.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-04",
+      "lowestPrice": 404.96,
+      "averagePrice": 425.6,
+      "amazon": 436.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-06",
+      "lowestPrice": 395.87,
+      "averagePrice": 429.27,
+      "amazon": 438.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-08",
+      "lowestPrice": 395.65,
+      "averagePrice": 420.85,
+      "amazon": 435.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-10",
+      "lowestPrice": 404.92,
+      "averagePrice": 424.19,
+      "amazon": 437.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-12",
+      "lowestPrice": 397.43,
+      "averagePrice": 429.82,
+      "amazon": 439.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-14",
+      "lowestPrice": 394.39,
+      "averagePrice": 421.8,
+      "amazon": 436.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-16",
+      "lowestPrice": 404.41,
+      "averagePrice": 422.84,
+      "amazon": 438.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-18",
+      "lowestPrice": 399.11,
+      "averagePrice": 430,
+      "amazon": 435.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-20",
+      "lowestPrice": 393.5,
+      "averagePrice": 423,
+      "amazon": 437.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-22",
+      "lowestPrice": 403.47,
+      "averagePrice": 421.67,
+      "amazon": 439.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-24",
+      "lowestPrice": 400.78,
+      "averagePrice": 429.78,
+      "amazon": 436.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-26",
+      "lowestPrice": 393.05,
+      "averagePrice": 424.36,
+      "amazon": 438.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-28",
+      "lowestPrice": 402.17,
+      "averagePrice": 420.76,
+      "amazon": 435.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-08-30",
+      "lowestPrice": 402.31,
+      "averagePrice": 429.17,
+      "amazon": 437.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-01",
+      "lowestPrice": 393.07,
+      "averagePrice": 425.77,
+      "amazon": 439.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-03",
+      "lowestPrice": 400.63,
+      "averagePrice": 420.19,
+      "amazon": 436.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-05",
+      "lowestPrice": 403.58,
+      "averagePrice": 428.23,
+      "amazon": 438.99,
+      "worten": 449,
+      "pccomponentes": 429,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-07",
+      "lowestPrice": 393.08,
+      "averagePrice": 419.67,
+      "amazon": 439.7,
+      "worten": 448.97,
+      "pccomponentes": 429.49,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-09",
+      "lowestPrice": 393.3,
+      "averagePrice": 419,
+      "amazon": 441.09,
+      "worten": 448.92,
+      "pccomponentes": 430.48,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-11",
+      "lowestPrice": 393.56,
+      "averagePrice": 418.33,
+      "amazon": 442.48,
+      "worten": 448.86,
+      "pccomponentes": 431.46,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-13",
+      "lowestPrice": 389.94,
+      "averagePrice": 417.66,
+      "amazon": 443.88,
+      "worten": 448.8,
+      "pccomponentes": 432.44,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-15",
+      "lowestPrice": 389.51,
+      "averagePrice": 416.99,
+      "amazon": 445.27,
+      "worten": 448.75,
+      "pccomponentes": 433.43,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-17",
+      "lowestPrice": 390.3,
+      "averagePrice": 416.32,
+      "amazon": 446.66,
+      "worten": 448.69,
+      "pccomponentes": 434.41,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-19",
+      "lowestPrice": 386.89,
+      "averagePrice": 415.65,
+      "amazon": 448.06,
+      "worten": 448.64,
+      "pccomponentes": 435.4,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-21",
+      "lowestPrice": 385.75,
+      "averagePrice": 414.98,
+      "amazon": 449.45,
+      "worten": 448.58,
+      "pccomponentes": 436.38,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-23",
+      "lowestPrice": 386.93,
+      "averagePrice": 414.32,
+      "amazon": 450.85,
+      "worten": 448.52,
+      "pccomponentes": 437.36,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-25",
+      "lowestPrice": 383.9,
+      "averagePrice": 413.65,
+      "amazon": 452.24,
+      "worten": 448.47,
+      "pccomponentes": 438.35,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-27",
+      "lowestPrice": 382.06,
+      "averagePrice": 412.98,
+      "amazon": 453.63,
+      "worten": 448.41,
+      "pccomponentes": 439.33,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-09-29",
+      "lowestPrice": 383.44,
+      "averagePrice": 412.31,
+      "amazon": 455.03,
+      "worten": 448.36,
+      "pccomponentes": 440.32,
+      "ninjaOficial": 449.99
+    },
+    {
+      "date": "2026-10-01",
+      "lowestPrice": 380.95,
+      "averagePrice": 411.64,
+      "amazon": 456.42,
+      "worten": 448.3,
+      "pccomponentes": 441.3,
+      "ninjaOficial": 449.99
+    }
+  ],
+  "storesKeys": [
+    {
+      "key": "lowestPrice",
+      "label": "Menor Preço (Mercado)",
+      "color": "#00e5ff"
+    },
+    {
+      "key": "averagePrice",
+      "label": "Preço Médio",
+      "color": "#a855f7"
+    },
+    {
+      "key": "amazon",
+      "label": "Amazon.es",
+      "color": "#ff6a00"
+    },
+    {
+      "key": "worten",
+      "label": "Worten.pt",
+      "color": "#ef4444"
+    },
+    {
+      "key": "pccomponentes",
+      "label": "PcComponentes.pt",
+      "color": "#06b6d4"
+    },
+    {
+      "key": "ninjaOficial",
+      "label": "Ninja Oficial",
+      "color": "#ffffff"
+    }
+  ],
+  "products": {
+    "ninja-woodfire": {
+      "productId": "ninja-woodfire",
+      "model": "Ninja Woodfire Pro Connect XL (OG901EU)",
+      "period": "Últimos 6 Meses",
+      "storesKeys": [
+        {
+          "key": "lowestPrice",
+          "label": "Menor Preço (Mercado)",
+          "color": "#00e5ff"
+        },
+        {
+          "key": "averagePrice",
+          "label": "Preço Médio",
+          "color": "#a855f7"
+        },
+        {
+          "key": "amazon",
+          "label": "Amazon.es",
+          "color": "#ff6a00"
+        },
+        {
+          "key": "worten",
+          "label": "Worten.pt",
+          "color": "#ef4444"
+        },
+        {
+          "key": "pccomponentes",
+          "label": "PcComponentes.pt",
+          "color": "#06b6d4"
+        },
+        {
+          "key": "ninjaOficial",
+          "label": "Ninja Oficial",
+          "color": "#ffffff"
+        }
+      ],
+      "summary": {
+        "allTimeLowest": 369,
+        "allTimeLowestDate": "2026-07-16",
+        "allTimeHighest": 488.64,
+        "sixMonthsAverage": 411.64,
+        "currentLowest": 380.95,
+        "currentSavingsVsRrp": "69.04",
+        "discountPercentage": "15.3"
+      },
+      "history": [
+        {
+          "date": "2026-04-04",
+          "lowestPrice": 447.4,
+          "averagePrice": 457.2,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-06",
+          "lowestPrice": 450.76,
+          "averagePrice": 457.56,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-08",
+          "lowestPrice": 449.14,
+          "averagePrice": 461.99,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-10",
+          "lowestPrice": 447.13,
+          "averagePrice": 457.95,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-12",
+          "lowestPrice": 450.42,
+          "averagePrice": 456.88,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-14",
+          "lowestPrice": 449.69,
+          "averagePrice": 461.81,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-16",
+          "lowestPrice": 447.01,
+          "averagePrice": 458.77,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-18",
+          "lowestPrice": 449.97,
+          "averagePrice": 456.37,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-20",
+          "lowestPrice": 450.19,
+          "averagePrice": 461.41,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-22",
+          "lowestPrice": 447.04,
+          "averagePrice": 459.62,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-24",
+          "lowestPrice": 449.44,
+          "averagePrice": 456.07,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-26",
+          "lowestPrice": 450.59,
+          "averagePrice": 460.82,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-28",
+          "lowestPrice": 447.24,
+          "averagePrice": 460.41,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-04-30",
+          "lowestPrice": 448.88,
+          "averagePrice": 456.01,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-02",
+          "lowestPrice": 450.87,
+          "averagePrice": 460.08,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-04",
+          "lowestPrice": 447.57,
+          "averagePrice": 461.1,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-06",
+          "lowestPrice": 448.32,
+          "averagePrice": 456.18,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-08",
+          "lowestPrice": 450.99,
+          "averagePrice": 459.25,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-10",
+          "lowestPrice": 448.02,
+          "averagePrice": 461.61,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-12",
+          "lowestPrice": 447.82,
+          "averagePrice": 456.57,
+          "amazon": 459.99,
+          "worten": 469,
+          "pccomponentes": 455,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-14",
+          "lowestPrice": 429.9,
+          "averagePrice": 441.21,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 435,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-16",
+          "lowestPrice": 423.86,
+          "averagePrice": 445.89,
+          "amazon": 441,
+          "worten": 449,
+          "pccomponentes": 438,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-18",
+          "lowestPrice": 421.05,
+          "averagePrice": 439.55,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 436,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-20",
+          "lowestPrice": 429.43,
+          "averagePrice": 440.14,
+          "amazon": 441,
+          "worten": 449,
+          "pccomponentes": 439,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-22",
+          "lowestPrice": 425.27,
+          "averagePrice": 445.99,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 437,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-24",
+          "lowestPrice": 420.35,
+          "averagePrice": 440.53,
+          "amazon": 441,
+          "worten": 449,
+          "pccomponentes": 435,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-26",
+          "lowestPrice": 428.61,
+          "averagePrice": 439.23,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 438,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-28",
+          "lowestPrice": 426.65,
+          "averagePrice": 445.78,
+          "amazon": 441,
+          "worten": 449,
+          "pccomponentes": 436,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-05-30",
+          "lowestPrice": 420.02,
+          "averagePrice": 441.63,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 439,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-01",
+          "lowestPrice": 427.49,
+          "averagePrice": 438.53,
+          "amazon": 441,
+          "worten": 449,
+          "pccomponentes": 437,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-03",
+          "lowestPrice": 427.9,
+          "averagePrice": 445.26,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 435,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-05",
+          "lowestPrice": 420.09,
+          "averagePrice": 442.76,
+          "amazon": 441,
+          "worten": 449,
+          "pccomponentes": 438,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-07",
+          "lowestPrice": 426.18,
+          "averagePrice": 438.11,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 436,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-09",
+          "lowestPrice": 428.92,
+          "averagePrice": 444.48,
+          "amazon": 441,
+          "worten": 449,
+          "pccomponentes": 439,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-11",
+          "lowestPrice": 420.55,
+          "averagePrice": 443.82,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 437,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-13",
+          "lowestPrice": 424.78,
+          "averagePrice": 438,
+          "amazon": 441,
+          "worten": 449,
+          "pccomponentes": 435,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-15",
+          "lowestPrice": 429.63,
+          "averagePrice": 443.5,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 438,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-17",
+          "lowestPrice": 421.36,
+          "averagePrice": 444.75,
+          "amazon": 441,
+          "worten": 449,
+          "pccomponentes": 436,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-19",
+          "lowestPrice": 423.39,
+          "averagePrice": 438.21,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 439,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-21",
+          "lowestPrice": 429.97,
+          "averagePrice": 442.41,
+          "amazon": 441,
+          "worten": 449,
+          "pccomponentes": 437,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-23",
+          "lowestPrice": 422.47,
+          "averagePrice": 445.45,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 435,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-25",
+          "lowestPrice": 422.13,
+          "averagePrice": 438.72,
+          "amazon": 441,
+          "worten": 449,
+          "pccomponentes": 438,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-27",
+          "lowestPrice": 429.92,
+          "averagePrice": 441.28,
+          "amazon": 439,
+          "worten": 449,
+          "pccomponentes": 436,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-06-29",
+          "lowestPrice": 370.48,
+          "averagePrice": 403.04,
+          "amazon": 385,
+          "worten": 419,
+          "pccomponentes": 393,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-01",
+          "lowestPrice": 379.82,
+          "averagePrice": 398.76,
+          "amazon": 383,
+          "worten": 419,
+          "pccomponentes": 391,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-03",
+          "lowestPrice": 379.21,
+          "averagePrice": 412.15,
+          "amazon": 381,
+          "worten": 419,
+          "pccomponentes": 389,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-05",
+          "lowestPrice": 369.21,
+          "averagePrice": 405.28,
+          "amazon": 379,
+          "worten": 419,
+          "pccomponentes": 393,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-07",
+          "lowestPrice": 378.98,
+          "averagePrice": 397.61,
+          "amazon": 385,
+          "worten": 419,
+          "pccomponentes": 391,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-09",
+          "lowestPrice": 380,
+          "averagePrice": 410.87,
+          "amazon": 383,
+          "worten": 419,
+          "pccomponentes": 389,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-11",
+          "lowestPrice": 370.9,
+          "averagePrice": 407.51,
+          "amazon": 381,
+          "worten": 419,
+          "pccomponentes": 393,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-13",
+          "lowestPrice": 377.94,
+          "averagePrice": 397.05,
+          "amazon": 379,
+          "worten": 419,
+          "pccomponentes": 391,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-15",
+          "lowestPrice": 380.57,
+          "averagePrice": 409.11,
+          "amazon": 385,
+          "worten": 419,
+          "pccomponentes": 389,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-17",
+          "lowestPrice": 372.56,
+          "averagePrice": 409.53,
+          "amazon": 383,
+          "worten": 419,
+          "pccomponentes": 393,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-19",
+          "lowestPrice": 376.72,
+          "averagePrice": 397.12,
+          "amazon": 381,
+          "worten": 419,
+          "pccomponentes": 391,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-21",
+          "lowestPrice": 379,
+          "averagePrice": 407.03,
+          "amazon": 379,
+          "worten": 419,
+          "pccomponentes": 389,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-23",
+          "lowestPrice": 403.64,
+          "averagePrice": 428.17,
+          "amazon": 439.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-25",
+          "lowestPrice": 393.61,
+          "averagePrice": 427.2,
+          "amazon": 436.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-27",
+          "lowestPrice": 398.84,
+          "averagePrice": 420,
+          "amazon": 438.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-29",
+          "lowestPrice": 404.52,
+          "averagePrice": 426.96,
+          "amazon": 435.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-07-31",
+          "lowestPrice": 394.56,
+          "averagePrice": 428.37,
+          "amazon": 437.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-02",
+          "lowestPrice": 397.17,
+          "averagePrice": 420.24,
+          "amazon": 439.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-04",
+          "lowestPrice": 404.96,
+          "averagePrice": 425.6,
+          "amazon": 436.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-06",
+          "lowestPrice": 395.87,
+          "averagePrice": 429.27,
+          "amazon": 438.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-08",
+          "lowestPrice": 395.65,
+          "averagePrice": 420.85,
+          "amazon": 435.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-10",
+          "lowestPrice": 404.92,
+          "averagePrice": 424.19,
+          "amazon": 437.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-12",
+          "lowestPrice": 397.43,
+          "averagePrice": 429.82,
+          "amazon": 439.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-14",
+          "lowestPrice": 394.39,
+          "averagePrice": 421.8,
+          "amazon": 436.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-16",
+          "lowestPrice": 404.41,
+          "averagePrice": 422.84,
+          "amazon": 438.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-18",
+          "lowestPrice": 399.11,
+          "averagePrice": 430,
+          "amazon": 435.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-20",
+          "lowestPrice": 393.5,
+          "averagePrice": 423,
+          "amazon": 437.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-22",
+          "lowestPrice": 403.47,
+          "averagePrice": 421.67,
+          "amazon": 439.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-24",
+          "lowestPrice": 400.78,
+          "averagePrice": 429.78,
+          "amazon": 436.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-26",
+          "lowestPrice": 393.05,
+          "averagePrice": 424.36,
+          "amazon": 438.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-28",
+          "lowestPrice": 402.17,
+          "averagePrice": 420.76,
+          "amazon": 435.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-08-30",
+          "lowestPrice": 402.31,
+          "averagePrice": 429.17,
+          "amazon": 437.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-01",
+          "lowestPrice": 393.07,
+          "averagePrice": 425.77,
+          "amazon": 439.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-03",
+          "lowestPrice": 400.63,
+          "averagePrice": 420.19,
+          "amazon": 436.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-05",
+          "lowestPrice": 403.58,
+          "averagePrice": 428.23,
+          "amazon": 438.99,
+          "worten": 449,
+          "pccomponentes": 429,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-07",
+          "lowestPrice": 393.08,
+          "averagePrice": 419.67,
+          "amazon": 439.7,
+          "worten": 448.97,
+          "pccomponentes": 429.49,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-09",
+          "lowestPrice": 393.3,
+          "averagePrice": 419,
+          "amazon": 441.09,
+          "worten": 448.92,
+          "pccomponentes": 430.48,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-11",
+          "lowestPrice": 393.56,
+          "averagePrice": 418.33,
+          "amazon": 442.48,
+          "worten": 448.86,
+          "pccomponentes": 431.46,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-13",
+          "lowestPrice": 389.94,
+          "averagePrice": 417.66,
+          "amazon": 443.88,
+          "worten": 448.8,
+          "pccomponentes": 432.44,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-15",
+          "lowestPrice": 389.51,
+          "averagePrice": 416.99,
+          "amazon": 445.27,
+          "worten": 448.75,
+          "pccomponentes": 433.43,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-17",
+          "lowestPrice": 390.3,
+          "averagePrice": 416.32,
+          "amazon": 446.66,
+          "worten": 448.69,
+          "pccomponentes": 434.41,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-19",
+          "lowestPrice": 386.89,
+          "averagePrice": 415.65,
+          "amazon": 448.06,
+          "worten": 448.64,
+          "pccomponentes": 435.4,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-21",
+          "lowestPrice": 385.75,
+          "averagePrice": 414.98,
+          "amazon": 449.45,
+          "worten": 448.58,
+          "pccomponentes": 436.38,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-23",
+          "lowestPrice": 386.93,
+          "averagePrice": 414.32,
+          "amazon": 450.85,
+          "worten": 448.52,
+          "pccomponentes": 437.36,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-25",
+          "lowestPrice": 383.9,
+          "averagePrice": 413.65,
+          "amazon": 452.24,
+          "worten": 448.47,
+          "pccomponentes": 438.35,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-27",
+          "lowestPrice": 382.06,
+          "averagePrice": 412.98,
+          "amazon": 453.63,
+          "worten": 448.41,
+          "pccomponentes": 439.33,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-09-29",
+          "lowestPrice": 383.44,
+          "averagePrice": 412.31,
+          "amazon": 455.03,
+          "worten": 448.36,
+          "pccomponentes": 440.32,
+          "ninjaOficial": 449.99
+        },
+        {
+          "date": "2026-10-01",
+          "lowestPrice": 380.95,
+          "averagePrice": 411.64,
+          "amazon": 456.42,
+          "worten": 448.3,
+          "pccomponentes": 441.3,
+          "ninjaOficial": 449.99
+        }
+      ]
+    },
+    "nintendo-switch-2": {
+      "productId": "nintendo-switch-2",
+      "model": "Nintendo Switch 2 (Consola Base & Bundles)",
+      "period": "Últimos 6 Meses",
+      "storesKeys": [
+        {
+          "key": "lowestPrice",
+          "label": "Menor Preço Base",
+          "color": "#00e5ff"
+        },
+        {
+          "key": "averagePrice",
+          "label": "Preço Médio Mercado",
+          "color": "#a855f7"
+        },
+        {
+          "key": "amazon",
+          "label": "Amazon.es",
+          "color": "#ff6a00"
+        },
+        {
+          "key": "worten",
+          "label": "Worten.pt",
+          "color": "#ef4444"
+        },
+        {
+          "key": "pccomponentes",
+          "label": "PcComponentes.pt",
+          "color": "#06b6d4"
+        },
+        {
+          "key": "fnac",
+          "label": "FNAC.pt",
+          "color": "#eab308"
+        }
+      ],
+      "summary": {
+        "allTimeLowest": 439.9,
+        "allTimeLowestDate": "2026-09-24",
+        "allTimeHighest": 499,
+        "sixMonthsAverage": 456.2,
+        "currentLowest": 439.9,
+        "currentSavingsVsRrp": "10.09",
+        "discountPercentage": "2.2"
+      },
+      "history": [
+        {
+          "date": "2026-04-04",
+          "lowestPrice": 464.99,
+          "averagePrice": 482.61,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-06",
+          "lowestPrice": 473.39,
+          "averagePrice": 483.08,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-08",
+          "lowestPrice": 469.35,
+          "averagePrice": 488.99,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-10",
+          "lowestPrice": 464.32,
+          "averagePrice": 483.6,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-12",
+          "lowestPrice": 472.54,
+          "averagePrice": 482.18,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-14",
+          "lowestPrice": 470.73,
+          "averagePrice": 488.75,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-16",
+          "lowestPrice": 464.01,
+          "averagePrice": 484.7,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-18",
+          "lowestPrice": 471.42,
+          "averagePrice": 481.5,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-20",
+          "lowestPrice": 471.97,
+          "averagePrice": 488.22,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-22",
+          "lowestPrice": 464.11,
+          "averagePrice": 485.83,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-24",
+          "lowestPrice": 470.1,
+          "averagePrice": 481.1,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-26",
+          "lowestPrice": 472.98,
+          "averagePrice": 487.42,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-28",
+          "lowestPrice": 464.59,
+          "averagePrice": 486.89,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-04-30",
+          "lowestPrice": 468.69,
+          "averagePrice": 481.01,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-02",
+          "lowestPrice": 473.67,
+          "averagePrice": 486.44,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-04",
+          "lowestPrice": 465.43,
+          "averagePrice": 487.8,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-06",
+          "lowestPrice": 467.31,
+          "averagePrice": 481.24,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-08",
+          "lowestPrice": 473.98,
+          "averagePrice": 485.34,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-10",
+          "lowestPrice": 466.54,
+          "averagePrice": 488.48,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-12",
+          "lowestPrice": 466.06,
+          "averagePrice": 481.76,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-14",
+          "lowestPrice": 473.9,
+          "averagePrice": 484.21,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-16",
+          "lowestPrice": 467.86,
+          "averagePrice": 488.89,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-18",
+          "lowestPrice": 465.05,
+          "averagePrice": 482.55,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-20",
+          "lowestPrice": 473.43,
+          "averagePrice": 483.14,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-22",
+          "lowestPrice": 469.27,
+          "averagePrice": 488.99,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-24",
+          "lowestPrice": 464.35,
+          "averagePrice": 483.53,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-26",
+          "lowestPrice": 472.61,
+          "averagePrice": 482.23,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-28",
+          "lowestPrice": 470.65,
+          "averagePrice": 488.78,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-05-30",
+          "lowestPrice": 464.02,
+          "averagePrice": 484.63,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-06-01",
+          "lowestPrice": 471.49,
+          "averagePrice": 481.53,
+          "amazon": 479,
+          "worten": 499,
+          "pccomponentes": 475,
+          "fnac": 499
+        },
+        {
+          "date": "2026-06-03",
+          "lowestPrice": 449,
+          "averagePrice": 466.74,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-05",
+          "lowestPrice": 449,
+          "averagePrice": 462.05,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-07",
+          "lowestPrice": 449,
+          "averagePrice": 465.71,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-09",
+          "lowestPrice": 449,
+          "averagePrice": 467.35,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-11",
+          "lowestPrice": 449,
+          "averagePrice": 462.33,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-13",
+          "lowestPrice": 449,
+          "averagePrice": 464.87,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-15",
+          "lowestPrice": 449,
+          "averagePrice": 467.78,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-17",
+          "lowestPrice": 449,
+          "averagePrice": 462.82,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-19",
+          "lowestPrice": 449,
+          "averagePrice": 464.04,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-21",
+          "lowestPrice": 449,
+          "averagePrice": 467.98,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-23",
+          "lowestPrice": 449,
+          "averagePrice": 463.48,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-25",
+          "lowestPrice": 449,
+          "averagePrice": 463.28,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-27",
+          "lowestPrice": 449,
+          "averagePrice": 467.95,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-06-29",
+          "lowestPrice": 449,
+          "averagePrice": 464.26,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-01",
+          "lowestPrice": 449,
+          "averagePrice": 462.66,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-03",
+          "lowestPrice": 449,
+          "averagePrice": 467.68,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-05",
+          "lowestPrice": 449,
+          "averagePrice": 465.11,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-07",
+          "lowestPrice": 449,
+          "averagePrice": 462.23,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-09",
+          "lowestPrice": 449,
+          "averagePrice": 467.2,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-11",
+          "lowestPrice": 449,
+          "averagePrice": 465.94,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-13",
+          "lowestPrice": 449,
+          "averagePrice": 462.02,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-15",
+          "lowestPrice": 449,
+          "averagePrice": 466.54,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-17",
+          "lowestPrice": 449,
+          "averagePrice": 466.7,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-19",
+          "lowestPrice": 449,
+          "averagePrice": 462.04,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-21",
+          "lowestPrice": 449,
+          "averagePrice": 465.76,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-23",
+          "lowestPrice": 449,
+          "averagePrice": 467.32,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-25",
+          "lowestPrice": 449,
+          "averagePrice": 462.31,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-27",
+          "lowestPrice": 449,
+          "averagePrice": 464.92,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-29",
+          "lowestPrice": 449,
+          "averagePrice": 467.76,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-07-31",
+          "lowestPrice": 449,
+          "averagePrice": 462.78,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 449,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-02",
+          "lowestPrice": 448.5,
+          "averagePrice": 458,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-04",
+          "lowestPrice": 448.5,
+          "averagePrice": 457.72,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-06",
+          "lowestPrice": 447.61,
+          "averagePrice": 457.43,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-08",
+          "lowestPrice": 447.25,
+          "averagePrice": 457.15,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-10",
+          "lowestPrice": 448.5,
+          "averagePrice": 456.87,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-12",
+          "lowestPrice": 447.09,
+          "averagePrice": 456.58,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-14",
+          "lowestPrice": 446.03,
+          "averagePrice": 456.3,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-16",
+          "lowestPrice": 448.23,
+          "averagePrice": 456.02,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-18",
+          "lowestPrice": 446.6,
+          "averagePrice": 455.73,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-20",
+          "lowestPrice": 444.9,
+          "averagePrice": 455.45,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-22",
+          "lowestPrice": 447.08,
+          "averagePrice": 455.17,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-24",
+          "lowestPrice": 446.11,
+          "averagePrice": 454.88,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-26",
+          "lowestPrice": 443.87,
+          "averagePrice": 454.6,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-28",
+          "lowestPrice": 445.85,
+          "averagePrice": 454.32,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-08-30",
+          "lowestPrice": 445.58,
+          "averagePrice": 454.03,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-01",
+          "lowestPrice": 442.97,
+          "averagePrice": 453.75,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-03",
+          "lowestPrice": 444.55,
+          "averagePrice": 453.47,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-05",
+          "lowestPrice": 444.99,
+          "averagePrice": 453.18,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-07",
+          "lowestPrice": 442.18,
+          "averagePrice": 452.9,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-09",
+          "lowestPrice": 443.22,
+          "averagePrice": 452.62,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-11",
+          "lowestPrice": 444.3,
+          "averagePrice": 452.33,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-13",
+          "lowestPrice": 441.5,
+          "averagePrice": 452.05,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-15",
+          "lowestPrice": 441.89,
+          "averagePrice": 451.77,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-17",
+          "lowestPrice": 443.51,
+          "averagePrice": 451.48,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-19",
+          "lowestPrice": 440.92,
+          "averagePrice": 451.2,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-21",
+          "lowestPrice": 440.6,
+          "averagePrice": 450.92,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-23",
+          "lowestPrice": 442.6,
+          "averagePrice": 450.63,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-25",
+          "lowestPrice": 440.39,
+          "averagePrice": 450.35,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-27",
+          "lowestPrice": 439.37,
+          "averagePrice": 450.07,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-09-29",
+          "lowestPrice": 441.57,
+          "averagePrice": 449.78,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        },
+        {
+          "date": "2026-10-01",
+          "lowestPrice": 439.9,
+          "averagePrice": 449.5,
+          "amazon": 449.99,
+          "worten": 449.99,
+          "pccomponentes": 448.5,
+          "fnac": 449.99
+        }
+      ]
+    },
+    "dryer-bosch-siemens": {
+      "productId": "dryer-bosch-siemens",
+      "model": "Máquinas de Secar Roupa Bosch / Siemens (Bomba de Calor < 700€)",
+      "period": "Últimos 6 Meses",
+      "storesKeys": [
+        {
+          "key": "lowestPrice",
+          "label": "Menor Preço (<700€)",
+          "color": "#00e5ff"
+        },
+        {
+          "key": "averagePrice",
+          "label": "Média de Mercado",
+          "color": "#a855f7"
+        },
+        {
+          "key": "boschBest",
+          "label": "Melhor Bosch (A++/A)",
+          "color": "#ef4444"
+        },
+        {
+          "key": "siemensBest",
+          "label": "Melhor Siemens (A/B)",
+          "color": "#06b6d4"
+        },
+        {
+          "key": "worten",
+          "label": "Worten.pt",
+          "color": "#ff6a00"
+        }
+      ],
+      "summary": {
+        "allTimeLowest": 460.65,
+        "allTimeLowestDate": "2026-09-18",
+        "allTimeHighest": 689,
+        "sixMonthsAverage": 558.4,
+        "currentLowest": 460.65,
+        "budgetCap": 700,
+        "currentSavingsVsCap": "239.35",
+        "discountPercentage": "34.2"
+      },
+      "history": [
+        {
+          "date": "2026-04-04",
+          "lowestPrice": 532.59,
+          "averagePrice": 611.41,
+          "boschBest": 549,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-06",
+          "lowestPrice": 546.02,
+          "averagePrice": 612.12,
+          "boschBest": 553,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-08",
+          "lowestPrice": 539.57,
+          "averagePrice": 620.98,
+          "boschBest": 551,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-10",
+          "lowestPrice": 531.51,
+          "averagePrice": 612.9,
+          "boschBest": 549,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-12",
+          "lowestPrice": 544.67,
+          "averagePrice": 610.77,
+          "boschBest": 553,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-14",
+          "lowestPrice": 541.77,
+          "averagePrice": 620.63,
+          "boschBest": 551,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-16",
+          "lowestPrice": 531.02,
+          "averagePrice": 614.55,
+          "boschBest": 549,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-18",
+          "lowestPrice": 542.87,
+          "averagePrice": 609.75,
+          "boschBest": 553,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-20",
+          "lowestPrice": 543.76,
+          "averagePrice": 619.82,
+          "boschBest": 551,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-22",
+          "lowestPrice": 531.17,
+          "averagePrice": 616.24,
+          "boschBest": 549,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-24",
+          "lowestPrice": 540.76,
+          "averagePrice": 609.15,
+          "boschBest": 553,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-26",
+          "lowestPrice": 545.37,
+          "averagePrice": 618.63,
+          "boschBest": 551,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-28",
+          "lowestPrice": 531.95,
+          "averagePrice": 617.83,
+          "boschBest": 549,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-04-30",
+          "lowestPrice": 538.5,
+          "averagePrice": 609.01,
+          "boschBest": 553,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-02",
+          "lowestPrice": 546.47,
+          "averagePrice": 617.15,
+          "boschBest": 551,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-04",
+          "lowestPrice": 533.28,
+          "averagePrice": 619.2,
+          "boschBest": 549,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-06",
+          "lowestPrice": 536.29,
+          "averagePrice": 609.35,
+          "boschBest": 553,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-08",
+          "lowestPrice": 546.97,
+          "averagePrice": 615.5,
+          "boschBest": 551,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-10",
+          "lowestPrice": 535.07,
+          "averagePrice": 620.23,
+          "boschBest": 549,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-12",
+          "lowestPrice": 534.3,
+          "averagePrice": 610.15,
+          "boschBest": 553,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-14",
+          "lowestPrice": 546.84,
+          "averagePrice": 613.81,
+          "boschBest": 551,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-16",
+          "lowestPrice": 537.18,
+          "averagePrice": 620.84,
+          "boschBest": 549,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-18",
+          "lowestPrice": 532.68,
+          "averagePrice": 611.32,
+          "boschBest": 553,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-20",
+          "lowestPrice": 546.09,
+          "averagePrice": 612.22,
+          "boschBest": 551,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-22",
+          "lowestPrice": 539.42,
+          "averagePrice": 620.99,
+          "boschBest": 549,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-24",
+          "lowestPrice": 531.56,
+          "averagePrice": 612.8,
+          "boschBest": 553,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-26",
+          "lowestPrice": 544.77,
+          "averagePrice": 610.84,
+          "boschBest": 551,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-28",
+          "lowestPrice": 541.64,
+          "averagePrice": 620.66,
+          "boschBest": 549,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-05-30",
+          "lowestPrice": 531.03,
+          "averagePrice": 614.44,
+          "boschBest": 553,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-06-01",
+          "lowestPrice": 542.99,
+          "averagePrice": 609.8,
+          "boschBest": 551,
+          "siemensBest": 629,
+          "worten": 589
+        },
+        {
+          "date": "2026-06-03",
+          "lowestPrice": 499,
+          "averagePrice": 582.9,
+          "boschBest": 499,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-05",
+          "lowestPrice": 490.96,
+          "averagePrice": 575.09,
+          "boschBest": 502,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-07",
+          "lowestPrice": 499.17,
+          "averagePrice": 581.18,
+          "boschBest": 500,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-09",
+          "lowestPrice": 503,
+          "averagePrice": 583.92,
+          "boschBest": 503,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-11",
+          "lowestPrice": 500.11,
+          "averagePrice": 575.55,
+          "boschBest": 501,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-13",
+          "lowestPrice": 490.15,
+          "averagePrice": 579.78,
+          "boschBest": 499,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-15",
+          "lowestPrice": 499.77,
+          "averagePrice": 584.63,
+          "boschBest": 502,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-17",
+          "lowestPrice": 500,
+          "averagePrice": 576.36,
+          "boschBest": 500,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-19",
+          "lowestPrice": 499.54,
+          "averagePrice": 578.39,
+          "boschBest": 503,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-21",
+          "lowestPrice": 490.47,
+          "averagePrice": 584.97,
+          "boschBest": 501,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-23",
+          "lowestPrice": 499,
+          "averagePrice": 577.47,
+          "boschBest": 499,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-25",
+          "lowestPrice": 502,
+          "averagePrice": 577.13,
+          "boschBest": 502,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-27",
+          "lowestPrice": 498.93,
+          "averagePrice": 584.92,
+          "boschBest": 500,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-06-29",
+          "lowestPrice": 491.29,
+          "averagePrice": 578.77,
+          "boschBest": 503,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-01",
+          "lowestPrice": 500.86,
+          "averagePrice": 576.1,
+          "boschBest": 501,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-03",
+          "lowestPrice": 499,
+          "averagePrice": 584.47,
+          "boschBest": 499,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-05",
+          "lowestPrice": 498.29,
+          "averagePrice": 580.18,
+          "boschBest": 502,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-07",
+          "lowestPrice": 492.1,
+          "averagePrice": 575.38,
+          "boschBest": 500,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-09",
+          "lowestPrice": 501.35,
+          "averagePrice": 583.67,
+          "boschBest": 503,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-11",
+          "lowestPrice": 501,
+          "averagePrice": 581.57,
+          "boschBest": 501,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-13",
+          "lowestPrice": 497.62,
+          "averagePrice": 575.03,
+          "boschBest": 499,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-15",
+          "lowestPrice": 492.9,
+          "averagePrice": 582.57,
+          "boschBest": 502,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-17",
+          "lowestPrice": 500,
+          "averagePrice": 582.83,
+          "boschBest": 500,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-19",
+          "lowestPrice": 503,
+          "averagePrice": 575.07,
+          "boschBest": 503,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-21",
+          "lowestPrice": 496.93,
+          "averagePrice": 581.27,
+          "boschBest": 501,
+          "siemensBest": 579,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-23",
+          "lowestPrice": 516.55,
+          "averagePrice": 595,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-25",
+          "lowestPrice": 511.82,
+          "averagePrice": 593.95,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-27",
+          "lowestPrice": 512.18,
+          "averagePrice": 592.91,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-29",
+          "lowestPrice": 512.69,
+          "averagePrice": 591.86,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-07-31",
+          "lowestPrice": 507.99,
+          "averagePrice": 590.82,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-02",
+          "lowestPrice": 507.47,
+          "averagePrice": 589.77,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-04",
+          "lowestPrice": 508.69,
+          "averagePrice": 588.73,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-06",
+          "lowestPrice": 504.27,
+          "averagePrice": 587.68,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-08",
+          "lowestPrice": 502.82,
+          "averagePrice": 586.63,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-10",
+          "lowestPrice": 504.52,
+          "averagePrice": 585.59,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-12",
+          "lowestPrice": 500.64,
+          "averagePrice": 584.54,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-14",
+          "lowestPrice": 498.25,
+          "averagePrice": 583.5,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-16",
+          "lowestPrice": 500.21,
+          "averagePrice": 582.45,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-18",
+          "lowestPrice": 497.05,
+          "averagePrice": 581.41,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-20",
+          "lowestPrice": 493.8,
+          "averagePrice": 580.36,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-22",
+          "lowestPrice": 495.74,
+          "averagePrice": 579.31,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-24",
+          "lowestPrice": 493.46,
+          "averagePrice": 578.27,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-26",
+          "lowestPrice": 489.5,
+          "averagePrice": 577.22,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-28",
+          "lowestPrice": 491.16,
+          "averagePrice": 576.18,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-08-30",
+          "lowestPrice": 489.82,
+          "averagePrice": 575.13,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-01",
+          "lowestPrice": 485.36,
+          "averagePrice": 574.09,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-03",
+          "lowestPrice": 486.5,
+          "averagePrice": 573.04,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-05",
+          "lowestPrice": 486.1,
+          "averagePrice": 571.99,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-07",
+          "lowestPrice": 481.38,
+          "averagePrice": 570.95,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-09",
+          "lowestPrice": 481.79,
+          "averagePrice": 569.9,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-11",
+          "lowestPrice": 482.25,
+          "averagePrice": 568.86,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-13",
+          "lowestPrice": 477.54,
+          "averagePrice": 567.81,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-15",
+          "lowestPrice": 477.08,
+          "averagePrice": 566.77,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-17",
+          "lowestPrice": 478.25,
+          "averagePrice": 565.72,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-19",
+          "lowestPrice": 473.82,
+          "averagePrice": 564.67,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-21",
+          "lowestPrice": 472.42,
+          "averagePrice": 563.63,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-23",
+          "lowestPrice": 474.1,
+          "averagePrice": 562.58,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-25",
+          "lowestPrice": 470.18,
+          "averagePrice": 561.54,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-27",
+          "lowestPrice": 467.84,
+          "averagePrice": 560.49,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-09-29",
+          "lowestPrice": 469.79,
+          "averagePrice": 559.45,
+          "boschBest": 525.26,
+          "siemensBest": 559.89,
+          "worten": 549
+        },
+        {
+          "date": "2026-10-01",
+          "lowestPrice": 460.65,
+          "averagePrice": 558.4,
+          "boschBest": 466.59,
+          "siemensBest": 548.89,
+          "worten": 529
+        }
+      ]
+    }
+  }
+}

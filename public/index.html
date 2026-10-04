@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Multi-Product Price Tracker - Ninja, Switch 2, Secadores</title>
+
+  <!-- PWA & Android Meta Tags -->
+  <link rel="manifest" href="/manifest.json">
+  <meta name="theme-color" content="#0a0b0e">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="Price Tracker">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Price Tracker">
+  <link rel="icon" type="image/png" sizes="192x192" href="/images/icon-192.png">
+  <link rel="apple-touch-icon" href="/images/icon-192.png">
+
+  <!-- Chart.js para o gráfico de histórico estilo KuantoKusta -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  
+  <!-- Google Fonts: Oswald para estética robusta Ninja & Inter para dados e preços neutros -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="ninja-theme">
+
+  <!-- Header Estilo Ninja Woodfire Hub -->
+  <header class="ninja-nav">
+    <div class="container nav-content">
+      <div class="brand">
+        <div class="ninja-badge">
+          <span class="ninja-brand-text">PRICE</span>
+          <span class="woodfire-sub">TRACKER HUB</span>
+        </div>
+        <div class="brand-divider"></div>
+        <div class="model-meta">
+          <span class="model-badge" id="headerProductBadge">MULTI-MONITOR</span>
+          <span class="edition-text" id="headerProductSub">Ninja Woodfire • Switch 2 • Secador Bosch/Siemens</span>
+        </div>
+      </div>
+
+      <div class="nav-actions">
+        <button id="btnCheckNow" class="btn btn-flame">
+          <i class="fa-solid fa-arrows-rotate"></i>
+          <span>Verificar Agora</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Banner Informativo e Monitor 4x/Dia -->
+  <div class="status-strip">
+    <div class="container strip-flex">
+      <div class="strip-left">
+        <div class="live-led"></div>
+        <span><strong>Monitorização de hora a hora ativa (24/7):</strong> Verificação a cada hora</span>
+        <span class="divider">•</span>
+        <span id="nextRunLabel"><i class="fa-regular fa-clock"></i> Próxima ronda: <strong>A calcular...</strong></span>
+      </div>
+      <div class="strip-right">
+        <div class="telegram-pill" id="telegramBadge">
+          <i class="fa-brands fa-telegram"></i>
+          <span id="telegramStatusText">Telegram: A verificar...</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main class="container main-content">
+
+    <!-- Selector de Produtos em Destaque (Hub Tabs) -->
+    <section class="products-tab-bar">
+      <div class="tab-bar-label"><i class="fa-solid fa-layer-group"></i> ESCOLHE O ARTIGO A MONITORIZAR:</div>
+      <div class="products-nav-grid" id="productsTabsContainer">
+        <!-- Rendered dynamically by JavaScript -->
+        <button class="product-tab-card active" data-product="ninja-woodfire">
+          <div class="tab-icon">🥩</div>
+          <div class="tab-info">
+            <div class="tab-title">Ninja Woodfire XL</div>
+            <div class="tab-sub">OG901EU • Grelhador & Defumador</div>
+          </div>
+          <div class="tab-price-pill" id="tabPrice_ninja-woodfire">380,95 €</div>
+        </button>
+
+        <button class="product-tab-card" data-product="nintendo-switch-2">
+          <div class="tab-icon">🎮</div>
+          <div class="tab-info">
+            <div class="tab-title">Nintendo Switch 2</div>
+            <div class="tab-sub">Consola Base & Bundles</div>
+          </div>
+          <div class="tab-price-pill" id="tabPrice_nintendo-switch-2">448,50 €</div>
+        </button>
+
+        <button class="product-tab-card" data-product="dryer-bosch-siemens">
+          <div class="tab-icon">🧺</div>
+          <div class="tab-info">
+            <div class="tab-title">Secador Bosch / Siemens</div>
+            <div class="tab-sub">Bomba Calor • Classe A/B (&lt;700€)</div>
+          </div>
+          <div class="tab-price-pill" id="tabPrice_dryer-bosch-siemens">446,34 €</div>
+        </button>
+
+        <button class="product-tab-card" data-product="outlet-radar">
+          <div class="tab-icon">⚡</div>
+          <div class="tab-info">
+            <div class="tab-title">Radar Outlet PT</div>
+            <div class="tab-sub">Worten • ECI • FNAC • Castro</div>
+          </div>
+          <div class="tab-price-pill tab-pill-flame" id="tabPrice_outlet-radar">20 Achados</div>
+        </button>
+      </div>
+    </section>
+
+    <!-- Resumo Comparativo Rápido dos 4 Itens -->
+    <div class="quick-overview-bar">
+      <div class="overview-item" onclick="switchProduct('ninja-woodfire')">
+        <span class="ov-emoji">🥩</span>
+        <div class="ov-text">
+          <span class="ov-name">Ninja Woodfire ProConnect XL</span>
+          <span class="ov-val" id="ovPrice_ninja">380,95 € <small class="text-green">🎯 No Alvo (&le;380€)</small></span>
+        </div>
+      </div>
+      <div class="overview-divider"></div>
+      <div class="overview-item" onclick="switchProduct('nintendo-switch-2')">
+        <span class="ov-emoji">🎮</span>
+        <div class="ov-text">
+          <span class="ov-name">Nintendo Switch 2</span>
+          <span class="ov-val" id="ovPrice_switch">448,50 € <small class="text-cyan">Consola Base Standard</small></span>
+        </div>
+      </div>
+      <div class="overview-divider"></div>
+      <div class="overview-item" onclick="switchProduct('dryer-bosch-siemens')">
+        <span class="ov-emoji">🧺</span>
+        <div class="ov-text">
+          <span class="ov-name">Secador Bosch / Siemens</span>
+          <span class="ov-val" id="ovPrice_dryer">446,34 € <small class="text-green">✅ Teto &lt;700€ Respeitado</small></span>
+        </div>
+      </div>
+      <div class="overview-divider"></div>
+      <div class="overview-item" onclick="switchProduct('outlet-radar')">
+        <span class="ov-emoji">⚡</span>
+        <div class="ov-text">
+          <span class="ov-name">Radar de Outlet PT</span>
+          <span class="ov-val" id="ovPrice_outlet">Até -65% <small class="text-flame">🔥 Vantagem Real vs Novo</small></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Content Wrapper for Standard Products (Ninja, Switch 2, Dryers) -->
+    <div id="standardProductView">
+      <!-- Hero Card do Produto Ativo -->
+      <section class="ninja-hero-card">
+      <div class="hero-left">
+        <div class="product-visual">
+          <div class="glow-backdrop"></div>
+          <img id="productImage" src="/images/ninja-woodfire-og901.jpg" alt="Produto em Monitorização">
+          <div class="tech-labels" id="productTechTags">
+            <span class="tech-tag tech-flame"><i class="fa-solid fa-fire"></i> Pellets Reais</span>
+            <span class="tech-tag tech-wifi"><i class="fa-solid fa-wifi"></i> App ProConnect</span>
+            <span class="tech-tag tech-probe"><i class="fa-solid fa-temperature-high"></i> Sonda Digital</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-header">
+          <div class="category-tag" id="productCategory">GRELHADOR ELÉTRICO DE EXTERIOR • DEFUMADOR • AIR FRY</div>
+          <h1 id="productTitle">NINJA WOODFIRE PRO CONNECT XL <span>OG901EU</span></h1>
+          <p class="hero-desc" id="productDesc">
+            Capacidade XL para exterior, 7 funções em 1, resistência IPX4 às intempéries e conectividade total através da App Ninja para monitorização em tempo real.
+          </p>
+        </div>
+
+        <!-- Painel Digital de Preço Atual (Fonte Neutra Inter) -->
+        <div class="lcd-price-dashboard">
+          <div class="lcd-box best-price-box">
+            <div class="lcd-label">MELHOR PREÇO ATUAL</div>
+            <div class="lcd-digits text-cyan" id="statLowestPrice">-- €</div>
+            <div class="lcd-sub" id="statLowestStore"><i class="fa-solid fa-store"></i> A pesquisar lojas...</div>
+          </div>
+
+          <div class="lcd-box">
+            <div class="lcd-label">MÉDIA 6 MESES (PT)</div>
+            <div class="lcd-digits text-violet" id="statAvgPrice">-- €</div>
+            <div class="lcd-sub">Referência KuantoKusta</div>
+          </div>
+
+          <div class="lcd-box">
+            <div class="lcd-label">MÍNIMO HISTÓRICO</div>
+            <div class="lcd-digits text-flame" id="statHistLowest">-- €</div>
+            <div class="lcd-sub" id="statHistLabel">Campanhas Anteriores</div>
+          </div>
+
+          <div class="lcd-box">
+            <div class="lcd-label" id="statTargetLabel">PREÇO ALVO / PVP</div>
+            <div class="lcd-digits text-muted" id="statRrpPrice">-- €</div>
+            <div class="lcd-sub text-green" id="statSavings"><i class="fa-solid fa-tag"></i> A calcular...</div>
+          </div>
+        </div>
+
+        <!-- Veredito KuantoKusta -->
+        <div class="deal-verdict-banner" id="verdictBox">
+          <div class="verdict-icon"><i class="fa-solid fa-bullhorn"></i></div>
+          <div class="verdict-text">
+            <h4 id="verdictTitle">Análise de Mercado</h4>
+            <p id="verdictDesc">A comparar com o histórico de preços dos últimos 6 meses em Portugal...</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Secção: Gráfico Histórico de Preços nos Últimos 6 Meses -->
+    <section class="ninja-panel">
+      <div class="panel-header">
+        <div class="panel-title-group">
+          <h2><i class="fa-solid fa-chart-area"></i> EVOLUÇÃO DE PREÇOS (ÚLTIMOS 6 MESES)</h2>
+          <p id="chartSubTitle">Comparativo detalhado estilo KuantoKusta no mercado português (Abril a Outubro de 2026)</p>
+        </div>
+
+        <div class="panel-actions">
+          <div class="period-switch">
+            <button class="btn-period active" data-period="all">6 Meses</button>
+            <button class="btn-period" data-period="90">3 Meses</button>
+            <button class="btn-period" data-period="30">1 Mês</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filtros de Lojas no Gráfico (Dinâmicos) -->
+      <div class="chart-toggles-bar" id="chartTogglesContainer">
+        <!-- Rendered dynamically -->
+      </div>
+
+      <div class="chart-container">
+        <canvas id="priceHistoryChart"></canvas>
+      </div>
+
+      <div class="panel-footer-note" id="chartFooterNote">
+        <i class="fa-solid fa-lightbulb"></i>
+        <span id="chartFooterText"><strong>Análise Histórica:</strong> Análise de preços atualizada com base nas cotações registadas no mercado português.</span>
+      </div>
+    </section>
+
+    <!-- Secção: Comparador de Lojas com Envio para Portugal -->
+    <section class="ninja-panel">
+      <div class="panel-header">
+        <div class="panel-title-group">
+          <h2><i class="fa-solid fa-store"></i> LOJAS E OFERTAS COM ENVIO PARA PORTUGAL</h2>
+          <p id="tableSubTitle">Amazon.es, Worten, PcComponentes, FNAC e principais lojas de referência</p>
+        </div>
+
+        <div class="table-tabs" id="tableFilterTabs">
+          <!-- Dynamically populated per active product -->
+          <button class="tab-btn active" data-filter="all">Todas as Lojas (<span id="countAll">0</span>)</button>
+          <button class="tab-btn" data-filter="free"><i class="fa-solid fa-truck-fast"></i> Apenas Portes Grátis (<span id="countFree">0</span>)</button>
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table class="ninja-table">
+          <thead>
+            <tr>
+              <th>LOJA / MODELO</th>
+              <th>ESTADO</th>
+              <th>PREÇO BASE</th>
+              <th>PORTES P/ PORTUGAL</th>
+              <th>PREÇO TOTAL</th>
+              <th>DIFERENÇA</th>
+              <th class="text-right">COMPRAR</th>
+            </tr>
+          </thead>
+          <tbody id="storesTableBody">
+            <tr>
+              <td colspan="7" class="text-center py-5">
+                <i class="fa-solid fa-spinner fa-spin"></i> A obter cotações em tempo real...
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+    </div><!-- End of standardProductView -->
+
+    <!-- SECÇÃO: RADAR DE OUTLET: CAIXA ABERTA, EXPOSIÇÃO & DEFEITOS -->
+    <section id="outletSection" class="ninja-panel" style="display: none;">
+      <div class="panel-header">
+        <div class="panel-title-group">
+          <h2><i class="fa-solid fa-bolt text-flame"></i> RADAR DE OUTLET: CAIXA ABERTA, EXPOSIÇÃO & DEFEITOS</h2>
+          <p>
+            Vigilância contínua das secções de Outlet, Saldos e Oportunidades nacionais (Worten, El Corte Inglés, FNAC, Castro Electrónica).
+            <strong>Critério Rigoroso:</strong> Exclusivamente artigos novos com caixa aberta, artigos de exposição em loja, embalagem danificada ou pequenos defeitos/mossas de transporte. Recondicionados comuns excluídos.
+          </p>
+        </div>
+
+        <div class="panel-actions">
+          <div class="outlet-sort-wrap">
+            <label for="outletSortSelect"><i class="fa-solid fa-arrow-down-wide-short"></i> Ordenar:</label>
+            <select id="outletSortSelect" class="ninja-select-sm">
+              <option value="date_desc" selected>⏱️ Mais Recentes Primeiro (Inserção)</option>
+              <option value="save_amount">💰 Maior Poupança Real (€)</option>
+              <option value="save_percent">📉 Maior Desconto (%)</option>
+              <option value="price_asc">🏷️ Menor Preço de Outlet</option>
+            </select>
+          </div>
+          <button id="btnScanOutlet" class="btn btn-flame">
+            <i class="fa-solid fa-arrows-rotate"></i>
+            <span>Varrer Outlets Agora</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- KPI Ribbon do Radar de Outlet -->
+      <div class="outlet-kpi-ribbon">
+        <div class="outlet-kpi-card">
+          <div class="kpi-label">TOTAL CATALOGADO</div>
+          <div class="kpi-val text-cyan" id="outletStatTotal">20</div>
+          <div class="kpi-sub">Caixa Aberta / Exposição / Defeitos</div>
+        </div>
+        <div class="outlet-kpi-card">
+          <div class="kpi-label">VANTAGEM REAL COMPROVADA</div>
+          <div class="kpi-val text-green" id="outletStatReal">8</div>
+          <div class="kpi-sub">Desconto real vs menor preço de novo</div>
+        </div>
+        <div class="outlet-kpi-card">
+          <div class="kpi-label">NEGÓCIOS DE OURO</div>
+          <div class="kpi-val text-flame" id="outletStatGold">8</div>
+          <div class="kpi-sub">Poupança &gt; 25% ou &gt; 80€ vs Novo</div>
+        </div>
+        <div class="outlet-kpi-card">
+          <div class="kpi-label">MAIOR POUPANÇA DETETADA</div>
+          <div class="kpi-val text-violet" id="outletStatMaxSave">-379,90 €</div>
+          <div class="kpi-sub">Face ao preço de novo no mercado</div>
+        </div>
+      </div>
+
+      <!-- Filtros Rápidos de Condição Física & Loja -->
+      <div class="outlet-filter-bar" id="outletFilterBar">
+        <button class="outlet-chip active" data-condition="all">Todos os Artigos (<span id="outletCountAll">0</span>)</button>
+        <button class="outlet-chip" data-condition="caixa_aberta"><i class="fa-solid fa-box-open text-cyan"></i> Caixa Aberta (<span id="countCaixaAberta">0</span>)</button>
+        <button class="outlet-chip" data-condition="exposicao"><i class="fa-solid fa-store text-violet"></i> Exposição (<span id="countExposicao">0</span>)</button>
+        <button class="outlet-chip" data-condition="embalagem_dano"><i class="fa-solid fa-boxes-packing text-amber"></i> Embalagem Danificada (<span id="countEmbalagem">0</span>)</button>
+        <button class="outlet-chip" data-condition="riscos_mossas"><i class="fa-solid fa-wrench text-rose"></i> Riscos & Mossas (<span id="countRiscos">0</span>)</button>
+        <span class="chip-divider">|</span>
+        <button class="outlet-chip" data-filter="gold"><i class="fa-solid fa-fire text-flame"></i> Negócios de Ouro</button>
+        <span class="chip-divider">|</span>
+        <button class="outlet-chip" data-store="worten">Worten</button>
+        <button class="outlet-chip" data-store="elcorteingles">El Corte Inglés</button>
+        <button class="outlet-chip" data-store="fnac">FNAC</button>
+        <button class="outlet-chip" data-store="castro">Castro Electrónica</button>
+      </div>
+
+      <!-- Grelha de Ofertas de Outlet -->
+      <div class="outlet-grid" id="outletDealsContainer">
+        <div class="text-center py-5 text-muted" style="grid-column: 1 / -1;">
+          <i class="fa-solid fa-spinner fa-spin"></i> A carregar achados verificados de outlet...
+        </div>
+      </div>
+    </section>
+
+    <!-- Secção: Histórico de Alertas & Verificações (Largura Total) -->
+    <section class="ninja-panel">
+      <div class="panel-header-mini">
+        <h3><i class="fa-solid fa-bell text-flame"></i> REGISTO DE VERIFICAÇÕES & ALERTAS MULTI-PRODUTO</h3>
+      </div>
+
+      <div class="panel-body">
+        <div class="sub-tabs">
+          <button class="sub-tab-btn active" id="tabAlerts">Alertas de Baixa de Preço (<span id="alertsCount">0</span>)</button>
+          <button class="sub-tab-btn" id="tabLogs">Histórico de Verificações</button>
+        </div>
+
+        <div id="alertsContainer" class="feed-container">
+          <div class="empty-feed">
+            <i class="fa-solid fa-shield-halved text-cyan"></i>
+            <p>O monitor está vigilante em segundo plano (de hora a hora, 24/7) a vigiar o <strong>Ninja Woodfire</strong>, a <strong>Nintendo Switch 2</strong>, as <strong>Máquinas de Secar Roupa Bosch/Siemens</strong> e os <strong>Achados de Outlet</strong> (Caixa Aberta / Exposição). Assim que surgir uma descida de preço ou novo artigo outlet com poupança real, a notificação é enviada imediatamente para o teu Telegram e registada aqui.</p>
+          </div>
+        </div>
+
+        <div id="logsContainer" class="feed-container" style="display: none;">
+          <ul class="logs-feed" id="logsList"></ul>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Rodapé Estilo Woodfire Outdoor Hub -->
+  <footer class="ninja-footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <span class="f-ninja">PRICE</span> <span class="f-woodfire">TRACKER HUB</span> <span class="f-pt">🇵🇹 Portugal</span>
+      </div>
+      <p>Monitor de preços e alertas automáticos em segundo plano via Telegram para Ninja Woodfire XL, Nintendo Switch 2 e Máquinas de Secar Bosch/Siemens (&lt;700€).</p>
+      <p class="text-xs text-muted">Compatível com Android (PWA), iOS e Desktop. As marcas e logótipos pertencem aos respetivos proprietários.</p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

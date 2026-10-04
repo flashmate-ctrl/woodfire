@@ -1,0 +1,27 @@
+{
+  "name": "Ninja Woodfire OG901 - Monitor de Preços",
+  "short_name": "Ninja Woodfire",
+  "description": "Monitor de Preços em tempo real e comparador de mercado para o grelhador elétrico Ninja Woodfire Pro Connect XL (OG901EU) com alertas Telegram",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#0c0d12",
+  "theme_color": "#0c0d12",
+  "lang": "pt-PT",
+  "categories": ["shopping", "utilities", "lifestyle"],
+  "icons": [
+    {
+      "src": "/images/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment and sensitive credentials
+.env
+.env.local
+.env.*.local
+data/config.json
+
+# Operating System files
+.DS_Store
+Thumbs.db
+
+# PM2 & Logs
+logs/
+*.log
+.pm2/

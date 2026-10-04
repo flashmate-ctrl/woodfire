@@ -1,0 +1,24 @@
+{
+  "name": "ninja-woodfire-price-tracker",
+  "version": "1.0.0",
+  "description": "Monitor de preços para Ninja Woodfire Pro Connect XL OG901 com alertas Telegram e comparador estilo KuantoKusta",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "check": "node src/cli-check.js",
+    "check:daily": "node src/cli-check.js --daily",
+    "seed": "node src/seed_history.js",
+    "pm2:start": "pm2 start ecosystem.config.js",
+    "pm2:stop": "pm2 stop ninja-woodfire",
+    "pm2:restart": "pm2 restart ninja-woodfire",
+    "pm2:logs": "pm2 logs ninja-woodfire",
+    "pm2:status": "pm2 status"
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-cron": "^3.0.3"
+  }
+}
