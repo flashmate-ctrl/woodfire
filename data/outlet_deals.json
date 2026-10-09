@@ -1,8 +1,8 @@
 {
   "stats": {
     "totalDeals": 28,
-    "realAdvantageCount": 10,
-    "goldDealsCount": 11,
+    "realAdvantageCount": 9,
+    "goldDealsCount": 10,
     "maxSavingsAmount": 1404.01,
     "storesTracked": [
       "Worten Outlet",
@@ -16,69 +16,69 @@
       "embalagem_dano": 7,
       "riscos_mossas": 4
     },
-    "lastScanTime": "2026-10-09T08:40:41.488Z"
+    "lastScanTime": "2026-10-09T08:50:33.847Z"
   },
   "deals": [
     {
-      "id": "out_worten_siemens_dryer_iq500_9kg",
-      "title": "Máquina de Secar Roupa Siemens iQ500 WQ45G2D0ES 9Kg Classe A",
-      "modelCode": "WQ45G2D0ES",
-      "brand": "Siemens",
-      "category": "Grandes Eletrodomésticos",
-      "storeName": "Worten Outlet",
-      "storeKey": "worten",
-      "storeLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-      "condition": "Pequenos Riscos / Mossas (Tara Estética)",
-      "conditionType": "riscos_mossas",
-      "conditionLabel": "Pequenos Riscos / Mossas (Novo)",
-      "conditionIcon": "fa-wrench",
-      "conditionBadgeClass": "badge-riscos",
-      "conditionDetails": "Ligeira marca superficial na chapa lateral decorrente de transporte. Tambor 9Kg, eletrónica e motor 100% novos com garantia oficial de 3 anos.",
-      "outletPrice": 519,
-      "newMarketPrice": 647.59,
-      "newMarketStore": "KuantoKusta (Menor Preço de Novo)",
-      "newMarketUrl": "https://www.kuantokusta.pt/p/11436712/siemens-wq45g2d0es-9kg-classe-a",
-      "savingsAmount": 128.59,
-      "savingsPercent": 19.9,
-      "isRealAdvantage": true,
-      "dealVerdict": "🔥 Negócio de Ouro",
-      "url": "https://www.worten.pt/produtos/maquina-de-secar-roupa-siemens-wq45g2d0es-9-kg-bomba-de-calor-branco-8184774",
-      "imageUrl": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=500&q=80",
-      "inStock": true,
-      "insertedAt": "2026-10-09T08:30:00.000Z",
-      "firstSeen": "2026-10-09T08:30:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
-      "alertSent": true
-    },
-    {
-      "id": "out_worten_dryer_bosch_series6",
-      "title": "Máquina de Secar Roupa Bosch Série 6 WQG245D0ES 9Kg Bomba de Calor",
+      "id": "out_worten_bosch_wqg245d0es_bgrade",
+      "title": "Máquina de Secar Roupa BOSCH WQG245D0ES (Outlet Grade B - 9 kg - Bomba de Calor - Branco)",
       "modelCode": "WQG245D0ES",
       "brand": "Bosch",
       "category": "Grandes Eletrodomésticos",
       "storeName": "Worten Outlet",
       "storeKey": "worten",
       "storeLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-      "condition": "Caixa Aberta / Embalagem Danificada",
+      "condition": "Pequenos Riscos / Mossas (Novo)",
+      "conditionType": "riscos_mossas",
+      "conditionLabel": "Pequenos Riscos / Mossas (Novo)",
+      "conditionIcon": "fa-wrench",
+      "conditionBadgeClass": "badge-riscos",
+      "conditionDetails": "Artigo Outlet Worten com marcas estéticas ligeiras de transporte. Motor, tambor 9Kg e eletrónica novos com garantia Worten de 3 anos.",
+      "outletPrice": 382.57,
+      "newMarketPrice": 647.99,
+      "newMarketStore": "KuantoKusta (Menor Preço de Novo)",
+      "newMarketUrl": "https://www.kuantokusta.pt/p/11427656/bosch-wqg245d0es-9kg-classe-c",
+      "savingsAmount": 265.42,
+      "savingsPercent": 41,
+      "isRealAdvantage": true,
+      "dealVerdict": "🔥 Negócio de Ouro",
+      "url": "https://www.worten.pt/produtos/maquina-de-secar-roupa-bosch-wqg245d0es-outlet-grade-b-9-kg-bomba-de-calor-branco-8242393",
+      "imageUrl": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=500&q=80",
+      "inStock": true,
+      "insertedAt": "2026-10-09T08:45:00.000Z",
+      "firstSeen": "2026-10-09T08:45:00.000Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "alertSent": true
+    },
+    {
+      "id": "out_worten_bosch_wqg245dres_caixa_aberta",
+      "title": "Máquina de Secar Roupa BOSCH WQG245DRES (Outlet Caixa Aberta - 9 Kg - Bomba de Calor - Cinzento)",
+      "modelCode": "WQG245DRES",
+      "brand": "Bosch",
+      "category": "Grandes Eletrodomésticos",
+      "storeName": "Worten Outlet",
+      "storeKey": "worten",
+      "storeLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
+      "condition": "Caixa Aberta / Open Box",
       "conditionType": "caixa_aberta",
       "conditionLabel": "Caixa Aberta / Open Box",
       "conditionIcon": "fa-box-open",
       "conditionBadgeClass": "badge-openbox",
-      "conditionDetails": "Caixa de papelão rasgada no transporte. Artigo 100% novo virgem com plásticos selados e garantia oficial de 3 anos.",
-      "outletPrice": 479,
-      "newMarketPrice": 858.9,
-      "newMarketStore": "KuantoKusta (Produto Novo)",
-      "newMarketUrl": "https://www.kuantokusta.pt/p/11936586/bosch-wrb247d0es-9kg-classe-a",
-      "savingsAmount": 379.9,
-      "savingsPercent": 44.2,
-      "isRealAdvantage": true,
-      "dealVerdict": "🔥 Negócio de Ouro",
-      "url": "https://www.worten.pt/produtos/maquina-de-secar-roupa-bosch-wqg245d0es-9-kg-bomba-de-calor-branco-8161024",
+      "conditionDetails": "Caixa aberta em armazém. Artigo 100% impecável novo em folha, tambor 9Kg Série 6 e acabamento inox/cinzento com 3 anos de garantia.",
+      "outletPrice": 699.97,
+      "newMarketPrice": 720.49,
+      "newMarketStore": "KuantoKusta (Menor Preço de Novo)",
+      "newMarketUrl": "https://www.kuantokusta.pt/p/11795462/bosch-wqg245dres-9kg-classe-c",
+      "savingsAmount": 20.52,
+      "savingsPercent": 2.8,
+      "isRealAdvantage": false,
+      "dealVerdict": "⚠️ Margem Reduzida",
+      "url": "https://www.worten.pt/produtos/maquina-de-secar-roupa-bosch-wqg245dres-outlet-caixa-aberta-9-kg-bomba-de-calor-cinzento-8889086",
       "imageUrl": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
-      "insertedAt": "2026-10-04T10:10:00.000Z",
-      "firstSeen": "2026-10-04T08:38:37.387Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "insertedAt": "2026-10-09T08:45:00.000Z",
+      "firstSeen": "2026-10-09T08:45:00.000Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -109,7 +109,7 @@
       "inStock": true,
       "insertedAt": "2026-10-04T09:15:00.000Z",
       "firstSeen": "2026-10-04T08:50:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -140,7 +140,7 @@
       "inStock": true,
       "insertedAt": "2026-10-04T08:50:00.000Z",
       "firstSeen": "2026-10-04T08:50:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -171,7 +171,7 @@
       "inStock": true,
       "insertedAt": "2026-10-04T08:20:00.000Z",
       "firstSeen": "2026-10-04T07:45:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -202,7 +202,7 @@
       "inStock": true,
       "insertedAt": "2026-10-04T07:45:00.000Z",
       "firstSeen": "2026-10-04T07:10:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -233,7 +233,7 @@
       "inStock": true,
       "insertedAt": "2026-10-04T07:15:00.000Z",
       "firstSeen": "2026-10-04T07:15:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -264,7 +264,7 @@
       "inStock": true,
       "insertedAt": "2026-10-04T06:40:00.000Z",
       "firstSeen": "2026-10-04T06:40:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -290,12 +290,12 @@
       "savingsPercent": 5.3,
       "isRealAdvantage": false,
       "dealVerdict": "⚠️ Margem Reduzida",
-      "url": "https://www.worten.pt/produtos/monitor-lg-ultragear-27gr75q-b-outlet-caixa-aberta-27-qhd-165-hz-ips-preto-8298869",
+      "url": "https://www.worten.pt/search?query=LG%2027GR75Q-B",
       "imageUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-04T06:05:00.000Z",
       "firstSeen": "2026-10-04T06:05:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -326,7 +326,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T23:30:00.000Z",
       "firstSeen": "2026-10-03T23:30:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -357,7 +357,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T21:50:00.000Z",
       "firstSeen": "2026-10-03T21:50:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -388,7 +388,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T20:10:00.000Z",
       "firstSeen": "2026-10-04T06:30:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -419,7 +419,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T18:40:00.000Z",
       "firstSeen": "2026-10-03T22:15:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -450,7 +450,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T16:25:00.000Z",
       "firstSeen": "2026-10-03T20:40:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -481,7 +481,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T14:15:00.000Z",
       "firstSeen": "2026-10-03T18:20:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -512,7 +512,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T12:00:00.000Z",
       "firstSeen": "2026-10-03T16:10:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -543,7 +543,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T10:20:00.000Z",
       "firstSeen": "2026-10-03T14:30:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -574,7 +574,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T08:30:00.000Z",
       "firstSeen": "2026-10-03T08:30:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -605,7 +605,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T21:40:00.000Z",
       "firstSeen": "2026-10-03T11:40:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -636,7 +636,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T19:15:00.000Z",
       "firstSeen": "2026-10-03T09:15:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -667,7 +667,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T16:30:00.000Z",
       "firstSeen": "2026-10-02T19:30:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -698,7 +698,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T13:00:00.000Z",
       "firstSeen": "2026-10-02T15:00:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -729,7 +729,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T10:15:00.000Z",
       "firstSeen": "2026-10-02T10:15:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -760,7 +760,7 @@
       "inStock": true,
       "insertedAt": "2026-10-01T20:20:00.000Z",
       "firstSeen": "2026-10-02T11:20:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -791,7 +791,7 @@
       "inStock": true,
       "insertedAt": "2026-10-01T17:45:00.000Z",
       "firstSeen": "2026-10-01T18:45:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -822,7 +822,7 @@
       "inStock": true,
       "insertedAt": "2026-10-01T14:10:00.000Z",
       "firstSeen": "2026-10-01T14:10:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -853,7 +853,7 @@
       "inStock": true,
       "insertedAt": "2026-09-30T16:20:00.000Z",
       "firstSeen": "2026-09-30T16:20:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     },
     {
@@ -884,9 +884,9 @@
       "inStock": true,
       "insertedAt": "2026-09-30T11:30:00.000Z",
       "firstSeen": "2026-09-30T11:30:00.000Z",
-      "lastChecked": "2026-10-09T08:40:41.488Z",
+      "lastChecked": "2026-10-09T08:50:33.847Z",
       "alertSent": true
     }
   ],
-  "lastScanTime": "2026-10-09T08:40:41.488Z"
+  "lastScanTime": "2026-10-09T08:50:33.847Z"
 }

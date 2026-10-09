@@ -238,40 +238,42 @@ async function checkMarketPriceOfNew(rawTitle, fallbackRrp = null, brand = null)
 const verifiedOutletStock = [
   // --- Worten Outlet ---
   {
-    id: 'out_worten_dryer_bosch_series6',
-    title: 'Máquina de Secar Roupa Bosch Série 6 WQG245D0ES 9Kg Bomba de Calor',
+    id: 'out_worten_bosch_wqg245d0es_bgrade',
+    title: 'Máquina de Secar Roupa BOSCH WQG245D0ES (Outlet Grade B - 9 kg - Bomba de Calor - Branco)',
     modelCode: 'WQG245D0ES',
     brand: 'Bosch',
     category: 'Grandes Eletrodomésticos',
     storeName: 'Worten Outlet',
     storeKey: 'worten',
     storeLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png',
-    condition: 'Caixa Aberta / Embalagem Danificada',
-    conditionType: 'caixa_aberta',
-    conditionDetails: 'Caixa de papelão rasgada no transporte. Artigo 100% novo virgem com plásticos selados e garantia oficial de 3 anos.',
-    outletPrice: 479.00,
-    referenceRrp: 640.99,
+    condition: 'Pequenos Riscos / Mossas (Novo)',
+    conditionType: 'riscos_mossas',
+    conditionDetails: 'Artigo Outlet Worten com marcas estéticas ligeiras de transporte. Motor, tambor 9Kg e eletrónica novos com garantia Worten de 3 anos.',
+    outletPrice: 382.57,
+    referenceRrp: 647.99,
+    directUrl: 'https://www.worten.pt/produtos/maquina-de-secar-roupa-bosch-wqg245d0es-outlet-grade-b-9-kg-bomba-de-calor-branco-8242393',
     imageUrl: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=500&q=80',
     inStock: true,
-    insertedAt: '2026-10-04T10:10:00.000Z'
+    insertedAt: '2026-10-09T08:45:00.000Z'
   },
   {
-    id: 'out_worten_siemens_dryer_iq500_9kg',
-    title: 'Máquina de Secar Roupa Siemens iQ500 WQ45G2D0ES 9Kg Classe A',
-    modelCode: 'WQ45G2D0ES',
-    brand: 'Siemens',
+    id: 'out_worten_bosch_wqg245dres_caixa_aberta',
+    title: 'Máquina de Secar Roupa BOSCH WQG245DRES (Outlet Caixa Aberta - 9 Kg - Bomba de Calor - Cinzento)',
+    modelCode: 'WQG245DRES',
+    brand: 'Bosch',
     category: 'Grandes Eletrodomésticos',
     storeName: 'Worten Outlet',
     storeKey: 'worten',
     storeLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png',
-    condition: 'Pequenos Riscos / Mossas (Tara Estética)',
-    conditionType: 'riscos_mossas',
-    conditionDetails: 'Ligeira marca superficial na chapa lateral decorrente de transporte. Tambor 9Kg, eletrónica e motor 100% novos com garantia oficial de 3 anos.',
-    outletPrice: 519.00,
-    referenceRrp: 647.59,
-    imageUrl: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=500&q=80',
+    condition: 'Caixa Aberta / Open Box',
+    conditionType: 'caixa_aberta',
+    conditionDetails: 'Caixa aberta em armazém. Artigo 100% impecável novo em folha, tambor 9Kg Série 6 e acabamento inox/cinzento com 3 anos de garantia.',
+    outletPrice: 699.97,
+    referenceRrp: 720.49,
+    directUrl: 'https://www.worten.pt/produtos/maquina-de-secar-roupa-bosch-wqg245dres-outlet-caixa-aberta-9-kg-bomba-de-calor-cinzento-8889086',
+    imageUrl: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=500&q=80',
     inStock: true,
-    insertedAt: '2026-10-09T08:30:00.000Z'
+    insertedAt: '2026-10-09T08:45:00.000Z'
   },
   {
     id: 'out_worten_ninja_af400_openbox',
@@ -773,7 +775,7 @@ async function runOutletScan() {
     const alertSent = existing?.alertSent || false;
 
     // Generate direct link on the retailer's site to the exact product page!
-    const directStoreUrl = await fetchDirectStoreProductUrl(rawItem.storeKey, rawItem.brand, rawItem.modelCode, rawItem.title);
+    const directStoreUrl = rawItem.directUrl || await fetchDirectStoreProductUrl(rawItem.storeKey, rawItem.brand, rawItem.modelCode, rawItem.title);
 
     // KuantoKusta check for NEW equivalent price
     let newMarketPrice = existing?.newMarketPrice;
