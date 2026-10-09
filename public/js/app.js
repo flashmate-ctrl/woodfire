@@ -298,22 +298,22 @@ function setupProductHero(productId) {
     chartSubTitle.textContent = 'Evolução de cotações e pré-vendas da Nintendo Switch 2 em Portugal';
     chartFooterText.innerHTML = '<strong>Análise Switch 2:</strong> A consola base está posicionada nos <strong>449,99 €</strong> oficiais, surgindo pontualmente a <strong>448,50 € / 439,90 €</strong>. Os bundles com jogos variam entre <strong>488,00 € e 529,99 €</strong>.';
   } else if (productId === 'dryer-bosch-siemens') {
-    headerProductBadge.textContent = 'BOMBA DE CALOR';
-    headerProductSub.textContent = 'Secadores Bosch & Siemens • Classe A/B (< 700€)';
-    productCategory.textContent = 'GRANDES ELETRODOMÉSTICOS • EFICIÊNCIA ENERGÉTICA CLASSE A/B';
-    productTitle.innerHTML = 'MÁQUINAS DE SECAR <span>BOSCH & SIEMENS</span>';
-    productDesc.textContent = 'Filtro inteligente de máquinas de secar roupa das marcas alemãs Bosch e Siemens com tecnologia de Bomba de Calor, Classe Energética A ou B (ou A++/A+++) e teto orçamental máximo rigorosamente inferior a 700 €.';
+    headerProductBadge.textContent = 'SÉRIE 6/8 • ≥ 9KG';
+    headerProductSub.textContent = 'Bosch (Série 6/8) & Siemens (≥ 9Kg) • < 700€';
+    productCategory.textContent = 'GRANDES ELETRODOMÉSTICOS • GAMA SUPERIOR • CAPACIDADE ≥ 9KG';
+    productTitle.innerHTML = 'MÁQUINAS DE SECAR <span>BOSCH & SIEMENS (≥ 9KG)</span>';
+    productDesc.textContent = 'Filtro restrito a modelos topo de gama Bosch (Série 6 ou 8) e Siemens equivalente (iQ500 / iQ700). Capacidade mínima obrigatória de 9 Kg, tecnologia Bomba de Calor e teto orçamental estrito inferior a 700 € (modelos de gama inferior excluídos).';
     productImage.src = 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=600&q=80';
     productTechTags.innerHTML = `
-      <span class="tech-tag tech-wifi"><i class="fa-solid fa-bolt"></i> Bomba de Calor</span>
-      <span class="tech-tag tech-probe"><i class="fa-solid fa-leaf"></i> Classe Energética A/B</span>
+      <span class="tech-tag tech-wifi"><i class="fa-solid fa-weight-hanging"></i> Capacidade Mín. 9 Kg</span>
+      <span class="tech-tag tech-probe"><i class="fa-solid fa-layer-group"></i> Bosch Série 6/8 • Siemens</span>
       <span class="tech-tag tech-flame"><i class="fa-solid fa-euro-sign"></i> Orçamento &lt; 700 €</span>
     `;
     statHistLabel.textContent = 'Melhor Preço Registado';
     statTargetLabel.textContent = 'TETO ORÇAMENTAL';
-    tableSubTitle.textContent = 'Modelos Bosch Série 4/6 e Siemens iQ300/iQ500 com Bomba de Calor e envio gratuito em Portugal';
-    chartSubTitle.textContent = 'Histórico de preços de secadores de roupa Bosch e Siemens de alta eficiência (< 700€)';
-    chartFooterText.innerHTML = '<strong>Critérios Respeitados:</strong> Todos os modelos listados possuem tecnologia de <strong>Bomba de Calor</strong>, classe de eficiência <strong>A, B, A++ ou A+++</strong> e custam <strong>menos de 700 €</strong> com portes incluídos.';
+    tableSubTitle.textContent = 'Modelos Bosch Série 6/8 e Siemens iQ500/700 (≥ 9Kg) com Bomba de Calor e entrega em Portugal';
+    chartSubTitle.textContent = 'Histórico de preços de secadores Bosch Série 6/8 e Siemens (≥ 9Kg) abaixo de 700€';
+    chartFooterText.innerHTML = '<strong>Critérios Estritos:</strong> Exclusivamente <strong>Bosch Série 6 e 8</strong> ou <strong>Siemens equivalente (iQ500 / iQ700)</strong>, capacidade <strong>mínima de 9 Kg</strong> e preço <strong>inferior a 700 €</strong>.';
   }
 }
 
@@ -334,10 +334,9 @@ function setupFilterTabs(productId) {
     `;
   } else if (productId === 'dryer-bosch-siemens') {
     tabsHtml = `
-      <button class="tab-btn active" data-filter="all">Todas (&lt; 700€) (<span id="countAll">0</span>)</button>
-      <button class="tab-btn" data-filter="bosch"><i class="fa-solid fa-circle-dot text-danger"></i> Apenas Bosch</button>
-      <button class="tab-btn" data-filter="siemens"><i class="fa-solid fa-circle-dot text-cyan"></i> Apenas Siemens</button>
-      <button class="tab-btn" data-filter="classA"><i class="fa-solid fa-leaf text-green"></i> Classe A (Máx. Eficiência)</button>
+      <button class="tab-btn active" data-filter="all">Todas (≥ 9Kg &lt; 700€) (<span id="countAll">0</span>)</button>
+      <button class="tab-btn" data-filter="bosch"><i class="fa-solid fa-circle-dot text-danger"></i> Bosch (Série 6/8)</button>
+      <button class="tab-btn" data-filter="siemens"><i class="fa-solid fa-circle-dot text-cyan"></i> Siemens (iQ500/700)</button>
       <button class="tab-btn" data-filter="free"><i class="fa-solid fa-truck-fast"></i> Portes Grátis</button>
     `;
   }

@@ -1,8 +1,8 @@
 {
   "stats": {
     "totalDeals": 28,
-    "realAdvantageCount": 9,
-    "goldDealsCount": 10,
+    "realAdvantageCount": 10,
+    "goldDealsCount": 11,
     "maxSavingsAmount": 1404.01,
     "storesTracked": [
       "Worten Outlet",
@@ -16,9 +16,40 @@
       "embalagem_dano": 7,
       "riscos_mossas": 4
     },
-    "lastScanTime": "2026-10-04T10:13:30.689Z"
+    "lastScanTime": "2026-10-09T08:35:00.005Z"
   },
   "deals": [
+    {
+      "id": "out_worten_siemens_dryer_iq500_9kg",
+      "title": "Máquina de Secar Roupa Siemens iQ500 WQ45G2D0ES 9Kg Classe A",
+      "modelCode": "WQ45G2D0ES",
+      "brand": "Siemens",
+      "category": "Grandes Eletrodomésticos",
+      "storeName": "Worten Outlet",
+      "storeKey": "worten",
+      "storeLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
+      "condition": "Pequenos Riscos / Mossas (Tara Estética)",
+      "conditionType": "riscos_mossas",
+      "conditionLabel": "Pequenos Riscos / Mossas (Novo)",
+      "conditionIcon": "fa-wrench",
+      "conditionBadgeClass": "badge-riscos",
+      "conditionDetails": "Ligeira marca superficial na chapa lateral decorrente de transporte. Tambor 9Kg, eletrónica e motor 100% novos com garantia oficial de 3 anos.",
+      "outletPrice": 519,
+      "newMarketPrice": 686.89,
+      "newMarketStore": "KuantoKusta (Menor Preço de Novo)",
+      "newMarketUrl": "https://www.kuantokusta.pt/p/11475664/siemens-iq500-wg56h2a0es-10kg-1600rpm-classe-a",
+      "savingsAmount": 167.89,
+      "savingsPercent": 24.4,
+      "isRealAdvantage": true,
+      "dealVerdict": "🔥 Negócio de Ouro",
+      "url": "https://www.worten.pt/search?query=Siemens%20WQ45G2D0ES",
+      "imageUrl": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=500&q=80",
+      "inStock": true,
+      "insertedAt": "2026-10-09T08:30:00.000Z",
+      "firstSeen": "2026-10-09T08:30:00.000Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
+      "alertSent": true
+    },
     {
       "id": "out_worten_dryer_bosch_series6",
       "title": "Máquina de Secar Roupa Bosch Série 6 WQG245D0ES 9Kg Bomba de Calor",
@@ -47,43 +78,12 @@
       "inStock": true,
       "insertedAt": "2026-10-04T10:10:00.000Z",
       "firstSeen": "2026-10-04T08:38:37.387Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
-      "alertSent": true
-    },
-    {
-      "id": "out_worten_siemens_dryer_iq500",
-      "title": "Máquina de Secar Roupa Siemens iQ500 WT47R400ES 8Kg Classe A+++",
-      "modelCode": "WT47R400ES",
-      "brand": "Siemens",
-      "category": "Grandes Eletrodomésticos",
-      "storeName": "Worten Outlet",
-      "storeKey": "worten",
-      "storeLogo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-      "condition": "Pequenos Riscos / Mossas (Tara Estética)",
-      "conditionType": "riscos_mossas",
-      "conditionLabel": "Pequenos Riscos / Mossas (Novo)",
-      "conditionIcon": "fa-wrench",
-      "conditionBadgeClass": "badge-riscos",
-      "conditionDetails": "Ligeira mossa na chapa lateral esquerda decorrente de descarga em armazém. Tambor e motor 100% impecáveis.",
-      "outletPrice": 499,
-      "newMarketPrice": 548.89,
-      "newMarketStore": "KuantoKusta (Menor Preço de Novo)",
-      "newMarketUrl": "https://www.kuantokusta.pt/p/11795464/siemens-wq42g200es-9kg-classe-d",
-      "savingsAmount": 49.89,
-      "savingsPercent": 9.1,
-      "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
-      "url": "https://www.worten.pt/search?query=Siemens%20WT47R400ES",
-      "imageUrl": "https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=500&q=80",
-      "inStock": true,
-      "insertedAt": "2026-10-04T09:42:00.000Z",
-      "firstSeen": "2026-10-04T09:15:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
       "id": "out_worten_ninja_af400_openbox",
-      "title": "Fritadeira sem �\u001cleo Ninja Foodi DualZone MAX AF400EU 9.5L 2470W",
+      "title": "Fritadeira sem Óleo Ninja Foodi DualZone MAX AF400EU 9.5L 2470W",
       "modelCode": "AF400EU",
       "brand": "Ninja",
       "category": "Pequenos Eletrodomésticos",
@@ -103,18 +103,18 @@
       "savingsAmount": 6.72,
       "savingsPercent": 4.3,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.worten.pt/search?query=Ninja%20AF400EU",
       "imageUrl": "https://ninjakitchen.pt/on/demandware.static/-/Sites-ninja-pt-Library/default/dw769584d4/images/logo.svg",
       "inStock": true,
       "insertedAt": "2026-10-04T09:15:00.000Z",
       "firstSeen": "2026-10-04T08:50:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
       "id": "out_worten_ninja_af500_openbox",
-      "title": "Fritadeira sem �\u001cleo Ninja Foodi FlexDrawer AF500EU 10.4L",
+      "title": "Fritadeira sem Óleo Ninja Foodi FlexDrawer AF500EU 10.4L",
       "modelCode": "AF500EU",
       "brand": "Ninja",
       "category": "Pequenos Eletrodomésticos",
@@ -134,13 +134,13 @@
       "savingsAmount": -8.6,
       "savingsPercent": -4.8,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.worten.pt/search?query=Ninja%20AF500EU",
       "imageUrl": "https://ninjakitchen.pt/on/demandware.static/-/Sites-ninja-pt-Library/default/dw769584d4/images/logo.svg",
       "inStock": true,
       "insertedAt": "2026-10-04T08:50:00.000Z",
       "firstSeen": "2026-10-04T08:50:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -171,7 +171,7 @@
       "inStock": true,
       "insertedAt": "2026-10-04T08:20:00.000Z",
       "firstSeen": "2026-10-04T07:45:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -196,13 +196,13 @@
       "savingsAmount": -36.55,
       "savingsPercent": -17.2,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.worten.pt/search?query=Roborock%20Q7%20Max",
       "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-04T07:45:00.000Z",
       "firstSeen": "2026-10-04T07:10:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -227,13 +227,13 @@
       "savingsAmount": 68.89,
       "savingsPercent": 15,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.worten.pt/search?query=Bosch%20WAN28280ES",
       "imageUrl": "https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-04T07:15:00.000Z",
       "firstSeen": "2026-10-04T07:15:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -258,13 +258,13 @@
       "savingsAmount": -2.1,
       "savingsPercent": -0.9,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.worten.pt/search?query=Bosch%20PUE611BB5E",
       "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-04T06:40:00.000Z",
       "firstSeen": "2026-10-04T06:40:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -289,13 +289,13 @@
       "savingsAmount": 9.51,
       "savingsPercent": 5.3,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.worten.pt/search?query=LG%2027GR75Q-B",
       "imageUrl": "https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-04T06:05:00.000Z",
       "firstSeen": "2026-10-04T06:05:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -320,13 +320,13 @@
       "savingsAmount": 10.45,
       "savingsPercent": 5.2,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.worten.pt/search?query=Logitech%20G29",
       "imageUrl": "https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-03T23:30:00.000Z",
       "firstSeen": "2026-10-03T23:30:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -357,7 +357,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T21:50:00.000Z",
       "firstSeen": "2026-10-03T21:50:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -388,12 +388,12 @@
       "inStock": true,
       "insertedAt": "2026-10-03T20:10:00.000Z",
       "firstSeen": "2026-10-04T06:30:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
       "id": "out_eci_ninja_doublestack_sl400",
-      "title": "Fritadeira sem �\u001cleo Ninja DoubleStack XL SL400EU 9.5L Vertical",
+      "title": "Fritadeira sem Óleo Ninja DoubleStack XL SL400EU 9.5L Vertical",
       "modelCode": "SL400EU",
       "brand": "Ninja",
       "category": "Pequenos Eletrodomésticos",
@@ -413,13 +413,13 @@
       "savingsAmount": 3.97,
       "savingsPercent": 2.2,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.elcorteingles.pt/search/?s=Ninja%20SL400EU",
       "imageUrl": "https://ninjakitchen.pt/on/demandware.static/-/Sites-ninja-pt-Library/default/dw769584d4/images/logo.svg",
       "inStock": true,
       "insertedAt": "2026-10-03T18:40:00.000Z",
       "firstSeen": "2026-10-03T22:15:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -450,7 +450,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T16:25:00.000Z",
       "firstSeen": "2026-10-03T20:40:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -475,13 +475,13 @@
       "savingsAmount": -24.01,
       "savingsPercent": -5.1,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.elcorteingles.pt/search/?s=Bosch%20KGN39VWEA",
       "imageUrl": "https://images.unsplash.com/photo-1584992236310-6edddc08acff?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-03T14:15:00.000Z",
       "firstSeen": "2026-10-03T18:20:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -512,7 +512,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T12:00:00.000Z",
       "firstSeen": "2026-10-03T16:10:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -543,7 +543,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T10:20:00.000Z",
       "firstSeen": "2026-10-03T14:30:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -568,13 +568,13 @@
       "savingsAmount": 43,
       "savingsPercent": 8.7,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.elcorteingles.pt/search/?s=Dyson%20V12",
       "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-03T08:30:00.000Z",
       "firstSeen": "2026-10-03T08:30:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -605,7 +605,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T21:40:00.000Z",
       "firstSeen": "2026-10-03T11:40:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -630,13 +630,13 @@
       "savingsAmount": 24.99,
       "savingsPercent": 4,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.fnac.pt/SearchResult/ResultList.aspx?Search=Bose%20Smart%20Ultra",
       "imageUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-02T19:15:00.000Z",
       "firstSeen": "2026-10-03T09:15:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -667,7 +667,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T16:30:00.000Z",
       "firstSeen": "2026-10-02T19:30:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -692,13 +692,13 @@
       "savingsAmount": -39.33,
       "savingsPercent": -18.7,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.fnac.pt/SearchResult/ResultList.aspx?Search=Sony%20WH-1000XM5",
       "imageUrl": "https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-02T13:00:00.000Z",
       "firstSeen": "2026-10-02T15:00:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -723,13 +723,13 @@
       "savingsAmount": -350,
       "savingsPercent": -70.1,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.fnac.pt/SearchResult/ResultList.aspx?Search=ASUS%20FA507NV",
       "imageUrl": "https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-02T10:15:00.000Z",
       "firstSeen": "2026-10-02T10:15:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -760,7 +760,7 @@
       "inStock": true,
       "insertedAt": "2026-10-01T20:20:00.000Z",
       "firstSeen": "2026-10-02T11:20:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -785,13 +785,13 @@
       "savingsAmount": 50,
       "savingsPercent": 16.7,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.castroelectronica.pt/pt/search?search=Marshall%20Stanmore%20III",
       "imageUrl": "https://images.unsplash.com/photo-1545454675-3531b543be5d?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-01T17:45:00.000Z",
       "firstSeen": "2026-10-01T18:45:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -816,13 +816,13 @@
       "savingsAmount": 34.9,
       "savingsPercent": 10.8,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.castroelectronica.pt/pt/search?search=Xiaomi%20A%20Pro%2055",
       "imageUrl": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-01T14:10:00.000Z",
       "firstSeen": "2026-10-01T14:10:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -847,13 +847,13 @@
       "savingsAmount": 47.31,
       "savingsPercent": 9.7,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.castroelectronica.pt/pt/search?search=Samsung%20The%20Freestyle",
       "imageUrl": "https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-09-30T16:20:00.000Z",
       "firstSeen": "2026-09-30T16:20:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     },
     {
@@ -878,15 +878,15 @@
       "savingsAmount": -28.78,
       "savingsPercent": -11.1,
       "isRealAdvantage": false,
-      "dealVerdict": "👍 Oportunidade Real",
+      "dealVerdict": "⚠️ Margem Reduzida",
       "url": "https://www.castroelectronica.pt/pt/search?search=Balay%203EB865FR",
       "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-09-30T11:30:00.000Z",
       "firstSeen": "2026-09-30T11:30:00.000Z",
-      "lastChecked": "2026-10-04T10:13:30.689Z",
+      "lastChecked": "2026-10-09T08:35:00.005Z",
       "alertSent": true
     }
   ],
-  "lastScanTime": "2026-10-04T10:13:30.689Z"
+  "lastScanTime": "2026-10-09T08:35:00.005Z"
 }

@@ -167,37 +167,37 @@ function buildInitialProducts() {
     },
     'dryer-bosch-siemens': {
       id: 'dryer-bosch-siemens',
-      name: 'Máquinas de Secar Roupa Bosch / Siemens',
-      shortName: 'Secador Bosch / Siemens',
-      badge: 'BOMBA DE CALOR',
+      name: 'Máquinas de Secar Roupa Bosch (Série 6/8) & Siemens (≥ 9Kg)',
+      shortName: 'Secador Bosch / Siemens 9Kg',
+      badge: 'SÉRIE 6/8 • 9KG',
       emoji: '🧺',
       icon: 'fa-solid fa-shirt',
-      category: 'Grandes Eletrodomésticos • Bomba de Calor',
+      category: 'Grandes Eletrodomésticos • Bomba de Calor ≥ 9Kg',
       targetPrice: 550.00,
       maxBudget: 700.00,
       officialRrp: 699.99,
       imageUrl: 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=600&q=80',
-      description: 'Filtro inteligente para máquinas de secar Bosch e Siemens com tecnologia de Bomba de Calor, Classe Energética A ou B (ou A++/A+++) e teto de orçamento estrito < 700 €.',
+      description: 'Vigilância restrita a máquinas de secar topo de gama Bosch (Série 6 ou Série 8) e Siemens equivalente (iQ500 / iQ700), com capacidade mínima de 9 Kg e preço abaixo de 700 €.',
       specs: [
-        'Tecnologia de Bomba de Calor economizadora',
-        'Classe Energética de alta eficiência (A, B, A+++)',
-        'Capacidade de 8 Kg a 9 Kg',
-        'Sensores inteligentes AutoDry que protegem os tecidos',
-        'Orçamento garantido abaixo de 700 €'
+        'Gama Superior: Bosch Série 6 ou 8 / Siemens iQ500 ou iQ700',
+        'Capacidade Mínima: 9 Kg (tambor amplo para grandes cargas)',
+        'Tecnologia de Bomba de Calor com sensores AutoDry',
+        'Filtro anti-gamas inferiores (excluídas Série 2/4 e iQ300)',
+        'Orçamento garantido abaixo de 700 € com portes'
       ],
       filterVariants: [
-        { id: 'all', label: 'Todas (< 700€)' },
-        { id: 'bosch', label: 'Apenas Bosch' },
-        { id: 'siemens', label: 'Apenas Siemens' },
+        { id: 'all', label: 'Todas 9Kg (< 700€)' },
+        { id: 'bosch', label: 'Bosch (Série 6/8)' },
+        { id: 'siemens', label: 'Siemens (iQ500/700)' },
         { id: 'classA', label: 'Classe A (Máx. Eficiência)' }
       ],
       stores: defaultDryerStores,
       stats: {
-        currentLowestPrice: 460.65,
-        currentLowestStore: 'KuantoKusta (44 Lojas PT)',
-        historicalLowestPrice: 460.65,
-        historicalHighestPrice: 689.00,
-        sixMonthsAveragePrice: 558.40
+        currentLowestPrice: 529.00,
+        currentLowestStore: 'Worten.pt',
+        historicalLowestPrice: 525.26,
+        historicalHighestPrice: 659.10,
+        sixMonthsAveragePrice: 598.50
       },
       lastScanTime: null
     }

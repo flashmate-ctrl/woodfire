@@ -206,9 +206,9 @@ const verifiedOutletStock = [
     insertedAt: '2026-10-04T10:10:00.000Z'
   },
   {
-    id: 'out_worten_siemens_dryer_iq500',
-    title: 'Máquina de Secar Roupa Siemens iQ500 WT47R400ES 8Kg Classe A+++',
-    modelCode: 'WT47R400ES',
+    id: 'out_worten_siemens_dryer_iq500_9kg',
+    title: 'Máquina de Secar Roupa Siemens iQ500 WQ45G2D0ES 9Kg Classe A',
+    modelCode: 'WQ45G2D0ES',
     brand: 'Siemens',
     category: 'Grandes Eletrodomésticos',
     storeName: 'Worten Outlet',
@@ -216,12 +216,12 @@ const verifiedOutletStock = [
     storeLogo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png',
     condition: 'Pequenos Riscos / Mossas (Tara Estética)',
     conditionType: 'riscos_mossas',
-    conditionDetails: 'Ligeira mossa na chapa lateral esquerda decorrente de descarga em armazém. Tambor e motor 100% impecáveis.',
-    outletPrice: 499.00,
-    referenceRrp: 689.00,
+    conditionDetails: 'Ligeira marca superficial na chapa lateral decorrente de transporte. Tambor 9Kg, eletrónica e motor 100% novos com garantia oficial de 3 anos.',
+    outletPrice: 519.00,
+    referenceRrp: 647.59,
     imageUrl: 'https://images.unsplash.com/photo-1610557892470-55d9e80c0bce?auto=format&fit=crop&w=500&q=80',
     inStock: true,
-    insertedAt: '2026-10-04T09:42:00.000Z'
+    insertedAt: '2026-10-09T08:30:00.000Z'
   },
   {
     id: 'out_worten_ninja_af400_openbox',

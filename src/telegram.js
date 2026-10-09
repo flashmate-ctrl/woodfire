@@ -180,16 +180,16 @@ async function sendDailyHeartbeat({ productsData }) {
     ? Math.min(...sw2BundleStores.map(s => s.price))
     : 488.00;
 
-  // 3. Dryers (Bosch/Siemens < 700€)
+  // 3. Dryers (Bosch Série 6/8 & Siemens iQ500/700 >= 9Kg < 700€)
   const dryers = productsData['dryer-bosch-siemens'] || {};
-  const dryerLowest = dryers.stats?.currentLowestPrice || 460.65;
-  const dryerLowestStore = dryers.stats?.currentLowestStore || 'KuantoKusta';
+  const dryerLowest = dryers.stats?.currentLowestPrice || 529.00;
+  const dryerLowestStore = dryers.stats?.currentLowestStore || 'Worten.pt';
   
-  // Find top Class A dryer under 700€
-  const classADryer = (dryers.stores || []).find(s => s.energyRating === 'A' || s.variantTitle?.includes('Classe A'));
-  const classAText = classADryer 
-    ? `• <b>Classe A (Máx. Eficiência):</b> ${classADryer.price.toFixed(2)} € (${classADryer.variantTitle})`
-    : `• <b>Classe A/B:</b> Modelos a partir de ${dryerLowest.toFixed(2)} €`;
+  // Find top Class A or Serie 8/iQ700 dryer under 700€
+  const topDryer = (dryers.stores || []).find(s => s.energyRating === 'A' || s.variantTitle?.includes('Classe A') || s.series === 'Série 8' || s.series === 'iQ700');
+  const topDryerText = topDryer 
+    ? `• <b>Destaque Eficiência / Gama:</b> ${topDryer.price.toFixed(2)} € (${topDryer.variantTitle})`
+    : `• <b>Gama:</b> Apenas Bosch Série 6/8 & Siemens iQ500/700 (≥ 9Kg)`;
 
   const message = `
 🤖 <b>RELATÓRIO DIÁRIO DE VIGILÂNCIA</b> ✅
@@ -208,9 +208,9 @@ Resumo das melhores cotações com envio para Portugal:
 • <b>Packs / Bundles:</b> A partir de <b>${sw2MinBundle.toFixed(2)} €</b> (com jogos)
 • <b>Preço Alvo Base:</b> ${sw2.targetPrice || 429.99} € <i>(Pre-order / Stock ativo)</i>
 
-🧺 <b>MÁQUINAS DE SECAR BOSCH &amp; SIEMENS (BOMBA DE CALOR)</b>
+🧺 <b>MÁQUINAS DE SECAR BOSCH (SÉRIE 6/8) &amp; SIEMENS (≥ 9KG)</b>
 • <b>Melhor Oferta (&lt;700€):</b> <b>${dryerLowest.toFixed(2)} €</b> na loja <i>${dryerLowestStore}</i>
-${classAText}
+${topDryerText}
 • <b>Teto Orçamental:</b> &lt; 700.00 € (✅ <b>-${(700 - dryerLowest).toFixed(2)} €</b> abaixo do limite máximo)
 
 ℹ️ <i>Nenhuma descida crítica nas últimas 24h. O bot continua vigilante e avisar-te-á de imediato no momento em que surgir qualquer descida ou flash deal!</i>
