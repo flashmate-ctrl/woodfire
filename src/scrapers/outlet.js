@@ -52,7 +52,57 @@ function cleanProductModelName(rawTitle) {
     .trim();
 }
 
-// Generate direct search / product page link on the target store so user lands directly on the product!
+const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36';
+
+// Resolve concrete product page URL on store (e.g. Worten canonical product page)
+async function fetchDirectStoreProductUrl(storeKey, brand, modelCode, fallbackTitle) {
+  if (storeKey === 'worten') {
+    const query = (modelCode && modelCode.length > 2) ? `${brand || ''} ${modelCode}`.trim() : fallbackTitle;
+    try {
+      const res = await fetch('https://www.worten.pt/worten-api/search-products', {
+        method: 'POST',
+        headers: {
+          'User-Agent': USER_AGENT,
+          'Content-Type': 'application/json',
+          'Referer': `https://www.worten.pt/search?query=${encodeURIComponent(query)}`,
+          'Origin': 'https://www.worten.pt',
+          'Accept': 'application/json, text/plain, */*'
+        },
+        body: JSON.stringify({
+          query,
+          params: { page: 1, num_results_per_page: 5 }
+        })
+      });
+      if (res.ok) {
+        const data = await res.json();
+        const canonMap = new Map();
+        for (const list of Object.values(data.detailsResponse?.productsCanonicalsData || {})) {
+          if (Array.isArray(list)) list.forEach(c => canonMap.set(c.id, c.url));
+        }
+        for (const list of Object.values(data.detailsResponse?.productsData || {})) {
+          if (Array.isArray(list)) {
+            for (const prod of list) {
+              const nameLower = (prod.properties?.text?.name || '').toLowerCase();
+              // Verify product relevance (model code or brand)
+              if (modelCode && !nameLower.includes(modelCode.toLowerCase())) continue;
+              const id = prod.meta?.refs?.webitem_id || prod.id;
+              const relUrl = canonMap.get(id);
+              if (relUrl) {
+                return relUrl.startsWith('http') ? relUrl : `https://www.worten.pt${relUrl}`;
+              }
+            }
+          }
+        }
+      }
+    } catch (e) {
+      // Fallback to direct search link on failure
+    }
+  }
+
+  return generateDirectStoreUrl(storeKey, brand, modelCode, fallbackTitle);
+}
+
+// Generate direct search / product page link on the target store as safe fallback
 function generateDirectStoreUrl(storeKey, brand, modelCode, fallbackTitle) {
   const term = (modelCode && modelCode.length > 2) ? `${brand || ''} ${modelCode}`.trim() : fallbackTitle;
   const q = encodeURIComponent(term);
@@ -722,8 +772,8 @@ async function runOutletScan() {
     const firstSeen = existing?.firstSeen || insertedAt;
     const alertSent = existing?.alertSent || false;
 
-    // Generate direct link on the retailer's site to the exact product!
-    const directStoreUrl = generateDirectStoreUrl(rawItem.storeKey, rawItem.brand, rawItem.modelCode, rawItem.title);
+    // Generate direct link on the retailer's site to the exact product page!
+    const directStoreUrl = await fetchDirectStoreProductUrl(rawItem.storeKey, rawItem.brand, rawItem.modelCode, rawItem.title);
 
     // KuantoKusta check for NEW equivalent price
     let newMarketPrice = existing?.newMarketPrice;
