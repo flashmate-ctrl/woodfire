@@ -1,7 +1,7 @@
 const express = require('express');
 const path = require('path');
 const { getConfig, updateConfig } = require('./config');
-const { getDatabase, get6MonthHistory } = require('./database');
+const { getDatabase, saveDatabase, get6MonthHistory } = require('./database');
 const { startMonitor, getMonitorStatus, triggerCheck } = require('./monitor');
 const { sendTestNotification, verifyBotCredentials } = require('./telegram');
 const { runOutletScan, getStoredOutletDeals } = require('./scrapers/outlet');
@@ -190,11 +190,30 @@ app.post('/api/config', (req, res) => {
   });
 });
 
-// 6. Testar notificação do Telegram
+// 6. Testar notificação do Telegram (Rate limit: máximo 1 envio por hora)
+const TEST_RATE_LIMIT_MS = 60 * 60 * 1000; // 1 hora (3.600.000 ms)
+
 app.post('/api/test-telegram', async (req, res) => {
   try {
+    const db = getDatabase();
+    const now = Date.now();
+    const lastTestTime = db.lastTelegramTestTimestamp ? new Date(db.lastTelegramTestTimestamp).getTime() : 0;
+    const elapsed = now - lastTestTime;
+
+    if (elapsed < TEST_RATE_LIMIT_MS) {
+      const remainingMinutes = Math.ceil((TEST_RATE_LIMIT_MS - elapsed) / (60 * 1000));
+      return res.status(429).json({
+        success: false,
+        error: `Limite de segurança atingido. Só é permitido 1 envio de teste por hora. Tenta novamente dentro de ${remainingMinutes} minuto(s).`,
+        remainingMinutes,
+        retryAfterMs: TEST_RATE_LIMIT_MS - elapsed
+      });
+    }
+
     const result = await sendTestNotification();
     if (result.success) {
+      db.lastTelegramTestTimestamp = new Date(now).toISOString();
+      saveDatabase(db);
       res.json({ success: true, message: 'Notificação de teste enviada com sucesso para o Telegram!' });
     } else {
       res.status(400).json({ success: false, error: result.error || 'Falha ao enviar notificação.' });

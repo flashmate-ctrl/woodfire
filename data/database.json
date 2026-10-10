@@ -30,9 +30,9 @@
           "shippingCost": 0,
           "isFreeShipping": true,
           "shippingNote": "Grátis para Portugal (>35€ / Prime)",
-          "inStock": false,
+          "inStock": true,
           "url": "https://www.amazon.es/dp/B0CXDTMM28",
-          "lastChecked": "2026-10-09T08:34:55.686Z",
+          "lastChecked": "2026-10-10T19:00:00.467Z",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg"
         },
         {
@@ -46,7 +46,7 @@
           "shippingNote": "Grátis para Portugal em loja / campanhas",
           "inStock": true,
           "url": "https://www.worten.pt/produtos/grelhador-ninja-og901eu-1700-w-preto-8022830",
-          "lastChecked": "2026-10-09T08:34:55.686Z",
+          "lastChecked": "2026-10-10T19:00:00.467Z",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png"
         },
         {
@@ -60,7 +60,7 @@
           "shippingNote": "Envio para Portugal Continental",
           "inStock": true,
           "url": "https://www.pccomponentes.pt/barbecue-ninja-woodfire-pro-connect-xl-og901eu-eletrica-sensor-digital-app-1700w",
-          "lastChecked": "2026-10-09T08:34:55.686Z",
+          "lastChecked": "2026-10-10T19:00:00.467Z",
           "logo": "https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg"
         },
         {
@@ -74,7 +74,7 @@
           "shippingNote": "Grátis para Portugal Continental (>50€)",
           "inStock": true,
           "url": "https://ninjakitchen.pt/produtos/grelhador-eletrico-de-exterior-e-fumador-ninja-woodfire-pro-connect-xl-og901eu-zidOG901EU",
-          "lastChecked": "2026-10-09T08:34:55.686Z",
+          "lastChecked": "2026-10-10T19:00:00.467Z",
           "logo": "https://ninjakitchen.pt/on/demandware.static/-/Sites-ninja-pt-Library/default/dw769584d4/images/logo.svg"
         },
         {
@@ -89,7 +89,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/11262_1.png",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "kk_kibo",
@@ -103,7 +103,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9326_1.png",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "kk_stock-in",
@@ -117,7 +117,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/7471_1.png",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "kk_novoatalho",
@@ -131,7 +131,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/50_1.png",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "kk_digibest",
@@ -145,7 +145,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/12043_1.png",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         }
       ],
       "stats": {
@@ -153,9 +153,9 @@
         "currentLowestStore": "Hipermercado",
         "historicalLowestPrice": 369,
         "historicalHighestPrice": 488.64,
-        "sixMonthsAveragePrice": 414.81
+        "sixMonthsAveragePrice": 416.52
       },
-      "lastScanTime": "2026-10-09T08:34:55.686Z",
+      "lastScanTime": "2026-10-10T19:00:00.467Z",
       "model": "Ninja Woodfire Pro Connect XL (OG901EU)",
       "sku": "OG901EU",
       "asin": "B0CXDTMM28",
@@ -218,7 +218,7 @@
           "variantTitle": "Consola Nintendo Switch 2 256GB Black",
           "url": "https://www.pccomponentes.pt/search/?query=nintendo+switch+2",
           "logo": "https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "sw2_kk_base",
@@ -234,7 +234,7 @@
           "variantTitle": "Nintendo Switch 2 256GB Black (Consola Base)",
           "url": "https://www.kuantokusta.pt/p/11716249/nintendo-switch-2-256gb-black",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "sw2_worten_base",
@@ -250,7 +250,7 @@
           "variantTitle": "Consola Nintendo Switch 2 256GB Standard",
           "url": "https://www.worten.pt/search?query=nintendo+switch+2",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "sw2_amazon_base",
@@ -266,7 +266,7 @@
           "variantTitle": "Nintendo Switch 2 - Versão Standard Europeia",
           "url": "https://www.amazon.es/s?k=nintendo+switch+2",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "sw2_fnac_base",
@@ -282,14 +282,14 @@
           "variantTitle": "Consola Nintendo Switch 2 256GB",
           "url": "https://www.fnac.pt/SearchResult/ResultList.aspx?Search=nintendo+switch+2",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fnac_Logo.svg/1200px-Fnac_Logo.svg.png",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "sw2_kk_11716249",
           "name": "KuantoKusta (Consola Base)",
-          "seller": "22 lojas via KuantoKusta",
-          "price": 459.49,
-          "previousPrice": 459.49,
+          "seller": "21 lojas via KuantoKusta",
+          "price": 456.42,
+          "previousPrice": 456.42,
           "shippingCost": 0,
           "isFreeShipping": true,
           "shippingNote": "Portes Grátis para Portugal Continental",
@@ -298,7 +298,7 @@
           "variantTitle": "Nintendo Switch 2 256GB Black",
           "url": "https://www.kuantokusta.pt/p/11716249/nintendo-switch-2-256gb-black",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "sw2_worten_bundle_pkmn",
@@ -314,7 +314,7 @@
           "variantTitle": "Pack Nintendo Switch 2 256GB + Pokémon Pokopia",
           "url": "https://www.kuantokusta.pt/p/12182806/nintendo-switch-2-256gb-black-pokemon-pokopia",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "sw2_kk_12182806",
@@ -330,12 +330,12 @@
           "variantTitle": "Nintendo Switch 2 256GB Black + Pokémon Pokopia",
           "url": "https://www.kuantokusta.pt/p/12182806/nintendo-switch-2-256gb-black-pokemon-pokopia",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "sw2_kk_11716250",
           "name": "KuantoKusta (Bundle)",
-          "seller": "13 lojas via KuantoKusta",
+          "seller": "12 lojas via KuantoKusta",
           "price": 493.69,
           "previousPrice": 493.69,
           "shippingCost": 0,
@@ -346,7 +346,7 @@
           "variantTitle": "Nintendo Switch 2 256GB Black + Mario Kart World",
           "url": "https://www.kuantokusta.pt/p/11716250/nintendo-switch-2-256gb-black-mario-kart-world",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "sw2_kk_bundle_mk",
@@ -362,7 +362,7 @@
           "variantTitle": "Pack Nintendo Switch 2 256GB + Mario Kart World",
           "url": "https://www.kuantokusta.pt/p/11716250/nintendo-switch-2-256gb-black-mario-kart-world",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "sw2_fnac_bundle_sports",
@@ -378,7 +378,7 @@
           "variantTitle": "Pack Nintendo Switch 2 + Switch Sports Resort + 3M Online",
           "url": "https://www.kuantokusta.pt/p/12279146/nintendo-switch-2-switch-sports-resort-3-meses-nintendo-switch-online",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fnac_Logo.svg/1200px-Fnac_Logo.svg.png",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "sw2_kk_12279146",
@@ -394,7 +394,7 @@
           "variantTitle": "Nintendo Switch 2 + Switch Sports Resort + 3 Meses Nintendo Switch Online",
           "url": "https://www.kuantokusta.pt/p/12279146/nintendo-switch-2-switch-sports-resort-3-meses-nintendo-switch-online",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         }
       ],
       "stats": {
@@ -402,9 +402,9 @@
         "currentLowestStore": "PcComponentes.pt",
         "historicalLowestPrice": 439.9,
         "historicalHighestPrice": 549.99,
-        "sixMonthsAveragePrice": 480.6
+        "sixMonthsAveragePrice": 478.41
       },
-      "lastScanTime": "2026-10-09T08:34:55.686Z"
+      "lastScanTime": "2026-10-10T19:00:00.467Z"
     },
     "dryer-bosch-siemens": {
       "id": "dryer-bosch-siemens",
@@ -465,7 +465,7 @@
           "variantTitle": "Bosch Série 6 WQG24200ES 9Kg AutoDry",
           "url": "https://www.worten.pt/produtos/maquina-de-secar-roupa-bosch-wqg24200es-9-kg-bomba-de-calor-branco-7576590",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_bosch_wqg24200es_kk",
@@ -478,7 +478,7 @@
           "energyRating": "Classe D / A+++",
           "technology": "Bomba de Calor",
           "price": 552.99,
-          "previousPrice": 525.26,
+          "previousPrice": 552.99,
           "shippingCost": 0,
           "isFreeShipping": true,
           "shippingNote": "Portes Grátis para Portugal Continental",
@@ -487,11 +487,11 @@
           "variantTitle": "Bosch Série 6 WQG24200ES 9Kg AutoDry",
           "url": "https://www.kuantokusta.pt/p/11795459/bosch-wqg24200es-9kg-classe-d",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_kk_11795459",
-          "name": "KuantoKusta (36 Lojas PT)",
+          "name": "KuantoKusta (35 Lojas PT)",
           "seller": "Lojas Certificadas Portugal",
           "brand": "Bosch",
           "series": "Série 6",
@@ -509,7 +509,7 @@
           "variantTitle": "Máquina de Secar Roupa Bosch WQG24200ES 9Kg Classe D (Série 6)",
           "url": "https://www.kuantokusta.pt/p/11795459/bosch-wqg24200es-9kg-classe-d",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_siemens_wq42g200es_kk",
@@ -522,7 +522,7 @@
           "energyRating": "Classe D / A+++",
           "technology": "Bomba de Calor",
           "price": 569.29,
-          "previousPrice": 548.89,
+          "previousPrice": 569.29,
           "shippingCost": 0,
           "isFreeShipping": true,
           "shippingNote": "Envio Grátis para Portugal Continental",
@@ -531,11 +531,11 @@
           "variantTitle": "Siemens iQ500 WQ42G200ES 9Kg AutoDry",
           "url": "https://www.kuantokusta.pt/p/11795464/siemens-wq42g200es-9kg-classe-d",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_kk_11795464",
-          "name": "KuantoKusta (33 Lojas PT)",
+          "name": "KuantoKusta (32 Lojas PT)",
           "seller": "Lojas Certificadas Portugal",
           "brand": "Siemens",
           "series": "iQ500",
@@ -553,7 +553,7 @@
           "variantTitle": "Máquina de Secar Roupa Siemens WQ42G200ES 9Kg Classe D (iQ500)",
           "url": "https://www.kuantokusta.pt/p/11795464/siemens-wq42g200es-9kg-classe-d",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_bosch_wqg243d0es_kk",
@@ -575,11 +575,11 @@
           "variantTitle": "Bosch Série 6 WQG243D0ES 9Kg Bomba de Calor",
           "url": "https://www.kuantokusta.pt/p/11946789/bosch-wqg243d0es-9kg-classe-c",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_kk_11946789",
-          "name": "KuantoKusta (31 Lojas PT)",
+          "name": "KuantoKusta (30 Lojas PT)",
           "seller": "Lojas Certificadas Portugal",
           "brand": "Bosch",
           "series": "Série 6",
@@ -597,7 +597,51 @@
           "variantTitle": "Máquina de Secar Roupa Bosch WQG243D0ES 9Kg Classe C (Série 6)",
           "url": "https://www.kuantokusta.pt/p/11946789/bosch-wqg243d0es-9kg-classe-c",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
+        },
+        {
+          "id": "dryer_kk_11959807",
+          "name": "KuantoKusta (19 Lojas PT)",
+          "seller": "Lojas Certificadas Portugal",
+          "brand": "Siemens",
+          "series": "iQ500",
+          "modelName": "Máquina de Secar Roupa Siemens WQ45G2D1EP 9Kg Classe C",
+          "capacity": "9 Kg",
+          "energyRating": "C",
+          "technology": "Bomba de Calor",
+          "price": 591.41,
+          "previousPrice": 591.41,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal Continental",
+          "inStock": true,
+          "variantType": "siemens",
+          "variantTitle": "Máquina de Secar Roupa Siemens WQ45G2D1EP 9Kg Classe C (iQ500)",
+          "url": "https://www.kuantokusta.pt/p/11959807/siemens-wq45g2d1ep-9kg-classe-c",
+          "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
+          "lastChecked": "2026-10-10T19:00:00.467Z"
+        },
+        {
+          "id": "dryer_kk_11795460",
+          "name": "KuantoKusta (35 Lojas PT)",
+          "seller": "Lojas Certificadas Portugal",
+          "brand": "Siemens",
+          "series": "iQ500",
+          "modelName": "Máquina de Secar Roupa Bosch WQG245D1ES 9Kg Classe C",
+          "capacity": "9 Kg",
+          "energyRating": "C",
+          "technology": "Bomba de Calor",
+          "price": 623.3,
+          "previousPrice": 623.3,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal Continental",
+          "inStock": true,
+          "variantType": "siemens",
+          "variantTitle": "Máquina de Secar Roupa Bosch WQG245D1ES 9Kg Classe C (iQ500)",
+          "url": "https://www.kuantokusta.pt/p/11795460/bosch-wqg245d1es-9kg-classe-c",
+          "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_siemens_wq45g2d0es_kk",
@@ -619,11 +663,11 @@
           "variantTitle": "Siemens iQ500 WQ45G2D0ES 9Kg Classe A",
           "url": "https://www.kuantokusta.pt/p/11436712/siemens-wq45g2d0es-9kg-classe-a",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_kk_11436712",
-          "name": "KuantoKusta (34 Lojas PT)",
+          "name": "KuantoKusta (33 Lojas PT)",
           "seller": "Lojas Certificadas Portugal",
           "brand": "Siemens",
           "series": "iQ500",
@@ -641,7 +685,7 @@
           "variantTitle": "Máquina de Secar Roupa Siemens WQ45G2D0ES 9Kg Classe A (iQ500)",
           "url": "https://www.kuantokusta.pt/p/11436712/siemens-wq45g2d0es-9kg-classe-a",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_bosch_wqg245d0es_kk",
@@ -663,11 +707,11 @@
           "variantTitle": "Bosch Série 6 WQG245D0ES 9Kg Bomba de Calor",
           "url": "https://www.kuantokusta.pt/p/11427656/bosch-wqg245d0es-9kg-classe-c",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_kk_11427656",
-          "name": "KuantoKusta (37 Lojas PT)",
+          "name": "KuantoKusta (36 Lojas PT)",
           "seller": "Lojas Certificadas Portugal",
           "brand": "Bosch",
           "series": "Série 6",
@@ -685,7 +729,7 @@
           "variantTitle": "Máquina de Secar Roupa Bosch WQG245D0ES 9Kg Classe C (Série 6)",
           "url": "https://www.kuantokusta.pt/p/11427656/bosch-wqg245d0es-9kg-classe-c",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_siemens_wq45g2d1ep_kk",
@@ -707,29 +751,7 @@
           "variantTitle": "Siemens iQ500 WQ45G2D1EP 9Kg Bomba de Calor",
           "url": "https://www.kuantokusta.pt/p/11959807/siemens-wq45g2d1ep-9kg-classe-c",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
-        },
-        {
-          "id": "dryer_kk_11959807",
-          "name": "KuantoKusta (19 Lojas PT)",
-          "seller": "Lojas Certificadas Portugal",
-          "brand": "Siemens",
-          "series": "iQ500",
-          "modelName": "Máquina de Secar Roupa Siemens WQ45G2D1EP 9Kg Classe C",
-          "capacity": "9 Kg",
-          "energyRating": "C",
-          "technology": "Bomba de Calor",
-          "price": 658.64,
-          "previousPrice": 658.64,
-          "shippingCost": 0,
-          "isFreeShipping": true,
-          "shippingNote": "Portes Grátis para Portugal Continental",
-          "inStock": true,
-          "variantType": "siemens",
-          "variantTitle": "Máquina de Secar Roupa Siemens WQ45G2D1EP 9Kg Classe C (iQ500)",
-          "url": "https://www.kuantokusta.pt/p/11959807/siemens-wq45g2d1ep-9kg-classe-c",
-          "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_bosch_wqg245d1es_kk",
@@ -751,29 +773,7 @@
           "variantTitle": "Bosch Série 6 WQG245D1ES 9Kg AutoDry",
           "url": "https://www.kuantokusta.pt/p/11795460/bosch-wqg245d1es-9kg-classe-c",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
-        },
-        {
-          "id": "dryer_kk_11795460",
-          "name": "KuantoKusta (36 Lojas PT)",
-          "seller": "Lojas Certificadas Portugal",
-          "brand": "Siemens",
-          "series": "iQ500",
-          "modelName": "Máquina de Secar Roupa Bosch WQG245D1ES 9Kg Classe C",
-          "capacity": "9 Kg",
-          "energyRating": "C",
-          "technology": "Bomba de Calor",
-          "price": 658.99,
-          "previousPrice": 658.99,
-          "shippingCost": 0,
-          "isFreeShipping": true,
-          "shippingNote": "Portes Grátis para Portugal Continental",
-          "inStock": true,
-          "variantType": "siemens",
-          "variantTitle": "Máquina de Secar Roupa Bosch WQG245D1ES 9Kg Classe C (iQ500)",
-          "url": "https://www.kuantokusta.pt/p/11795460/bosch-wqg245d1es-9kg-classe-c",
-          "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_siemens_wq45g2d1es_kk",
@@ -795,11 +795,11 @@
           "variantTitle": "Siemens iQ500 WQ45G2D1ES 9Kg Classe A",
           "url": "https://www.kuantokusta.pt/p/11795465/siemens-wq45g2d1es-9kg-classe-a",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         },
         {
           "id": "dryer_kk_11795465",
-          "name": "KuantoKusta (35 Lojas PT)",
+          "name": "KuantoKusta (34 Lojas PT)",
           "seller": "Lojas Certificadas Portugal",
           "brand": "Siemens",
           "series": "iQ500",
@@ -807,8 +807,8 @@
           "capacity": "9 Kg",
           "energyRating": "A",
           "technology": "Bomba de Calor",
-          "price": 659.1,
-          "previousPrice": 659.1,
+          "price": 663.49,
+          "previousPrice": 663.49,
           "shippingCost": 0,
           "isFreeShipping": true,
           "shippingNote": "Portes Grátis para Portugal Continental",
@@ -817,7 +817,7 @@
           "variantTitle": "Máquina de Secar Roupa Siemens WQ45G2D1ES 9Kg Classe A (iQ500)",
           "url": "https://www.kuantokusta.pt/p/11795465/siemens-wq45g2d1es-9kg-classe-a",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-10-09T08:34:55.686Z"
+          "lastChecked": "2026-10-10T19:00:00.467Z"
         }
       ],
       "stats": {
@@ -825,12 +825,292 @@
         "currentLowestStore": "Worten.pt",
         "historicalLowestPrice": 446.34,
         "historicalHighestPrice": 689,
-        "sixMonthsAveragePrice": 585
+        "sixMonthsAveragePrice": 606.86
       },
-      "lastScanTime": "2026-10-09T08:34:55.686Z"
+      "lastScanTime": "2026-10-10T19:00:00.467Z"
     }
   },
   "checksLog": [
+    {
+      "timestamp": "2026-10-10T19:00:00.467Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T18:00:00.632Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T17:00:00.042Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T16:00:00.710Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T15:00:00.728Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T14:00:00.113Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T13:00:00.390Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T12:00:00.384Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T11:00:00.330Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 1,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T10:00:00.433Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T09:00:00.279Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 2,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T08:00:00.951Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T07:00:00.222Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T06:00:00.827Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T05:00:00.249Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T04:00:00.927Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T03:00:00.105Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T02:00:00.239Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T01:00:00.637Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-10T00:00:00.592Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T23:00:00.554Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T22:00:00.545Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T21:00:00.728Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T20:00:00.452Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T19:00:00.673Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 2,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T18:00:00.472Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T17:00:00.359Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T16:00:00.350Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T15:00:00.380Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T14:00:00.346Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 1,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T13:00:00.376Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T12:00:00.537Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T11:00:00.010Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T10:00:00.194Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 1,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
+    {
+      "timestamp": "2026-10-09T09:00:00.938Z",
+      "totalStoresChecked": 38,
+      "priceDropsCount": 0,
+      "ninjaLowest": 380.95,
+      "switchLowest": 448.5,
+      "dryerLowest": 529
+    },
     {
       "timestamp": "2026-10-09T08:34:55.686Z",
       "totalStoresChecked": 38,
@@ -1350,289 +1630,121 @@
       "ninjaLowest": 380.95,
       "switchLowest": 448.5,
       "dryerLowest": 460.65
-    },
-    {
-      "timestamp": "2026-10-06T16:00:00.965Z",
-      "totalStoresChecked": 47,
-      "priceDropsCount": 0,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 460.65
-    },
-    {
-      "timestamp": "2026-10-06T15:00:00.391Z",
-      "totalStoresChecked": 47,
-      "priceDropsCount": 0,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 460.65
-    },
-    {
-      "timestamp": "2026-10-06T14:00:00.676Z",
-      "totalStoresChecked": 47,
-      "priceDropsCount": 1,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 460.65
-    },
-    {
-      "timestamp": "2026-10-06T13:00:00.242Z",
-      "totalStoresChecked": 47,
-      "priceDropsCount": 0,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 460.65
-    },
-    {
-      "timestamp": "2026-10-06T12:00:00.318Z",
-      "totalStoresChecked": 47,
-      "priceDropsCount": 1,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 460.65
-    },
-    {
-      "timestamp": "2026-10-06T11:00:00.065Z",
-      "totalStoresChecked": 47,
-      "priceDropsCount": 0,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 456.42
-    },
-    {
-      "timestamp": "2026-10-06T10:00:00.411Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 1,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 456.42
-    },
-    {
-      "timestamp": "2026-10-06T09:00:00.259Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 456.42
-    },
-    {
-      "timestamp": "2026-10-06T08:00:00.973Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 1,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 456.42
-    },
-    {
-      "timestamp": "2026-10-06T07:00:00.764Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 456.42
-    },
-    {
-      "timestamp": "2026-10-06T06:00:00.676Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-06T05:00:00.171Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-06T04:00:00.957Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-06T03:00:00.771Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 380.95,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-06T02:00:00.439Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-06T01:00:00.097Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-06T00:00:00.943Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 2,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T23:00:00.780Z",
-      "totalStoresChecked": 47,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T22:43:09.857Z",
-      "totalStoresChecked": 47,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T22:00:00.851Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T21:00:00.949Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T20:00:00.054Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T19:00:00.171Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T18:00:00.686Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T17:00:00.516Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T16:00:00.914Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T15:00:00.079Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T14:00:00.014Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T13:00:00.818Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T12:00:00.214Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 1,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T11:00:00.989Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T10:00:00.866Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T09:00:00.846Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T08:00:00.188Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
-    },
-    {
-      "timestamp": "2026-10-05T07:00:00.481Z",
-      "totalStoresChecked": 48,
-      "priceDropsCount": 0,
-      "ninjaLowest": 377.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 446.34
     }
   ],
   "alertsHistory": [
+    {
+      "productId": "nintendo-switch-2",
+      "productName": "Nintendo Switch 2 (Consola & Bundles)",
+      "productEmoji": "🎮",
+      "variantTitle": "Nintendo Switch 2 256GB Black",
+      "storeId": "sw2_kk_11716249",
+      "storeName": "KuantoKusta (Consola Base)",
+      "oldPrice": 459.49,
+      "newPrice": 456.42,
+      "diff": 3.069999999999993,
+      "percent": "0.7",
+      "url": "https://www.kuantokusta.pt/p/11716249/nintendo-switch-2-256gb-black",
+      "shippingNote": "Portes Grátis para Portugal Continental",
+      "inStock": true,
+      "date": "2026-10-10T11:00:00.330Z"
+    },
+    {
+      "productId": "dryer-bosch-siemens",
+      "productName": "Máquinas de Secar Roupa Bosch (Série 6/8) & Siemens (≥ 9Kg)",
+      "productEmoji": "🧺",
+      "variantTitle": "Máquina de Secar Roupa Bosch WQG245D1ES 9Kg Classe C (iQ500)",
+      "storeId": "dryer_kk_11795460",
+      "storeName": "KuantoKusta (36 Lojas PT)",
+      "oldPrice": 633.75,
+      "newPrice": 623.3,
+      "diff": 10.450000000000045,
+      "percent": "1.6",
+      "url": "https://www.kuantokusta.pt/p/11795460/bosch-wqg245d1es-9kg-classe-c",
+      "shippingNote": "Portes Grátis para Portugal Continental",
+      "inStock": true,
+      "date": "2026-10-10T09:00:00.279Z"
+    },
+    {
+      "productId": "dryer-bosch-siemens",
+      "productName": "Máquinas de Secar Roupa Bosch (Série 6/8) & Siemens (≥ 9Kg)",
+      "productEmoji": "🧺",
+      "variantTitle": "Máquina de Secar Roupa Siemens WQ45G2D1EP 9Kg Classe C (iQ500)",
+      "storeId": "dryer_kk_11959807",
+      "storeName": "KuantoKusta (19 Lojas PT)",
+      "oldPrice": 601.89,
+      "newPrice": 591.41,
+      "diff": 10.480000000000018,
+      "percent": "1.7",
+      "url": "https://www.kuantokusta.pt/p/11959807/siemens-wq45g2d1ep-9kg-classe-c",
+      "shippingNote": "Portes Grátis para Portugal Continental",
+      "inStock": true,
+      "date": "2026-10-10T09:00:00.279Z"
+    },
+    {
+      "productId": "dryer-bosch-siemens",
+      "productName": "Máquinas de Secar Roupa Bosch (Série 6/8) & Siemens (≥ 9Kg)",
+      "productEmoji": "🧺",
+      "variantTitle": "Máquina de Secar Roupa Bosch WQG245D1ES 9Kg Classe C (iQ500)",
+      "storeId": "dryer_kk_11795460",
+      "storeName": "KuantoKusta (36 Lojas PT)",
+      "oldPrice": 658.99,
+      "newPrice": 633.75,
+      "diff": 25.24000000000001,
+      "percent": "3.8",
+      "url": "https://www.kuantokusta.pt/p/11795460/bosch-wqg245d1es-9kg-classe-c",
+      "shippingNote": "Portes Grátis para Portugal Continental",
+      "inStock": true,
+      "date": "2026-10-09T19:00:00.673Z"
+    },
+    {
+      "productId": "dryer-bosch-siemens",
+      "productName": "Máquinas de Secar Roupa Bosch (Série 6/8) & Siemens (≥ 9Kg)",
+      "productEmoji": "🧺",
+      "variantTitle": "Máquina de Secar Roupa Siemens WQ45G2D1EP 9Kg Classe C (iQ500)",
+      "storeId": "dryer_kk_11959807",
+      "storeName": "KuantoKusta (18 Lojas PT)",
+      "oldPrice": 663.1,
+      "newPrice": 601.89,
+      "diff": 61.210000000000036,
+      "percent": "9.2",
+      "url": "https://www.kuantokusta.pt/p/11959807/siemens-wq45g2d1ep-9kg-classe-c",
+      "shippingNote": "Portes Grátis para Portugal Continental",
+      "inStock": true,
+      "date": "2026-10-09T19:00:00.673Z"
+    },
+    {
+      "productId": "dryer-bosch-siemens",
+      "productName": "Máquinas de Secar Roupa Bosch (Série 6/8) & Siemens (≥ 9Kg)",
+      "productEmoji": "🧺",
+      "variantTitle": "Máquina de Secar Roupa Siemens WQ45G2D1EP 9Kg Classe C (iQ500)",
+      "storeId": "dryer_kk_11959807",
+      "storeName": "KuantoKusta (19 Lojas PT)",
+      "oldPrice": 663.1,
+      "newPrice": 658.64,
+      "diff": 4.460000000000036,
+      "percent": "0.7",
+      "url": "https://www.kuantokusta.pt/p/11959807/siemens-wq45g2d1ep-9kg-classe-c",
+      "shippingNote": "Portes Grátis para Portugal Continental",
+      "inStock": true,
+      "date": "2026-10-09T14:00:00.346Z"
+    },
+    {
+      "productId": "nintendo-switch-2",
+      "productName": "Nintendo Switch 2 (Consola & Bundles)",
+      "productEmoji": "🎮",
+      "variantTitle": "Nintendo Switch 2 256GB Black",
+      "storeId": "sw2_kk_11716249",
+      "storeName": "KuantoKusta (Consola Base)",
+      "oldPrice": 459.49,
+      "newPrice": 456.42,
+      "diff": 3.069999999999993,
+      "percent": "0.7",
+      "url": "https://www.kuantokusta.pt/p/11716249/nintendo-switch-2-256gb-black",
+      "shippingNote": "Portes Grátis para Portugal Continental",
+      "inStock": true,
+      "date": "2026-10-09T10:00:00.194Z"
+    },
     {
       "productId": "nintendo-switch-2",
       "productName": "Nintendo Switch 2 (Consola & Bundles)",
@@ -1953,8 +2065,8 @@
       "date": "2026-10-05T02:00:00.886Z"
     }
   ],
-  "lastScanTime": "2026-10-09T08:34:55.686Z",
-  "lastDailyHeartbeatDate": "2026-10-09",
+  "lastScanTime": "2026-10-10T19:00:00.467Z",
+  "lastDailyHeartbeatDate": "2026-10-10",
   "dailyHeartbeatsHistory": [
     {
       "date": "2026-10-08",
@@ -1982,5 +2094,6 @@
       "lowestPrice": 380.95,
       "lowestStore": "Hipermercado"
     }
-  ]
+  ],
+  "lastTelegramTestTimestamp": "2026-10-10T19:09:59.292Z"
 }

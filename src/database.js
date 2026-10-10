@@ -271,7 +271,8 @@ function saveDatabase(data) {
     alertsHistory: data.alertsHistory || [],
     lastScanTime: data.lastScanTime || null,
     lastDailyHeartbeatDate: data.lastDailyHeartbeatDate || null,
-    dailyHeartbeatsHistory: data.dailyHeartbeatsHistory || []
+    dailyHeartbeatsHistory: data.dailyHeartbeatsHistory || [],
+    lastTelegramTestTimestamp: data.lastTelegramTestTimestamp || null
   };
   fs.writeFileSync(DB_PATH, JSON.stringify(toSave, null, 2), 'utf8');
 }

@@ -16,7 +16,7 @@
       "embalagem_dano": 7,
       "riscos_mossas": 4
     },
-    "lastScanTime": "2026-10-09T08:50:33.847Z"
+    "lastScanTime": "2026-10-10T19:00:37.551Z"
   },
   "deals": [
     {
@@ -47,7 +47,7 @@
       "inStock": true,
       "insertedAt": "2026-10-09T08:45:00.000Z",
       "firstSeen": "2026-10-09T08:45:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -78,7 +78,7 @@
       "inStock": true,
       "insertedAt": "2026-10-09T08:45:00.000Z",
       "firstSeen": "2026-10-09T08:45:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -104,12 +104,12 @@
       "savingsPercent": 4.3,
       "isRealAdvantage": false,
       "dealVerdict": "⚠️ Margem Reduzida",
-      "url": "https://www.worten.pt/produtos/fritadeira-sem-oleo-ninja-af400eu-doble-9-5-l-8062822",
+      "url": "https://www.worten.pt/search?query=Ninja%20AF400EU",
       "imageUrl": "https://ninjakitchen.pt/on/demandware.static/-/Sites-ninja-pt-Library/default/dw769584d4/images/logo.svg",
       "inStock": true,
       "insertedAt": "2026-10-04T09:15:00.000Z",
       "firstSeen": "2026-10-04T08:50:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -135,12 +135,12 @@
       "savingsPercent": -4.8,
       "isRealAdvantage": false,
       "dealVerdict": "⚠️ Margem Reduzida",
-      "url": "https://www.worten.pt/produtos/fritadeira-sem-oleo-ninja-af500eu-preto-10-4-l-preto-8062823",
+      "url": "https://www.worten.pt/search?query=Ninja%20AF500EU",
       "imageUrl": "https://ninjakitchen.pt/on/demandware.static/-/Sites-ninja-pt-Library/default/dw769584d4/images/logo.svg",
       "inStock": true,
       "insertedAt": "2026-10-04T08:50:00.000Z",
       "firstSeen": "2026-10-04T08:50:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -166,12 +166,12 @@
       "savingsPercent": 11.6,
       "isRealAdvantage": false,
       "dealVerdict": "🔥 Negócio de Ouro",
-      "url": "https://www.worten.pt/produtos/tv-samsung-tq55s90catxxc-oled-55-140-cm-4k-ultra-hd-smart-tv-7733129",
+      "url": "https://www.worten.pt/search?query=Samsung%20S90C",
       "imageUrl": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-04T08:20:00.000Z",
       "firstSeen": "2026-10-04T07:45:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -197,12 +197,12 @@
       "savingsPercent": -17.2,
       "isRealAdvantage": false,
       "dealVerdict": "⚠️ Margem Reduzida",
-      "url": "https://www.worten.pt/produtos/aspirador-roborock-q7-max-branco-7791644",
+      "url": "https://www.worten.pt/search?query=Roborock%20Q7%20Max",
       "imageUrl": "https://images.unsplash.com/photo-1558317374-067fb5f30001?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-04T07:45:00.000Z",
       "firstSeen": "2026-10-04T07:10:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -233,7 +233,7 @@
       "inStock": true,
       "insertedAt": "2026-10-04T07:15:00.000Z",
       "firstSeen": "2026-10-04T07:15:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -259,12 +259,12 @@
       "savingsPercent": -0.9,
       "isRealAdvantage": false,
       "dealVerdict": "⚠️ Margem Reduzida",
-      "url": "https://www.worten.pt/produtos/placa-induccion-bosch-pue611bb5e-4z-7578052",
+      "url": "https://www.worten.pt/search?query=Bosch%20PUE611BB5E",
       "imageUrl": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-04T06:40:00.000Z",
       "firstSeen": "2026-10-04T06:40:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -295,7 +295,7 @@
       "inStock": true,
       "insertedAt": "2026-10-04T06:05:00.000Z",
       "firstSeen": "2026-10-04T06:05:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -321,12 +321,12 @@
       "savingsPercent": 5.2,
       "isRealAdvantage": false,
       "dealVerdict": "⚠️ Margem Reduzida",
-      "url": "https://www.worten.pt/produtos/volante-pedais-logitech-g29-driving-forceracing-multiplataforma-preto-5611995",
+      "url": "https://www.worten.pt/search?query=Logitech%20G29",
       "imageUrl": "https://images.unsplash.com/photo-1592840496694-26d035b52b48?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-03T23:30:00.000Z",
       "firstSeen": "2026-10-03T23:30:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -352,12 +352,12 @@
       "savingsPercent": 25.3,
       "isRealAdvantage": true,
       "dealVerdict": "🔥 Negócio de Ouro",
-      "url": "https://www.worten.pt/produtos/lenovo-ideapad-slim-3-15iah8-15-6-polegadas-i5-12450h-16gb-512gb-ssd-prata-marcas-minimas-teclado-italiano-mrkean-2199015343078",
+      "url": "https://www.worten.pt/search?query=Lenovo%2015IAH8",
       "imageUrl": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=500&q=80",
       "inStock": true,
       "insertedAt": "2026-10-03T21:50:00.000Z",
       "firstSeen": "2026-10-03T21:50:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -388,7 +388,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T20:10:00.000Z",
       "firstSeen": "2026-10-04T06:30:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -419,7 +419,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T18:40:00.000Z",
       "firstSeen": "2026-10-03T22:15:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -450,7 +450,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T16:25:00.000Z",
       "firstSeen": "2026-10-03T20:40:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -481,7 +481,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T14:15:00.000Z",
       "firstSeen": "2026-10-03T18:20:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -512,7 +512,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T12:00:00.000Z",
       "firstSeen": "2026-10-03T16:10:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -543,7 +543,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T10:20:00.000Z",
       "firstSeen": "2026-10-03T14:30:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -574,7 +574,7 @@
       "inStock": true,
       "insertedAt": "2026-10-03T08:30:00.000Z",
       "firstSeen": "2026-10-03T08:30:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -605,7 +605,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T21:40:00.000Z",
       "firstSeen": "2026-10-03T11:40:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -636,7 +636,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T19:15:00.000Z",
       "firstSeen": "2026-10-03T09:15:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -667,7 +667,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T16:30:00.000Z",
       "firstSeen": "2026-10-02T19:30:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -698,7 +698,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T13:00:00.000Z",
       "firstSeen": "2026-10-02T15:00:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -729,7 +729,7 @@
       "inStock": true,
       "insertedAt": "2026-10-02T10:15:00.000Z",
       "firstSeen": "2026-10-02T10:15:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -760,7 +760,7 @@
       "inStock": true,
       "insertedAt": "2026-10-01T20:20:00.000Z",
       "firstSeen": "2026-10-02T11:20:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -791,7 +791,7 @@
       "inStock": true,
       "insertedAt": "2026-10-01T17:45:00.000Z",
       "firstSeen": "2026-10-01T18:45:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -822,7 +822,7 @@
       "inStock": true,
       "insertedAt": "2026-10-01T14:10:00.000Z",
       "firstSeen": "2026-10-01T14:10:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -853,7 +853,7 @@
       "inStock": true,
       "insertedAt": "2026-09-30T16:20:00.000Z",
       "firstSeen": "2026-09-30T16:20:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     },
     {
@@ -884,9 +884,9 @@
       "inStock": true,
       "insertedAt": "2026-09-30T11:30:00.000Z",
       "firstSeen": "2026-09-30T11:30:00.000Z",
-      "lastChecked": "2026-10-09T08:50:33.847Z",
+      "lastChecked": "2026-10-10T19:00:37.551Z",
       "alertSent": true
     }
   ],
-  "lastScanTime": "2026-10-09T08:50:33.847Z"
+  "lastScanTime": "2026-10-10T19:00:37.551Z"
 }
