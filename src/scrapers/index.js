@@ -21,6 +21,7 @@ async function runPriceCheck(options = {}) {
   const config = getConfig();
 
   const allPriceDrops = [];
+  const minDropPercent = config.minPriceDropPercent ?? 5.0;
 
   // ==========================================
   // 1. Monitorizar Ninja Woodfire OG901EU
@@ -76,22 +77,30 @@ async function runPriceCheck(options = {}) {
       };
 
       if (newPrice < oldPrice) {
-        console.log(`📉 [Ninja] Baixa em ${name}: ${oldPrice} € -> ${newPrice} €`);
-        allPriceDrops.push({
-          productId: 'ninja-woodfire',
-          productName: ninjaProd.name,
-          productEmoji: '🥩',
-          storeId: id,
-          storeName: name,
-          oldPrice,
-          newPrice,
-          diff: oldPrice - newPrice,
-          percent: (((oldPrice - newPrice) / oldPrice) * 100).toFixed(1),
-          url: storeEntry.url,
-          shippingNote: storeEntry.shippingNote,
-          inStock: storeEntry.inStock,
-          date: now
-        });
+        const dropDiff = oldPrice - newPrice;
+        const dropPercentVal = ((dropDiff / oldPrice) * 100);
+        const dropPercentStr = dropPercentVal.toFixed(1);
+
+        if (dropPercentVal > minDropPercent) {
+          console.log(`📉 [Ninja] Baixa em ${name}: ${oldPrice} € -> ${newPrice} € (-${dropPercentStr}%)`);
+          allPriceDrops.push({
+            productId: 'ninja-woodfire',
+            productName: ninjaProd.name,
+            productEmoji: '🥩',
+            storeId: id,
+            storeName: name,
+            oldPrice,
+            newPrice,
+            diff: dropDiff,
+            percent: dropPercentStr,
+            url: storeEntry.url,
+            shippingNote: storeEntry.shippingNote,
+            inStock: storeEntry.inStock,
+            date: now
+          });
+        } else {
+          console.log(`⏩ [Ninja Ignorado] Baixa em ${name}: ${oldPrice} € -> ${newPrice} € (-${dropPercentStr}%) é <= ${minDropPercent}%`);
+        }
       }
 
       updatedNinjaStores.push(storeEntry);
@@ -163,23 +172,31 @@ async function runPriceCheck(options = {}) {
         const oldPrice = oldStore ? oldStore.price : store.price;
 
         if (store.price < oldPrice) {
-          console.log(`📉 [Switch 2] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} €`);
-          allPriceDrops.push({
-            productId: 'nintendo-switch-2',
-            productName: swProd.name,
-            productEmoji: '🎮',
-            variantTitle: store.variantTitle,
-            storeId: store.id,
-            storeName: store.name,
-            oldPrice,
-            newPrice: store.price,
-            diff: oldPrice - store.price,
-            percent: (((oldPrice - store.price) / oldPrice) * 100).toFixed(1),
-            url: store.url,
-            shippingNote: store.shippingNote,
-            inStock: store.inStock,
-            date: now
-          });
+          const dropDiff = oldPrice - store.price;
+          const dropPercentVal = ((dropDiff / oldPrice) * 100);
+          const dropPercentStr = dropPercentVal.toFixed(1);
+
+          if (dropPercentVal > minDropPercent) {
+            console.log(`📉 [Switch 2] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%)`);
+            allPriceDrops.push({
+              productId: 'nintendo-switch-2',
+              productName: swProd.name,
+              productEmoji: '🎮',
+              variantTitle: store.variantTitle,
+              storeId: store.id,
+              storeName: store.name,
+              oldPrice,
+              newPrice: store.price,
+              diff: dropDiff,
+              percent: dropPercentStr,
+              url: store.url,
+              shippingNote: store.shippingNote,
+              inStock: store.inStock,
+              date: now
+            });
+          } else {
+            console.log(`⏩ [Switch 2 Ignorado] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%) é <= ${minDropPercent}%`);
+          }
         }
 
         return {
@@ -224,23 +241,31 @@ async function runPriceCheck(options = {}) {
         const oldPrice = oldStore ? oldStore.price : store.price;
 
         if (store.price < oldPrice) {
-          console.log(`📉 [Secador] Baixa em ${store.name} (${store.variantTitle}): ${oldPrice} € -> ${store.price} €`);
-          allPriceDrops.push({
-            productId: 'dryer-bosch-siemens',
-            productName: dryerProd.name,
-            productEmoji: '🧺',
-            variantTitle: store.variantTitle,
-            storeId: store.id,
-            storeName: store.name,
-            oldPrice,
-            newPrice: store.price,
-            diff: oldPrice - store.price,
-            percent: (((oldPrice - store.price) / oldPrice) * 100).toFixed(1),
-            url: store.url,
-            shippingNote: store.shippingNote,
-            inStock: store.inStock,
-            date: now
-          });
+          const dropDiff = oldPrice - store.price;
+          const dropPercentVal = ((dropDiff / oldPrice) * 100);
+          const dropPercentStr = dropPercentVal.toFixed(1);
+
+          if (dropPercentVal > minDropPercent) {
+            console.log(`📉 [Secador] Baixa em ${store.name} (${store.variantTitle}): ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%)`);
+            allPriceDrops.push({
+              productId: 'dryer-bosch-siemens',
+              productName: dryerProd.name,
+              productEmoji: '🧺',
+              variantTitle: store.variantTitle,
+              storeId: store.id,
+              storeName: store.name,
+              oldPrice,
+              newPrice: store.price,
+              diff: dropDiff,
+              percent: dropPercentStr,
+              url: store.url,
+              shippingNote: store.shippingNote,
+              inStock: store.inStock,
+              date: now
+            });
+          } else {
+            console.log(`⏩ [Secador Ignorado] Baixa em ${store.name} (${store.variantTitle}): ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%) é <= ${minDropPercent}%`);
+          }
         }
 
         return {

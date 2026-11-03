@@ -28,6 +28,7 @@ function getConfig() {
     telegramChatId: fileConfig.telegramChatId || process.env.TELEGRAM_CHAT_ID || '',
     cronSchedule: fileConfig.cronSchedule || process.env.CRON_SCHEDULE || '0 0,6,12,18 * * *',
     alertTargetPrice: parseFloat(fileConfig.alertTargetPrice || process.env.ALERT_TARGET_PRICE || 380.00),
+    minPriceDropPercent: parseFloat(fileConfig.minPriceDropPercent || process.env.MIN_PRICE_DROP_PERCENT || 5.0),
     checkTimesPerDay: fileConfig.checkTimesPerDay || 4,
     freeShippingOnly: fileConfig.freeShippingOnly ?? false
   };
