@@ -1,217 +1,45 @@
 const { fetchWithRetry } = require('./fetcher');
 
-// Targeted search queries on KuantoKusta focusing on Bosch Série 6 & 8 and Siemens iQ500 / iQ700 (9Kg)
+// Targeted search queries on KuantoKusta focusing on Bosch Série 8 and Siemens iQ700 / iQ800 (9Kg)
 const KK_SEARCH_URLS = [
-  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+bosch+wqg+9kg', brand: 'Bosch' },
-  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+bosch+wqh+9kg', brand: 'Bosch' },
-  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+bosch+serie+6+9kg', brand: 'Bosch' },
+  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+bosch+serie+8', brand: 'Bosch' },
   { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+bosch+serie+8+9kg', brand: 'Bosch' },
-  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+siemens+wq45+9kg', brand: 'Siemens' },
-  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+siemens+wq42+9kg', brand: 'Siemens' },
-  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+siemens+iq500+9kg', brand: 'Siemens' }
+  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+bosch+wqb+9kg', brand: 'Bosch' },
+  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+bosch+wtx+9kg', brand: 'Bosch' },
+  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+bosch+wrb+9kg', brand: 'Bosch' },
+  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+siemens+iq700', brand: 'Siemens' },
+  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+siemens+iq700+9kg', brand: 'Siemens' },
+  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+siemens+iq800', brand: 'Siemens' },
+  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+siemens+wr47', brand: 'Siemens' },
+  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+siemens+wq47', brand: 'Siemens' },
+  { url: 'https://www.kuantokusta.pt/search?q=secar+roupa+siemens+wt47', brand: 'Siemens' }
 ];
 
 // Verified baseline models meeting the user's strict criteria:
-// - Bosch Série 6 / Série 8 or Siemens equivalent (iQ500 / iQ700)
+// - Bosch Série 8 or Siemens equivalent (iQ700 / iQ800)
 // - Minimum capacity 9 Kg
 // - Budget < 700 €
 const defaultDryerStores = [
   {
-    id: 'dryer_bosch_wqg24200es_kk',
-    name: 'KuantoKusta (36 Lojas PT)',
-    seller: 'Lojas Certificadas PT',
+    id: 'dryer_eci_bosch_series8_outlet',
+    name: 'El Corte Inglés Outlet',
+    seller: 'El Corte Inglés PT',
     brand: 'Bosch',
-    series: 'Série 6',
-    modelName: 'Bosch Série 6 WQG24200ES',
+    series: 'Série 8',
+    modelName: 'Bosch Série 8 WTX88EH0ES',
     capacity: '9 Kg',
-    energyRating: 'Classe D / A+++',
+    energyRating: 'Classe A+++',
     technology: 'Bomba de Calor',
-    price: 552.99,
-    previousPrice: 552.99,
+    price: 689.00,
+    previousPrice: 689.00,
     shippingCost: 0,
     isFreeShipping: true,
-    shippingNote: 'Portes Grátis para Portugal Continental',
+    shippingNote: 'Entrega Grátis em loja / domicílio (Artigo de Exposição)',
     inStock: true,
     variantType: 'bosch',
-    variantTitle: 'Bosch Série 6 WQG24200ES 9Kg AutoDry',
-    url: 'https://www.kuantokusta.pt/p/11795459/bosch-wqg24200es-9kg-classe-d',
-    logo: 'https://cdn.kuantokusta.pt/img/kk-logo.svg',
-    lastChecked: null
-  },
-  {
-    id: 'dryer_bosch_wqg24200es_worten',
-    name: 'Worten.pt',
-    seller: 'Worten PT',
-    brand: 'Bosch',
-    series: 'Série 6',
-    modelName: 'Bosch Série 6 WQG24200ES',
-    capacity: '9 Kg',
-    energyRating: 'Classe D / A+++',
-    technology: 'Bomba de Calor',
-    price: 529.00,
-    previousPrice: 529.00,
-    shippingCost: 0,
-    isFreeShipping: true,
-    shippingNote: 'Entrega Grátis em loja e ao domicílio',
-    inStock: true,
-    variantType: 'bosch',
-    variantTitle: 'Bosch Série 6 WQG24200ES 9Kg AutoDry',
-    url: 'https://www.worten.pt/produtos/maquina-de-secar-roupa-bosch-wqg24200es-9-kg-bomba-de-calor-branco-7576590',
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png',
-    lastChecked: null
-  },
-  {
-    id: 'dryer_siemens_wq42g200es_kk',
-    name: 'KuantoKusta (33 Lojas PT)',
-    seller: 'Lojas Parceiras PT',
-    brand: 'Siemens',
-    series: 'iQ500',
-    modelName: 'Siemens iQ500 WQ42G200ES',
-    capacity: '9 Kg',
-    energyRating: 'Classe D / A+++',
-    technology: 'Bomba de Calor',
-    price: 569.29,
-    previousPrice: 569.29,
-    shippingCost: 0,
-    isFreeShipping: true,
-    shippingNote: 'Envio Grátis para Portugal Continental',
-    inStock: true,
-    variantType: 'siemens',
-    variantTitle: 'Siemens iQ500 WQ42G200ES 9Kg AutoDry',
-    url: 'https://www.kuantokusta.pt/p/11795464/siemens-wq42g200es-9kg-classe-d',
-    logo: 'https://cdn.kuantokusta.pt/img/kk-logo.svg',
-    lastChecked: null
-  },
-  {
-    id: 'dryer_bosch_wqg243d0es_kk',
-    name: 'KuantoKusta (31 Lojas PT)',
-    seller: 'Especialistas PT',
-    brand: 'Bosch',
-    series: 'Série 6',
-    modelName: 'Bosch Série 6 WQG243D0ES',
-    capacity: '9 Kg',
-    energyRating: 'Classe C / A+++',
-    technology: 'Bomba de Calor',
-    price: 574.99,
-    previousPrice: 574.99,
-    shippingCost: 0,
-    isFreeShipping: true,
-    shippingNote: 'Portes Grátis para Portugal',
-    inStock: true,
-    variantType: 'bosch',
-    variantTitle: 'Bosch Série 6 WQG243D0ES 9Kg Bomba de Calor',
-    url: 'https://www.kuantokusta.pt/p/11946789/bosch-wqg243d0es-9kg-classe-c',
-    logo: 'https://cdn.kuantokusta.pt/img/kk-logo.svg',
-    lastChecked: null
-  },
-  {
-    id: 'dryer_siemens_wq45g2d0es_kk',
-    name: 'KuantoKusta (34 Lojas PT)',
-    seller: 'Hipermercado & Especialistas PT',
-    brand: 'Siemens',
-    series: 'iQ500',
-    modelName: 'Siemens iQ500 WQ45G2D0ES',
-    capacity: '9 Kg',
-    energyRating: 'Classe A',
-    technology: 'Bomba de Calor',
-    price: 647.59,
-    previousPrice: 647.59,
-    shippingCost: 0,
-    isFreeShipping: true,
-    shippingNote: 'Portes Grátis para Portugal Continental',
-    inStock: true,
-    variantType: 'siemens',
-    variantTitle: 'Siemens iQ500 WQ45G2D0ES 9Kg Classe A',
-    url: 'https://www.kuantokusta.pt/p/11436712/siemens-wq45g2d0es-9kg-classe-a',
-    logo: 'https://cdn.kuantokusta.pt/img/kk-logo.svg',
-    lastChecked: null
-  },
-  {
-    id: 'dryer_bosch_wqg245d0es_kk',
-    name: 'KuantoKusta (37 Lojas PT)',
-    seller: 'Lojas Certificadas PT',
-    brand: 'Bosch',
-    series: 'Série 6',
-    modelName: 'Bosch Série 6 WQG245D0ES',
-    capacity: '9 Kg',
-    energyRating: 'Classe C / A+++',
-    technology: 'Bomba de Calor',
-    price: 647.99,
-    previousPrice: 647.99,
-    shippingCost: 0,
-    isFreeShipping: true,
-    shippingNote: 'Portes Grátis para Portugal',
-    inStock: true,
-    variantType: 'bosch',
-    variantTitle: 'Bosch Série 6 WQG245D0ES 9Kg Bomba de Calor',
-    url: 'https://www.kuantokusta.pt/p/11427656/bosch-wqg245d0es-9kg-classe-c',
-    logo: 'https://cdn.kuantokusta.pt/img/kk-logo.svg',
-    lastChecked: null
-  },
-  {
-    id: 'dryer_siemens_wq45g2d1ep_kk',
-    name: 'KuantoKusta (19 Lojas PT)',
-    seller: 'Lojas Especializadas PT',
-    brand: 'Siemens',
-    series: 'iQ500',
-    modelName: 'Siemens iQ500 WQ45G2D1EP',
-    capacity: '9 Kg',
-    energyRating: 'Classe C',
-    technology: 'Bomba de Calor',
-    price: 658.64,
-    previousPrice: 658.64,
-    shippingCost: 0,
-    isFreeShipping: true,
-    shippingNote: 'Portes Grátis para Portugal',
-    inStock: true,
-    variantType: 'siemens',
-    variantTitle: 'Siemens iQ500 WQ45G2D1EP 9Kg Bomba de Calor',
-    url: 'https://www.kuantokusta.pt/p/11959807/siemens-wq45g2d1ep-9kg-classe-c',
-    logo: 'https://cdn.kuantokusta.pt/img/kk-logo.svg',
-    lastChecked: null
-  },
-  {
-    id: 'dryer_bosch_wqg245d1es_kk',
-    name: 'KuantoKusta (36 Lojas PT)',
-    seller: 'Lojas Parceiras PT',
-    brand: 'Bosch',
-    series: 'Série 6',
-    modelName: 'Bosch Série 6 WQG245D1ES',
-    capacity: '9 Kg',
-    energyRating: 'Classe C',
-    technology: 'Bomba de Calor',
-    price: 658.99,
-    previousPrice: 658.99,
-    shippingCost: 0,
-    isFreeShipping: true,
-    shippingNote: 'Portes Grátis para Portugal Continental',
-    inStock: true,
-    variantType: 'bosch',
-    variantTitle: 'Bosch Série 6 WQG245D1ES 9Kg AutoDry',
-    url: 'https://www.kuantokusta.pt/p/11795460/bosch-wqg245d1es-9kg-classe-c',
-    logo: 'https://cdn.kuantokusta.pt/img/kk-logo.svg',
-    lastChecked: null
-  },
-  {
-    id: 'dryer_siemens_wq45g2d1es_kk',
-    name: 'KuantoKusta (35 Lojas PT)',
-    seller: 'Lojas Especializadas PT',
-    brand: 'Siemens',
-    series: 'iQ500',
-    modelName: 'Siemens iQ500 WQ45G2D1ES',
-    capacity: '9 Kg',
-    energyRating: 'Classe A',
-    technology: 'Bomba de Calor',
-    price: 659.10,
-    previousPrice: 659.10,
-    shippingCost: 0,
-    isFreeShipping: true,
-    shippingNote: 'Portes Grátis para Portugal',
-    inStock: true,
-    variantType: 'siemens',
-    variantTitle: 'Siemens iQ500 WQ45G2D1ES 9Kg Classe A',
-    url: 'https://www.kuantokusta.pt/p/11795465/siemens-wq45g2d1es-9kg-classe-a',
-    logo: 'https://cdn.kuantokusta.pt/img/kk-logo.svg',
+    variantTitle: 'Bosch Série 8 WTX88EH0ES 9Kg Classe A+++ Home Connect',
+    url: 'https://www.elcorteingles.pt',
+    logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/El_Corte_Ingl%C3%A9s_logo.svg/1200px-El_Corte_Ingl%C3%A9s_logo.svg.png',
     lastChecked: null
   }
 ];
@@ -236,7 +64,7 @@ function parseCapacity(name) {
 // Strict filter function:
 // 1. Must be dryer (not washer-dryer, no RPM / dual weight)
 // 2. Minimum capacity 9 Kg
-// 3. Bosch Série 6 / Série 8 OR Siemens iQ500 / iQ700 / iQ800
+// 3. Bosch Série 8 OR Siemens equivalent (iQ700 / iQ800)
 function isQualifyingDryer(item, brand) {
   const name = item.name;
   const nameUpper = name.toUpperCase();
@@ -253,19 +81,18 @@ function isQualifyingDryer(item, brand) {
   const isSiemens = brand.toLowerCase() === 'siemens' || nameUpper.includes('SIEMENS');
 
   if (isBosch) {
-    // Série 6 / Série 8: WQG24, WQH24, WQB24, WTX88, WRB24, ou 'SÉRIE 6' / 'SÉRIE 8'
-    // Exclude inferior series (Série 4: WTR, WTH, etc.)
-    if (/WTR|WTH|S[EÉ]RIE\s*4|S[EÉ]RIE\s*2/i.test(nameUpper)) return false;
-    const isSerie6 = /WQG24|WQH24|S[EÉ]RIE\s*6/i.test(nameUpper);
+    // Série 8 strictly: WQB24, WTX88, WRB24, ou 'SÉRIE 8'
+    // Exclude inferior series (Série 2, Série 4, Série 6: WQG24, WQH24, WTR, WTH, etc.)
+    if (/WTR|WTH|WQG|WQH|S[EÉ]RIE\s*6|S[EÉ]RIE\s*4|S[EÉ]RIE\s*2/i.test(nameUpper)) return false;
     const isSerie8 = /WQB24|WTX88|WRB24|S[EÉ]RIE\s*8/i.test(nameUpper);
-    return isSerie6 || isSerie8;
+    return isSerie8;
   }
 
   if (isSiemens) {
-    // Siemens equivalent: iQ500 / iQ700 / iQ800 (WQ42, WQ45, WQ46, WT47, WR47, WQ47)
-    // Exclude inferior series (iQ300: WQ33, WQ35, WT43, WT45)
-    if (/WQ33|WQ35|WT43|WT45|IQ300|IQ100/i.test(nameUpper)) return false;
-    const isEquivalent = /WQ42|WQ45|WQ46|WT47|WR47|WQ47|IQ500|IQ700|IQ800/i.test(nameUpper);
+    // Siemens equivalent: iQ700 / iQ800 (WT47, WR47, WQ47, WT48, WR48, WQ48)
+    // Exclude inferior series (iQ300: WQ33, WQ35, WT43, WT45 | iQ500: WQ42, WQ45, WQ46)
+    if (/WQ33|WQ35|WT43|WT45|WQ42|WQ45|WQ46|IQ500|IQ300|IQ100/i.test(nameUpper)) return false;
+    const isEquivalent = /WT47|WR47|WQ47|WT48|WR48|WQ48|IQ700|IQ800/i.test(nameUpper);
     return isEquivalent;
   }
 
@@ -275,16 +102,15 @@ function isQualifyingDryer(item, brand) {
 function identifySeries(name, brand) {
   const n = name.toUpperCase();
   if (brand.toLowerCase() === 'bosch') {
-    if (/WQB24|WTX88|WRB24|S[EÉ]RIE\s*8/i.test(n)) return 'Série 8';
-    return 'Série 6';
+    return 'Série 8';
   } else {
-    if (/WR47|WQ47|IQ700|IQ800/i.test(n)) return 'iQ700';
-    return 'iQ500';
+    if (/IQ800|WT48|WR48|WQ48/i.test(n)) return 'iQ800';
+    return 'iQ700';
   }
 }
 
 async function scrapeDryers() {
-  console.log('🔍 A pesquisar máquinas de secar Bosch (Série 6/8) e Siemens (iQ500/700) >= 9Kg (< 700€)...');
+  console.log('🔍 A pesquisar máquinas de secar Bosch Série 8 e Siemens (iQ700/800) >= 9Kg (< 700€)...');
   try {
     const responses = await Promise.all(
       KK_SEARCH_URLS.map(entry => fetchWithRetry(entry.url).then(r => ({ res: r, brand: entry.brand })))
@@ -317,7 +143,7 @@ async function scrapeDryers() {
         // STRICT FILTER: Budget ceiling < 700 € (and >= 350 €)
         if (price >= 700 || price < 350) continue;
 
-        // Strict qualification: Bosch Série 6/8 or Siemens iQ500/700 with >= 9Kg
+        // Strict qualification: Bosch Série 8 or Siemens iQ700/800 with >= 9Kg
         if (!isQualifyingDryer(item, brand)) continue;
 
         const url = item.url ? (item.url.startsWith('http') ? item.url : `https://www.kuantokusta.pt${item.url}`) : null;

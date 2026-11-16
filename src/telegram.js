@@ -162,7 +162,7 @@ async function sendDailyHeartbeat({ productsData }) {
   const ninja = productsData['ninja-woodfire'] || {};
   const ninjaPrice = ninja.stats?.currentLowestPrice || 380.95;
   const ninjaStore = ninja.stats?.currentLowestStore || 'KuantoKusta';
-  const ninjaTarget = ninja.targetPrice || 380.00;
+  const ninjaTarget = ninja.targetPrice || 340.00;
   const ninjaStatus = ninjaPrice <= ninjaTarget 
     ? `🎯 <b>No Alvo!</b> (${ninjaPrice.toFixed(2)} € &le; ${ninjaTarget.toFixed(2)} €)`
     : `⏳ A +${(ninjaPrice - ninjaTarget).toFixed(2)} € do alvo (${ninjaTarget.toFixed(2)} €)`;
@@ -180,16 +180,16 @@ async function sendDailyHeartbeat({ productsData }) {
     ? Math.min(...sw2BundleStores.map(s => s.price))
     : 488.00;
 
-  // 3. Dryers (Bosch Série 6/8 & Siemens iQ500/700 >= 9Kg < 700€)
+  // 3. Dryers (Bosch Série 8 & Siemens iQ700/iQ800 >= 9Kg < 700€)
   const dryers = productsData['dryer-bosch-siemens'] || {};
-  const dryerLowest = dryers.stats?.currentLowestPrice || 529.00;
-  const dryerLowestStore = dryers.stats?.currentLowestStore || 'Worten.pt';
+  const dryerLowest = dryers.stats?.currentLowestPrice || 689.00;
+  const dryerLowestStore = dryers.stats?.currentLowestStore || 'El Corte Inglés Outlet';
   
   // Find top Class A or Serie 8/iQ700 dryer under 700€
-  const topDryer = (dryers.stores || []).find(s => s.energyRating === 'A' || s.variantTitle?.includes('Classe A') || s.series === 'Série 8' || s.series === 'iQ700');
+  const topDryer = (dryers.stores || []).find(s => s.series === 'Série 8' || s.series === 'iQ700' || s.series === 'iQ800');
   const topDryerText = topDryer 
-    ? `• <b>Destaque Eficiência / Gama:</b> ${topDryer.price.toFixed(2)} € (${topDryer.variantTitle})`
-    : `• <b>Gama:</b> Apenas Bosch Série 6/8 & Siemens iQ500/700 (≥ 9Kg)`;
+    ? `• <b>Modelo / Série:</b> ${topDryer.price.toFixed(2)} € (${topDryer.variantTitle})`
+    : `• <b>Filtro Estrito:</b> Apenas Bosch Série 8 & Siemens iQ700/800 (≥ 9Kg)`;
 
   const message = `
 🤖 <b>RELATÓRIO DIÁRIO DE VIGILÂNCIA</b> ✅
@@ -208,7 +208,7 @@ Resumo das melhores cotações com envio para Portugal:
 • <b>Packs / Bundles:</b> A partir de <b>${sw2MinBundle.toFixed(2)} €</b> (com jogos)
 • <b>Preço Alvo Base:</b> ${sw2.targetPrice || 429.99} € <i>(Pre-order / Stock ativo)</i>
 
-🧺 <b>MÁQUINAS DE SECAR BOSCH (SÉRIE 6/8) &amp; SIEMENS (≥ 9KG)</b>
+🧺 <b>MÁQUINAS DE SECAR BOSCH SÉRIE 8 &amp; SIEMENS EQUIVALENTE (≥ 9KG)</b>
 • <b>Melhor Oferta (&lt;700€):</b> <b>${dryerLowest.toFixed(2)} €</b> na loja <i>${dryerLowestStore}</i>
 ${topDryerText}
 • <b>Teto Orçamental:</b> &lt; 700.00 € (✅ <b>-${(700 - dryerLowest).toFixed(2)} €</b> abaixo do limite máximo)

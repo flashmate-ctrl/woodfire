@@ -182,7 +182,9 @@ async function loadAllProducts(silent = false) {
     const ninja = allProducts.find(p => p.id === 'ninja-woodfire');
     if (ninja) {
       const el = document.getElementById('ovPrice_ninja');
-      if (el) el.innerHTML = `${ninja.currentLowestPrice.toFixed(2)} € <small class="text-green">🎯 No Alvo (&le;380€)</small>`;
+      const targetVal = ninja.targetPrice || 340.00;
+      const isTarget = ninja.currentLowestPrice <= targetVal;
+      if (el) el.innerHTML = `${ninja.currentLowestPrice.toFixed(2)} € <small class="${isTarget ? 'text-green' : 'text-cyan'}">${isTarget ? '🎯 No Alvo (&le;340€)' : '⏳ Alvo: 340€'}</small>`;
     }
 
     const sw = allProducts.find(p => p.id === 'nintendo-switch-2');
@@ -194,7 +196,7 @@ async function loadAllProducts(silent = false) {
     const dryer = allProducts.find(p => p.id === 'dryer-bosch-siemens');
     if (dryer) {
       const el = document.getElementById('ovPrice_dryer');
-      if (el) el.innerHTML = `${dryer.currentLowestPrice.toFixed(2)} € <small class="text-green">✅ Teto &lt;700€ Respeitado</small>`;
+      if (el) el.innerHTML = `${dryer.currentLowestPrice.toFixed(2)} € <small class="text-green">✅ Série 8 / Teto &lt;700€</small>`;
     }
 
     // Also fetch outlet stats for the 4th tab pill
@@ -298,22 +300,22 @@ function setupProductHero(productId) {
     chartSubTitle.textContent = 'Evolução de cotações e pré-vendas da Nintendo Switch 2 em Portugal';
     chartFooterText.innerHTML = '<strong>Análise Switch 2:</strong> A consola base está posicionada nos <strong>449,99 €</strong> oficiais, surgindo pontualmente a <strong>448,50 € / 439,90 €</strong>. Os bundles com jogos variam entre <strong>488,00 € e 529,99 €</strong>.';
   } else if (productId === 'dryer-bosch-siemens') {
-    headerProductBadge.textContent = 'SÉRIE 6/8 • ≥ 9KG';
-    headerProductSub.textContent = 'Bosch (Série 6/8) & Siemens (≥ 9Kg) • < 700€';
-    productCategory.textContent = 'GRANDES ELETRODOMÉSTICOS • GAMA SUPERIOR • CAPACIDADE ≥ 9KG';
-    productTitle.innerHTML = 'MÁQUINAS DE SECAR <span>BOSCH & SIEMENS (≥ 9KG)</span>';
-    productDesc.textContent = 'Filtro restrito a modelos topo de gama Bosch (Série 6 ou 8) e Siemens equivalente (iQ500 / iQ700). Capacidade mínima obrigatória de 9 Kg, tecnologia Bomba de Calor e teto orçamental estrito inferior a 700 € (modelos de gama inferior excluídos).';
+    headerProductBadge.textContent = 'SÉRIE 8 • ≥ 9KG';
+    headerProductSub.textContent = 'Bosch (Série 8) & Siemens (iQ700/800) • < 700€';
+    productCategory.textContent = 'GRANDES ELETRODOMÉSTICOS • GAMA TOPO • CAPACIDADE ≥ 9KG';
+    productTitle.innerHTML = 'MÁQUINAS DE SECAR <span>BOSCH SÉRIE 8 & SIEMENS (≥ 9KG)</span>';
+    productDesc.textContent = 'Filtro restrito a modelos topo de gama Bosch Série 8 e Siemens equivalente (iQ700 / iQ800). Capacidade mínima obrigatória de 9 Kg, tecnologia Bomba de Calor e teto orçamental estrito inferior a 700 € (modelos de gama inferior Série 4/6 e iQ300/500 excluídos).';
     productImage.src = 'https://images.unsplash.com/photo-1626806787461-102c1bfaaea1?auto=format&fit=crop&w=600&q=80';
     productTechTags.innerHTML = `
       <span class="tech-tag tech-wifi"><i class="fa-solid fa-weight-hanging"></i> Capacidade Mín. 9 Kg</span>
-      <span class="tech-tag tech-probe"><i class="fa-solid fa-layer-group"></i> Bosch Série 6/8 • Siemens</span>
+      <span class="tech-tag tech-probe"><i class="fa-solid fa-layer-group"></i> Bosch Série 8 • Siemens iQ700</span>
       <span class="tech-tag tech-flame"><i class="fa-solid fa-euro-sign"></i> Orçamento &lt; 700 €</span>
     `;
     statHistLabel.textContent = 'Melhor Preço Registado';
     statTargetLabel.textContent = 'TETO ORÇAMENTAL';
-    tableSubTitle.textContent = 'Modelos Bosch Série 6/8 e Siemens iQ500/700 (≥ 9Kg) com Bomba de Calor e entrega em Portugal';
-    chartSubTitle.textContent = 'Histórico de preços de secadores Bosch Série 6/8 e Siemens (≥ 9Kg) abaixo de 700€';
-    chartFooterText.innerHTML = '<strong>Critérios Estritos:</strong> Exclusivamente <strong>Bosch Série 6 e 8</strong> ou <strong>Siemens equivalente (iQ500 / iQ700)</strong>, capacidade <strong>mínima de 9 Kg</strong> e preço <strong>inferior a 700 €</strong>.';
+    tableSubTitle.textContent = 'Modelos Bosch Série 8 e Siemens iQ700/800 (≥ 9Kg) com Bomba de Calor e entrega em Portugal';
+    chartSubTitle.textContent = 'Histórico de preços de secadores Bosch Série 8 e Siemens (≥ 9Kg) abaixo de 700€';
+    chartFooterText.innerHTML = '<strong>Critérios Estritos:</strong> Exclusivamente <strong>Bosch Série 8</strong> ou <strong>Siemens equivalente (iQ700 / iQ800)</strong>, capacidade <strong>mínima de 9 Kg</strong> e preço <strong>inferior a 700 €</strong>.';
   }
 }
 
@@ -334,9 +336,9 @@ function setupFilterTabs(productId) {
     `;
   } else if (productId === 'dryer-bosch-siemens') {
     tabsHtml = `
-      <button class="tab-btn active" data-filter="all">Todas (≥ 9Kg &lt; 700€) (<span id="countAll">0</span>)</button>
-      <button class="tab-btn" data-filter="bosch"><i class="fa-solid fa-circle-dot text-danger"></i> Bosch (Série 6/8)</button>
-      <button class="tab-btn" data-filter="siemens"><i class="fa-solid fa-circle-dot text-cyan"></i> Siemens (iQ500/700)</button>
+      <button class="tab-btn active" data-filter="all">Todas S8/iQ700 (≥ 9Kg &lt; 700€) (<span id="countAll">0</span>)</button>
+      <button class="tab-btn" data-filter="bosch"><i class="fa-solid fa-circle-dot text-danger"></i> Bosch (Série 8)</button>
+      <button class="tab-btn" data-filter="siemens"><i class="fa-solid fa-circle-dot text-cyan"></i> Siemens (iQ700/800)</button>
       <button class="tab-btn" data-filter="free"><i class="fa-solid fa-truck-fast"></i> Portes Grátis</button>
     `;
   }
@@ -439,14 +441,14 @@ function updateVerdictBanner(productId, stats) {
   const avg = stats.sixMonthsAveragePrice;
 
   if (productId === 'ninja-woodfire') {
-    if (lowest <= 385) {
+    if (lowest <= 340) {
       verdictTitle.textContent = '🔥 EXCELENTE OPORTUNIDADE DE COMPRA';
-      verdictDesc.textContent = `O preço atual de ${lowest.toFixed(2)} € atingiu o teu preço-alvo (380 €) e está ${(avg - lowest).toFixed(2)} € mais barato que a média histórica (${avg.toFixed(2)} €). Recomendado!`;
+      verdictDesc.textContent = `O preço atual de ${lowest.toFixed(2)} € atingiu o teu preço-alvo (${340} €) e está ${(avg - lowest).toFixed(2)} € mais barato que a média histórica (${avg.toFixed(2)} €). Recomendado!`;
       verdictBox.style.borderColor = 'rgba(0, 229, 255, 0.4)';
       verdictBox.style.background = 'rgba(0, 229, 255, 0.08)';
     } else {
       verdictTitle.textContent = '⏳ PREÇO EM VIGILÂNCIA';
-      verdictDesc.textContent = `O grelhador está atualmente a ${lowest.toFixed(2)} €. O bot irá alertar-te no Telegram assim que baixar para o alvo de 380 €.`;
+      verdictDesc.textContent = `O grelhador está atualmente a ${lowest.toFixed(2)} €. O bot irá alertar-te no Telegram assim que baixar para o alvo de 340 €.`;
     }
   } else if (productId === 'nintendo-switch-2') {
     verdictTitle.textContent = '🎮 CONSOLA BASE & BUNDLES SOB VIGILÂNCIA';
@@ -455,7 +457,7 @@ function updateVerdictBanner(productId, stats) {
     verdictBox.style.background = 'rgba(168, 85, 247, 0.08)';
   } else if (productId === 'dryer-bosch-siemens') {
     verdictTitle.textContent = '🧺 ORÇAMENTO < 700€ RIGOROSAMENTE CUMPRIDO';
-    verdictDesc.textContent = `Encontrámos modelos Bosch e Siemens com Bomba de Calor e Classe A/B a partir de ${lowest.toFixed(2)} € (mais de ${(700 - lowest).toFixed(2)} € abaixo do teu teto de 700 €).`;
+    verdictDesc.textContent = `Filtro restrito a Bosch Série 8 e Siemens equivalente (iQ700/800) com capacidade ≥ 9Kg. Melhor preço registado abaixo de 700€: ${lowest.toFixed(2)} €.`;
     verdictBox.style.borderColor = 'rgba(16, 185, 129, 0.4)';
     verdictBox.style.background = 'rgba(16, 185, 129, 0.08)';
   }
