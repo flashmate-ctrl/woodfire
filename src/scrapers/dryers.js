@@ -1,4 +1,6 @@
 const { fetchWithRetry } = require('./fetcher');
+const { detectCartPromotion } = require('./promotions');
+const { getConfig } = require('../config');
 
 // Targeted search queries on KuantoKusta focusing on Bosch Série 8 and Siemens iQ700 / iQ800 (9Kg)
 const KK_SEARCH_URLS = [
@@ -110,6 +112,8 @@ function identifySeries(name, brand) {
 }
 
 async function scrapeDryers() {
+  const config = getConfig();
+  const customCampaigns = config.customCampaigns || [];
   console.log('🔍 A pesquisar máquinas de secar Bosch Série 8 e Siemens (iQ700/800) >= 9Kg (< 700€)...');
   try {
     const responses = await Promise.all(
@@ -139,9 +143,15 @@ async function scrapeDryers() {
       const items = json.props?.pageProps?.basePage?.data || [];
 
       for (const item of items) {
-        const price = parseFloat(item.priceMin);
-        // STRICT FILTER: Budget ceiling < 700 € (and >= 350 €)
-        if (price >= 700 || price < 350) continue;
+        const basePrice = parseFloat(item.priceMin);
+        if (isNaN(basePrice) || basePrice < 350) continue;
+
+        // Check if there is an active cart promo, "Sem IVA", or coupon
+        const promo = detectCartPromotion({ html, text: item.name, price: basePrice, storeKey: 'kuantokusta', customCampaigns });
+        const effectivePrice = promo ? promo.effectivePrice : basePrice;
+
+        // STRICT FILTER: Effective budget ceiling < 700 € (allows 850€ models if cart promo brings it < 700€!)
+        if (effectivePrice >= 700) continue;
 
         // Strict qualification: Bosch Série 8 or Siemens iQ700/800 with >= 9Kg
         if (!isQualifyingDryer(item, brand)) continue;
@@ -164,11 +174,13 @@ async function scrapeDryers() {
           capacity: `${cap} Kg`,
           energyRating: rating,
           technology: 'Bomba de Calor',
-          price,
-          previousPrice: price,
+          price: effectivePrice,
+          originalPrice: promo ? basePrice : null,
+          cartPromo: promo || null,
+          previousPrice: effectivePrice,
           shippingCost: 0,
           isFreeShipping: true,
-          shippingNote: 'Portes Grátis para Portugal Continental',
+          shippingNote: promo ? `${promo.badgeText} • Portes Grátis PT` : 'Portes Grátis para Portugal Continental',
           inStock: true,
           variantType: brand.toLowerCase(),
           variantTitle: `${item.name} (${seriesName})`,

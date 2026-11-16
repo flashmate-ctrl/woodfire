@@ -1,9 +1,14 @@
 const cheerio = require('cheerio');
 const { fetchWithRetry } = require('./fetcher');
+const { detectCartPromotion } = require('./promotions');
+const { getConfig } = require('../config');
 
 const AMAZON_URL = 'https://www.amazon.es/dp/B0CXDTMM28';
 
 async function scrapeAmazon() {
+  const config = getConfig();
+  const customCampaigns = config.customCampaigns || [];
+
   try {
     const res = await fetchWithRetry(AMAZON_URL, {
       headers: {
@@ -18,12 +23,16 @@ async function scrapeAmazon() {
       // Check if blocked by captcha
       if (html.includes('api-services-support@amazon.com') || html.includes('validateCaptcha')) {
         console.warn('⚠️ Amazon.es apresentou captcha, usando valor de mercado verificado.');
+        const fallbackBase = 456.42;
+        const promo = detectCartPromotion({ price: fallbackBase, storeKey: 'amazon_es', customCampaigns });
         return {
           success: true,
-          price: 456.42,
+          price: promo ? promo.effectivePrice : fallbackBase,
+          originalPrice: promo ? fallbackBase : null,
+          cartPromo: promo || null,
           shippingCost: 0,
           isFreeShipping: true,
-          shippingNote: 'Grátis para Portugal (>35€ / Prime)',
+          shippingNote: promo ? `${promo.badgeText} • Grátis (>35€)` : 'Grátis para Portugal (>35€ / Prime)',
           inStock: true,
           url: AMAZON_URL,
           estimated: true
@@ -45,12 +54,15 @@ async function scrapeAmazon() {
 
         if (!isNaN(price) && price > 100) {
           const inStock = !html.includes('No disponible') && !html.includes('Currently unavailable');
+          const promo = detectCartPromotion({ html, price, storeKey: 'amazon_es', customCampaigns });
           return {
             success: true,
-            price,
+            price: promo ? promo.effectivePrice : price,
+            originalPrice: promo ? price : null,
+            cartPromo: promo || null,
             shippingCost: 0,
             isFreeShipping: true,
-            shippingNote: 'Grátis para Portugal (>35€ / Prime)',
+            shippingNote: promo ? `${promo.badgeText} • Grátis (>35€)` : 'Grátis para Portugal (>35€ / Prime)',
             inStock,
             url: AMAZON_URL
           };
@@ -59,24 +71,32 @@ async function scrapeAmazon() {
     }
 
     // Fallback verified price if page structure changed or blocked
+    const fallbackBase = 456.42;
+    const promo = detectCartPromotion({ price: fallbackBase, storeKey: 'amazon_es', customCampaigns });
     return {
       success: true,
-      price: 456.42,
+      price: promo ? promo.effectivePrice : fallbackBase,
+      originalPrice: promo ? fallbackBase : null,
+      cartPromo: promo || null,
       shippingCost: 0,
       isFreeShipping: true,
-      shippingNote: 'Grátis para Portugal (>35€ / Prime)',
+      shippingNote: promo ? `${promo.badgeText} • Grátis (>35€)` : 'Grátis para Portugal (>35€ / Prime)',
       inStock: true,
       url: AMAZON_URL,
       estimated: true
     };
   } catch (err) {
     console.warn('⚠️ Erro ao contactar Amazon.es diretamente:', err.message);
+    const fallbackBase = 456.42;
+    const promo = detectCartPromotion({ price: fallbackBase, storeKey: 'amazon_es', customCampaigns });
     return {
       success: true,
-      price: 456.42,
+      price: promo ? promo.effectivePrice : fallbackBase,
+      originalPrice: promo ? fallbackBase : null,
+      cartPromo: promo || null,
       shippingCost: 0,
       isFreeShipping: true,
-      shippingNote: 'Grátis para Portugal (>35€ / Prime)',
+      shippingNote: promo ? `${promo.badgeText} • Grátis (>35€)` : 'Grátis para Portugal (>35€ / Prime)',
       inStock: true,
       url: AMAZON_URL,
       estimated: true

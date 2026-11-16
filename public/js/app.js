@@ -534,6 +534,19 @@ function renderStoresTable() {
       ? store.variantTitle 
       : (store.shippingNote || store.seller);
 
+    const cartPromoHtml = store.cartPromo ? `
+      <div class="store-promo-pill" style="font-size:0.73rem; background:rgba(239,68,68,0.15); color:#f87171; border:1px solid rgba(239,68,68,0.3); border-radius:4px; padding:2px 6px; margin-top:3px; display:inline-block;">
+        <i class="fa-solid fa-cart-shopping"></i> ${store.cartPromo.badgeText || 'DESCONTO NO CARRINHO'}
+      </div>
+    ` : '';
+
+    const priceDisplayHtml = store.originalPrice ? `
+      <div class="price-val ${isLowest ? 'lowest-price-active' : ''}">${store.price.toFixed(2)} €</div>
+      <div style="font-size:0.75rem; color:#94a3b8; text-decoration:line-through;">${store.originalPrice.toFixed(2)} €</div>
+    ` : `
+      <div class="price-val ${isLowest ? 'lowest-price-active' : ''}">${store.price.toFixed(2)} €</div>
+    `;
+
     return `
       <tr>
         <td>
@@ -542,6 +555,7 @@ function renderStoresTable() {
             <div>
               <div class="store-title">${store.name} ${energyBadgeHtml}</div>
               <div class="store-sub">${titleDisplay}</div>
+              ${cartPromoHtml}
               ${variantBadgeHtml}
             </div>
           </div>
@@ -553,7 +567,7 @@ function renderStoresTable() {
           </span>
         </td>
         <td>
-          <div class="price-val ${isLowest ? 'lowest-price-active' : ''}">${store.price.toFixed(2)} €</div>
+          ${priceDisplayHtml}
         </td>
         <td>${shippingBadge}</td>
         <td>

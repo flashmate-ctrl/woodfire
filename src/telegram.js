@@ -59,6 +59,8 @@ async function sendPriceDropAlert({
   storeName,
   oldPrice,
   newPrice,
+  originalPrice = null,
+  cartPromo = null,
   url,
   shippingNote,
   stats
@@ -71,16 +73,21 @@ async function sendPriceDropAlert({
     ? `\nℹ️ <b>Versão/Modelo:</b> ${variantTitle}` 
     : '';
 
+  const promoSection = cartPromo ? `
+🛒 <b>Campanha no Carrinho:</b> <b>${cartPromo.promoLabel}</b>
+🏷️ <b>PVP na Página:</b> <s>${cartPromo.originalPrice.toFixed(2)} €</s>
+💸 <b>Desconto Direto no Carrinho:</b> <b>-${cartPromo.discountAmount.toFixed(2)} € (-${cartPromo.discountPercent}%)</b>
+💡 <i>${cartPromo.note || 'Desconto aplicado automaticamente ao adicionar ao cesto!'}</i>
+` : '';
+
   const message = `
 🚨 <b>ALERTA DE BAIXA DE PREÇO!</b> 📉
-
+${cartPromo ? '🔥 <b>[DESCONTO NO CARRINHO / DIAS SEM IVA]</b>\n' : ''}
 ${productEmoji} <b>Produto:</b> <b>${productName}</b>${variantLine}
 🏬 <b>Loja:</b> <b>${storeName}</b>
-
-💰 <b>Novo Preço:</b> <b>${newPrice.toFixed(2)} €</b>
-🏷️ <b>Preço Anterior:</b> <s>${oldPrice.toFixed(2)} €</s>
-📉 <b>Poupança Imediata:</b> <b>-${diff.toFixed(2)} € (-${percent}%)</b>
-
+${promoSection}
+💰 <b>Preço Final Efetivo:</b> <b>${newPrice.toFixed(2)} €</b>
+${!cartPromo ? `🏷️ <b>Preço Anterior:</b> <s>${oldPrice.toFixed(2)} €</s>\n📉 <b>Poupança Imediata:</b> <b>-${diff.toFixed(2)} € (-${percent}%)</b>\n` : ''}
 🚚 <b>Envio para Portugal:</b> ${shippingNote || 'Grátis para Portugal'} 🇵🇹
 📦 <b>Disponibilidade:</b> Em Stock ✅
 
