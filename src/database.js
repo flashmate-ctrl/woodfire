@@ -202,24 +202,24 @@ function buildInitialProducts() {
       },
       lastScanTime: null
     },
-    'tplink-deco-be25': {
-      id: 'tplink-deco-be25',
-      name: 'TP-Link Deco BE25 Whole Mesh Wi-Fi 7 BE3600 (Pack de 2)',
-      shortName: 'TP-Link Deco BE25 (Pack 2)',
-      badge: 'WI-FI 7 MESH',
+    'tplink-deco-x50': {
+      id: 'tplink-deco-x50',
+      name: 'TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)',
+      shortName: 'TP-Link Deco X50 (Pack 2)',
+      badge: 'WI-FI 6 MESH',
       emoji: '📡',
       icon: 'fa-solid fa-wifi',
-      category: 'Redes & Conectividade • Wi-Fi 7 Mesh Gigabit',
+      category: 'Redes & Conectividade • Wi-Fi 6 Mesh Gigabit',
       targetPrice: 130.00,
-      officialRrp: 239.99,
-      imageUrl: 'https://s1.kuantokusta.pt/img_upload/produtos_informatica/1216718_3_tp-link-router-wireless-be3600-deco-be25-whole-mesh-dual-band-wifi-7-gigabit-pack2.jpg',
-      description: 'Sistema Wi-Fi 7 Mesh TP-Link Deco BE25 Dual-Band BE3600 (Pack de 2 unidades). Portas 2.5 Gbps, suporte MLO, roaming inteligente e cobertura alargada.',
+      officialRrp: 219.99,
+      imageUrl: 'https://s1.kuantokusta.pt/img_upload/produtos_informatica/920953_3_tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox50-2-pack.jpg',
+      description: 'Sistema Wi-Fi 6 Mesh TP-Link Deco X50 Dual-Band AX3000 (Pack de 2 unidades). 3 portas Gigabit por unidade, roaming AI inteligente, canais de 160 MHz e cobertura até 420 m² com teto de compra < 130 €.',
       specs: [
-        'Tecnologia Wi-Fi 7 de última geração com velocidades até 3.6 Gbps',
-        'Pack de 2 unidades para cobertura até 400 m²',
-        '2 Portas 2.5 Gbps por unidade (backhaul ultra-rápido)',
-        'Suporte Multi-Link Operation (MLO) e canais de 160 MHz',
-        'Gestão simplificada e segurança integrada via App Deco'
+        'Tecnologia Wi-Fi 6 Dual-Band AX3000 (2402 Mbps em 5GHz + 574 Mbps em 2.4GHz)',
+        'Pack de 2 unidades para cobertura até 420 m²',
+        '3 Portas Gigabit por unidade com deteção automática WAN/LAN',
+        'Suporte a canais de 160 MHz, OFDMA e 1024-QAM',
+        'Roaming AI inteligente com perfil de rede único e gestão via App Deco'
       ],
       filterVariants: [
         { id: 'all', label: 'Todas as Lojas (< 130€)' },
@@ -227,11 +227,11 @@ function buildInitialProducts() {
       ],
       stores: defaultDecoStores,
       stats: {
-        currentLowestPrice: 172.80,
-        currentLowestStore: 'Amazon.es',
-        historicalLowestPrice: 172.80,
-        historicalHighestPrice: 269.99,
-        sixMonthsAveragePrice: 224.50
+        currentLowestPrice: 158.57,
+        currentLowestStore: 'Amazon Spain (via KuantoKusta)',
+        historicalLowestPrice: 149.99,
+        historicalHighestPrice: 219.99,
+        sixMonthsAveragePrice: 179.90
       },
       lastScanTime: null
     }

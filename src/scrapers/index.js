@@ -5,7 +5,7 @@ const { scrapePcComponentes } = require('./pccomponentes');
 const { scrapeNinjaOfficial } = require('./ninjakitchen');
 const { scrapeSwitch2 } = require('./switch2');
 const { scrapeDryers } = require('./dryers');
-const { scrapeDecoBE25 } = require('./deco');
+const { scrapeDecoX50 } = require('./deco');
 const { runOutletScan, getStoredOutletDeals, saveOutletDeals } = require('./outlet');
 const { getDatabase, saveDatabase } = require('../database');
 const { sendPriceDropAlert, sendDailyHeartbeat, sendOutletDealAlert } = require('../telegram');
@@ -14,7 +14,7 @@ const { getConfig } = require('../config');
 async function runPriceCheck(options = {}) {
   console.log('\n======================================================');
   console.log('🔍 A iniciar ronda de monitorização multi-produto...');
-  console.log('1. Ninja Woodfire XL | 2. Switch 2 | 3. Secadores Bosh S8 | 4. TP-Link Deco BE25');
+  console.log('1. Ninja Woodfire XL | 2. Switch 2 | 3. Secadores Bosh S8 | 4. TP-Link Deco X50');
   console.log('======================================================\n');
 
   const now = new Date().toISOString();
@@ -302,12 +302,12 @@ async function runPriceCheck(options = {}) {
   }
 
   // ==========================================
-  // 4. Monitorizar TP-Link Deco BE25 (Pack 2)
+  // 4. Monitorizar TP-Link Deco X50 (Pack 2)
   // ==========================================
   try {
-    const decoRes = await scrapeDecoBE25();
+    const decoRes = await scrapeDecoX50();
     if (decoRes.success && decoRes.stores && decoRes.stores.length > 0) {
-      const decoProd = db.products['tplink-deco-be25'] || { stores: [] };
+      const decoProd = db.products['tplink-deco-x50'] || { stores: [] };
       const oldStoresMap = new Map();
       (decoProd.stores || []).forEach(s => oldStoresMap.set(s.id, s));
 
@@ -321,10 +321,10 @@ async function runPriceCheck(options = {}) {
           const dropPercentStr = dropPercentVal.toFixed(1);
 
           if (dropPercentVal > minDropPercent) {
-            console.log(`📉 [Deco BE25] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%)`);
+            console.log(`📉 [Deco X50] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%)`);
             allPriceDrops.push({
-              productId: 'tplink-deco-be25',
-              productName: decoProd.name || 'TP-Link Deco BE25 (Pack de 2)',
+              productId: 'tplink-deco-x50',
+              productName: decoProd.name || 'TP-Link Deco X50 (Pack de 2)',
               productEmoji: '📡',
               variantTitle: store.variantTitle,
               storeId: store.id,
@@ -341,7 +341,7 @@ async function runPriceCheck(options = {}) {
               date: now
             });
           } else {
-            console.log(`⏩ [Deco BE25 Ignorado] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%) é <= ${minDropPercent}%`);
+            console.log(`⏩ [Deco X50 Ignorado] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%) é <= ${minDropPercent}%`);
           }
         }
 
@@ -362,14 +362,14 @@ async function runPriceCheck(options = {}) {
       decoProd.stats = {
         currentLowestPrice: parseFloat(minDecoPrice.toFixed(2)),
         currentLowestStore: minDecoStore,
-        historicalLowestPrice: Math.min(decoProd.stats?.historicalLowestPrice || 172.80, minDecoPrice),
-        historicalHighestPrice: Math.max(decoProd.stats?.historicalHighestPrice || 269.99, ...allDecoPrices),
-        sixMonthsAveragePrice: parseFloat(((decoProd.stats?.sixMonthsAveragePrice || 224.50) * 0.95 + avgDecoPrice * 0.05).toFixed(2))
+        historicalLowestPrice: Math.min(decoProd.stats?.historicalLowestPrice || 149.99, minDecoPrice),
+        historicalHighestPrice: Math.max(decoProd.stats?.historicalHighestPrice || 219.99, ...allDecoPrices),
+        sixMonthsAveragePrice: parseFloat(((decoProd.stats?.sixMonthsAveragePrice || 179.90) * 0.95 + avgDecoPrice * 0.05).toFixed(2))
       };
-      db.products['tplink-deco-be25'] = decoProd;
+      db.products['tplink-deco-x50'] = decoProd;
     }
   } catch (err) {
-    console.error('❌ Erro na monitorização TP-Link Deco BE25:', err.message);
+    console.error('❌ Erro na monitorização TP-Link Deco X50:', err.message);
   }
 
   // Update global properties
@@ -384,7 +384,7 @@ async function runPriceCheck(options = {}) {
     ninjaLowest: db.products['ninja-woodfire']?.stats?.currentLowestPrice,
     switchLowest: db.products['nintendo-switch-2']?.stats?.currentLowestPrice,
     dryerLowest: db.products['dryer-bosch-siemens']?.stats?.currentLowestPrice,
-    decoLowest: db.products['tplink-deco-be25']?.stats?.currentLowestPrice
+    decoLowest: db.products['tplink-deco-x50']?.stats?.currentLowestPrice
   });
   if (db.checksLog.length > 100) db.checksLog = db.checksLog.slice(0, 100);
 
@@ -433,7 +433,8 @@ async function runPriceCheck(options = {}) {
             timestamp: now,
             ninjaLowest: db.products['ninja-woodfire']?.stats?.currentLowestPrice,
             switchLowest: db.products['nintendo-switch-2']?.stats?.currentLowestPrice,
-            dryerLowest: db.products['dryer-bosch-siemens']?.stats?.currentLowestPrice
+            dryerLowest: db.products['dryer-bosch-siemens']?.stats?.currentLowestPrice,
+            decoLowest: db.products['tplink-deco-x50']?.stats?.currentLowestPrice
           });
           if (db.dailyHeartbeatsHistory.length > 30) db.dailyHeartbeatsHistory = db.dailyHeartbeatsHistory.slice(0, 30);
           console.log(`✅ Relatório diário multi-produto entregue com sucesso no Telegram (${todayStr}).`);

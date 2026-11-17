@@ -2,80 +2,80 @@ const { fetchWithRetry } = require('./fetcher');
 const { detectCartPromotion } = require('./promotions');
 const { getConfig } = require('../config');
 
-// Direct KuantoKusta product page for TP-Link Deco BE25 Wi-Fi 7 (Pack 2)
-const DECO_KK_URL = 'https://www.kuantokusta.pt/p/11516715/tp-link-router-wireless-be3600-deco-be25-whole-mesh-dual-band-wifi-7-gigabit-pack2';
-const DECO_AMAZON_URL = 'https://www.amazon.es/s?k=tp-link+deco+be25+2-pack';
-const DECO_WORTEN_URL = 'https://www.worten.pt/search?query=tp-link%20deco%20be25';
+// Direct KuantoKusta product page for TP-Link Deco X50 Wi-Fi 6 (Pack 2)
+const DECO_KK_URL = 'https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack';
+const DECO_AMAZON_URL = 'https://www.amazon.es/dp/B09LVFNMVJ';
+const DECO_WORTEN_URL = 'https://www.worten.pt/search?query=tp-link%20deco%20x50';
 
 const defaultDecoStores = [
   {
     id: 'deco_amazon_es',
     name: 'Amazon.es',
-    seller: 'Amazon',
-    price: 172.80,
-    previousPrice: 172.80,
+    seller: 'Amazon Spain',
+    price: 158.57,
+    previousPrice: 158.57,
     shippingCost: 0,
     isFreeShipping: true,
     shippingNote: 'Grátis para Portugal (>35€ / Prime)',
     inStock: true,
     variantType: 'pack2',
-    variantTitle: 'TP-Link Deco BE25 Wi-Fi 7 BE3600 (Pack de 2)',
-    url: 'https://www.amazon.es/s?k=tp-link+deco+be25+2-pack',
+    variantTitle: 'TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)',
+    url: DECO_AMAZON_URL,
     logo: 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg',
+    lastChecked: null
+  },
+  {
+    id: 'deco_pccomponentes_pt',
+    name: 'PcComponentes.pt',
+    seller: 'PcComponentes PT',
+    price: 169.90,
+    previousPrice: 169.90,
+    shippingCost: 0,
+    isFreeShipping: true,
+    shippingNote: 'Envio para Portugal Continental',
+    inStock: true,
+    variantType: 'pack2',
+    variantTitle: 'TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)',
+    url: 'https://www.pccomponentes.pt/tp-link-deco-x50-ax3000-mesh-pack-2',
+    logo: 'https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg',
     lastChecked: null
   },
   {
     id: 'deco_worten_pt',
     name: 'Worten.pt',
     seller: 'Worten PT',
-    price: 239.99,
-    previousPrice: 239.99,
+    price: 189.99,
+    previousPrice: 189.99,
     shippingCost: 0,
     isFreeShipping: true,
     shippingNote: 'Grátis em loja / campanhas',
     inStock: true,
     variantType: 'pack2',
-    variantTitle: 'TP-Link Deco BE25 Wi-Fi 7 BE3600 (Pack de 2)',
-    url: 'https://www.worten.pt/search?query=tp-link%20deco%20be25',
+    variantTitle: 'TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)',
+    url: DECO_WORTEN_URL,
     logo: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png',
-    lastChecked: null
-  },
-  {
-    id: 'deco_globaldata_pt',
-    name: 'Globaldata.pt',
-    seller: 'Globaldata PT',
-    price: 219.90,
-    previousPrice: 219.90,
-    shippingCost: 0,
-    isFreeShipping: true,
-    shippingNote: 'Portes Grátis Portugal Continental',
-    inStock: true,
-    variantType: 'pack2',
-    variantTitle: 'TP-Link Deco BE25 Wi-Fi 7 BE3600 (Pack de 2)',
-    url: DECO_KK_URL,
-    logo: 'https://cdn.kuantokusta.pt/img/kk-logo.svg',
     lastChecked: null
   },
   {
     id: 'deco_castro_pt',
     name: 'Castro Electrónica',
     seller: 'Castro Electrónica PT',
-    price: 241.69,
-    previousPrice: 241.69,
+    price: 208.59,
+    previousPrice: 208.59,
     shippingCost: 0,
     isFreeShipping: true,
     shippingNote: 'Portes Grátis Portugal Continental',
     inStock: true,
     variantType: 'pack2',
-    variantTitle: 'TP-Link Deco BE25 Wi-Fi 7 BE3600 (Pack de 2)',
+    variantTitle: 'TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)',
     url: DECO_KK_URL,
     logo: 'https://cdn.kuantokusta.pt/img/kk-logo.svg',
     lastChecked: null
   }
 ];
 
-async function scrapeDecoBE25() {
-  console.log('📡 [TP-Link Deco BE25] A verificar cotações para o Pack de 2...');
+async function scrapeDecoX50() {
+  console.log('📡 [TP-Link Deco X50] A verificar cotações para o Pack de 2...');
   const config = getConfig();
   const customCampaigns = config.customCampaigns || [];
 
@@ -97,7 +97,7 @@ async function scrapeDecoBE25() {
     const product = json.props?.pageProps?.basePage?.product;
 
     if (!product || !product.offers || product.offers.length === 0) {
-      console.warn('⚠️ Nenhuma oferta encontrada no KuantoKusta para Deco BE25, a usar defaults.');
+      console.warn('⚠️ Nenhuma oferta encontrada no KuantoKusta para Deco X50, a usar defaults.');
       return { success: true, stores: defaultDecoStores };
     }
 
@@ -112,13 +112,13 @@ async function scrapeDecoBE25() {
       seenStores.add(storeSlug);
 
       const basePrice = parseFloat(o.price);
-      if (isNaN(basePrice) || basePrice < 50) continue;
+      if (isNaN(basePrice) || basePrice < 40) continue;
 
       const shippingPrice = typeof o.shipping?.minimumPrice === 'number' ? o.shipping.minimumPrice : 0;
       const isFree = shippingPrice === 0 || o.shipping?.isFree === true || o.filters?.isFreeShipping === true;
 
       // Check for cart / VAT promotion
-      const promo = detectCartPromotion({ html, text: `${merchantName} Deco BE25`, price: basePrice, storeKey: storeSlug, customCampaigns });
+      const promo = detectCartPromotion({ html, text: `${merchantName} Deco X50`, price: basePrice, storeKey: storeSlug, customCampaigns });
       const effectivePrice = promo ? promo.effectivePrice : basePrice;
 
       let storeUrl = DECO_KK_URL;
@@ -132,8 +132,14 @@ async function scrapeDecoBE25() {
         else logo = 'https://cdn.kuantokusta.pt/img/kk-logo.svg';
       }
 
+      let storeId = `deco_${storeSlug}`;
+      if (storeSlug.includes('amazon')) storeId = 'deco_amazon_es';
+      else if (storeSlug.includes('worten')) storeId = 'deco_worten_pt';
+      else if (storeSlug.includes('pccomponentes')) storeId = 'deco_pccomponentes_pt';
+      else if (storeSlug.includes('castro')) storeId = 'deco_castro_pt';
+
       parsedStores.push({
-        id: `deco_${storeSlug}`,
+        id: storeId,
         name: merchantName,
         seller: merchantName,
         price: effectivePrice,
@@ -147,7 +153,7 @@ async function scrapeDecoBE25() {
           : (isFree ? 'Portes Grátis para Portugal' : `Envio: ${shippingPrice.toFixed(2)} €`),
         inStock: true,
         variantType: 'pack2',
-        variantTitle: 'TP-Link Deco BE25 Whole Mesh Wi-Fi 7 BE3600 (Pack de 2)',
+        variantTitle: 'TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)',
         url: storeUrl,
         logo,
         lastChecked: now
@@ -166,7 +172,7 @@ async function scrapeDecoBE25() {
       stores: finalStores
     };
   } catch (err) {
-    console.error('❌ Falha ao obter dados do Deco BE25:', err.message);
+    console.error('❌ Falha ao obter dados do Deco X50:', err.message);
     return {
       success: true,
       stores: defaultDecoStores
@@ -175,7 +181,8 @@ async function scrapeDecoBE25() {
 }
 
 module.exports = {
-  scrapeDecoBE25,
+  scrapeDecoX50,
+  scrapeDeco: scrapeDecoX50,
   defaultDecoStores,
   DECO_KK_URL
 };
