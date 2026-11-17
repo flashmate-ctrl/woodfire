@@ -198,6 +198,15 @@ async function sendDailyHeartbeat({ productsData }) {
     ? `• <b>Modelo / Série:</b> ${topDryer.price.toFixed(2)} € (${topDryer.variantTitle})`
     : `• <b>Filtro Estrito:</b> Apenas Bosch Série 8 & Siemens iQ700/800 (≥ 9Kg)`;
 
+  // 4. TP-Link Deco BE25 (Pack de 2)
+  const deco = productsData['tplink-deco-be25'] || {};
+  const decoPrice = deco.stats?.currentLowestPrice || 172.80;
+  const decoStore = deco.stats?.currentLowestStore || 'Amazon.es';
+  const decoTarget = deco.targetPrice || 130.00;
+  const decoStatus = decoPrice <= decoTarget
+    ? `🎯 <b>No Alvo!</b> (${decoPrice.toFixed(2)} € &le; ${decoTarget.toFixed(2)} €)`
+    : `⏳ A +${(decoPrice - decoTarget).toFixed(2)} € do alvo (${decoTarget.toFixed(2)} €)`;
+
   const message = `
 🤖 <b>RELATÓRIO DIÁRIO DE VIGILÂNCIA</b> ✅
 📅 <i>${todayFormatted}</i>
@@ -219,6 +228,11 @@ Resumo das melhores cotações com envio para Portugal:
 • <b>Melhor Oferta (&lt;700€):</b> <b>${dryerLowest.toFixed(2)} €</b> na loja <i>${dryerLowestStore}</i>
 ${topDryerText}
 • <b>Teto Orçamental:</b> &lt; 700.00 € (✅ <b>-${(700 - dryerLowest).toFixed(2)} €</b> abaixo do limite máximo)
+
+📡 <b>TP-LINK DECO BE25 WI-FI 7 MESH (PACK 2)</b>
+• <b>Melhor Preço:</b> <b>${decoPrice.toFixed(2)} €</b> na loja <i>${decoStore}</i>
+• <b>Situação:</b> ${decoStatus}
+• <b>PVP Oficial:</b> ${deco.officialRrp || 239.99} € (Alvo: &lt; ${decoTarget.toFixed(2)} €)
 
 ℹ️ <i>Nenhuma descida crítica nas últimas 24h. O bot continua vigilante e avisar-te-á de imediato no momento em que surgir qualquer descida ou flash deal!</i>
 

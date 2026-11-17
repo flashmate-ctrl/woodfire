@@ -199,6 +199,14 @@ async function loadAllProducts(silent = false) {
       if (el) el.innerHTML = `${dryer.currentLowestPrice.toFixed(2)} € <small class="text-green">✅ Série 8 / Teto &lt;700€</small>`;
     }
 
+    const deco = allProducts.find(p => p.id === 'tplink-deco-be25');
+    if (deco) {
+      const el = document.getElementById('ovPrice_deco');
+      const targetVal = deco.targetPrice || 130.00;
+      const isTarget = deco.currentLowestPrice <= targetVal;
+      if (el) el.innerHTML = `${deco.currentLowestPrice.toFixed(2)} € <small class="${isTarget ? 'text-green' : 'text-cyan'}">${isTarget ? '🎯 No Alvo (&le;130€)' : '⏳ Alvo: <130€'}</small>`;
+    }
+
     // Also fetch outlet stats for the 4th tab pill
     try {
       const outRes = await fetch('/api/outlet');
@@ -299,6 +307,23 @@ function setupProductHero(productId) {
     tableSubTitle.textContent = 'Amazon.es, Worten, PcComponentes, FNAC e KuantoKusta - Consola Base e Bundles';
     chartSubTitle.textContent = 'Evolução de cotações e pré-vendas da Nintendo Switch 2 em Portugal';
     chartFooterText.innerHTML = '<strong>Análise Switch 2:</strong> A consola base está posicionada nos <strong>449,99 €</strong> oficiais, surgindo pontualmente a <strong>448,50 € / 439,90 €</strong>. Os bundles com jogos variam entre <strong>488,00 € e 529,99 €</strong>.';
+  } else if (productId === 'tplink-deco-be25') {
+    headerProductBadge.textContent = 'WI-FI 7 MESH';
+    headerProductSub.textContent = 'TP-Link Deco BE25 (Pack 2) • Wi-Fi 7 BE3600';
+    productCategory.textContent = 'REDES & CONECTIVIDADE • SISTEMA MESH GIGABIT 2.5G';
+    productTitle.innerHTML = 'TP-LINK DECO BE25 <span>WI-FI 7 (PACK 2)</span>';
+    productDesc.textContent = 'Sistema Wi-Fi 7 Mesh TP-Link Deco BE25 Dual-Band BE3600 (Pack de 2 unidades). Portas 2.5 Gbps, suporte MLO, roaming inteligente e cobertura alargada com teto de compra < 130 €.';
+    productImage.src = 'https://s1.kuantokusta.pt/img_upload/produtos_informatica/1216718_3_tp-link-router-wireless-be3600-deco-be25-whole-mesh-dual-band-wifi-7-gigabit-pack2.jpg';
+    productTechTags.innerHTML = `
+      <span class="tech-tag tech-wifi"><i class="fa-solid fa-wifi"></i> Wi-Fi 7 BE3600</span>
+      <span class="tech-tag tech-probe"><i class="fa-solid fa-network-wired"></i> Portas 2.5 Gbps</span>
+      <span class="tech-tag tech-flame"><i class="fa-solid fa-bullseye"></i> Alvo &lt; 130 €</span>
+    `;
+    statHistLabel.textContent = 'Mínimo Registado';
+    statTargetLabel.textContent = 'PREÇO ALVO';
+    tableSubTitle.textContent = 'Amazon.es, Worten, Globaldata, Castro Electrónica e KuantoKusta - Pack de 2 Unidades';
+    chartSubTitle.textContent = 'Evolução de preços do pack de 2 TP-Link Deco BE25 em Portugal';
+    chartFooterText.innerHTML = '<strong>Análise Deco BE25:</strong> O PVP de lançamento ronda os <strong>239,99 €</strong>. Atualmente na Amazon ronda os <strong>172,80 €</strong>. O bot avisar-te-á no Telegram assim que surgir uma campanha Black Friday ou corte de preço que o coloque <strong>abaixo dos 130 €</strong>.';
   } else if (productId === 'dryer-bosch-siemens') {
     headerProductBadge.textContent = 'SÉRIE 8 • ≥ 9KG';
     headerProductSub.textContent = 'Bosch (Série 8) & Siemens (iQ700/800) • < 700€';
@@ -340,6 +365,12 @@ function setupFilterTabs(productId) {
       <button class="tab-btn" data-filter="bosch"><i class="fa-solid fa-circle-dot text-danger"></i> Bosch (Série 8)</button>
       <button class="tab-btn" data-filter="siemens"><i class="fa-solid fa-circle-dot text-cyan"></i> Siemens (iQ700/800)</button>
       <button class="tab-btn" data-filter="free"><i class="fa-solid fa-truck-fast"></i> Portes Grátis</button>
+    `;
+  } else if (productId === 'tplink-deco-be25') {
+    tabsHtml = `
+      <button class="tab-btn active" data-filter="all">Todas as Ofertas (<span id="countAll">0</span>)</button>
+      <button class="tab-btn" data-filter="pack2"><i class="fa-solid fa-layer-group"></i> Pack de 2 Unidades</button>
+      <button class="tab-btn" data-filter="free"><i class="fa-solid fa-truck-fast"></i> Portes Grátis (<span id="countFree">0</span>)</button>
     `;
   }
 
@@ -460,6 +491,18 @@ function updateVerdictBanner(productId, stats) {
     verdictDesc.textContent = `Filtro restrito a Bosch Série 8 e Siemens equivalente (iQ700/800) com capacidade ≥ 9Kg. Melhor preço registado abaixo de 700€: ${lowest.toFixed(2)} €.`;
     verdictBox.style.borderColor = 'rgba(16, 185, 129, 0.4)';
     verdictBox.style.background = 'rgba(16, 185, 129, 0.08)';
+  } else if (productId === 'tplink-deco-be25') {
+    if (lowest <= 130) {
+      verdictTitle.textContent = '🔥 ALVO ATINGIDO: PACK 2 DECO BE25 < 130€!';
+      verdictDesc.textContent = `O preço do pack de 2 unidades baixou para ${lowest.toFixed(2)} € (alvo < 130 €). Excelente oportunidade para Wi-Fi 7 Mesh Gigabit!`;
+      verdictBox.style.borderColor = 'rgba(0, 229, 255, 0.4)';
+      verdictBox.style.background = 'rgba(0, 229, 255, 0.08)';
+    } else {
+      verdictTitle.textContent = '⏳ WI-FI 7 MESH SOB VIGILÂNCIA DE PREÇO';
+      verdictDesc.textContent = `Melhor cotação atual: ${lowest.toFixed(2)} €. O bot irá disparar um alerta no Telegram assim que surgir uma descida ou campanha Black Friday abaixo de 130,00 €.`;
+      verdictBox.style.borderColor = 'rgba(59, 130, 246, 0.4)';
+      verdictBox.style.background = 'rgba(59, 130, 246, 0.08)';
+    }
   }
 }
 
