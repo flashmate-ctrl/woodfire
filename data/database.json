@@ -26,13 +26,13 @@
           "name": "Amazon.es",
           "seller": "Amazon / Vendedor Certificado",
           "price": 456.42,
-          "previousPrice": 172.8,
+          "previousPrice": 456.42,
           "shippingCost": 0,
           "isFreeShipping": true,
           "shippingNote": "Temporariamente Esgotado na Amazon.es",
           "inStock": false,
           "url": "https://www.amazon.es/dp/B0CXDTMM28",
-          "lastChecked": "2026-11-20T08:56:29.443Z",
+          "lastChecked": "2026-11-20T09:27:46.461Z",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
           "originalPrice": null,
           "cartPromo": null
@@ -48,7 +48,7 @@
           "shippingNote": "Grátis para Portugal em loja / campanhas",
           "inStock": true,
           "url": "https://www.worten.pt/produtos/grelhador-ninja-og901eu-1700-w-preto-8022830",
-          "lastChecked": "2026-11-20T08:56:29.443Z",
+          "lastChecked": "2026-11-20T09:27:46.461Z",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
           "originalPrice": null,
           "cartPromo": null
@@ -64,7 +64,7 @@
           "shippingNote": "Envio para Portugal Continental",
           "inStock": true,
           "url": "https://www.pccomponentes.pt/barbecue-ninja-woodfire-pro-connect-xl-og901eu-eletrica-sensor-digital-app-1700w",
-          "lastChecked": "2026-11-20T08:56:29.443Z",
+          "lastChecked": "2026-11-20T09:27:46.461Z",
           "logo": "https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg",
           "originalPrice": null,
           "cartPromo": null
@@ -80,7 +80,7 @@
           "shippingNote": "Grátis para Portugal Continental (>50€)",
           "inStock": true,
           "url": "https://ninjakitchen.pt/produtos/grelhador-eletrico-de-exterior-e-fumador-ninja-woodfire-pro-connect-xl-og901eu-zidOG901EU",
-          "lastChecked": "2026-11-20T08:56:29.443Z",
+          "lastChecked": "2026-11-20T09:27:46.461Z",
           "logo": "https://ninjakitchen.pt/on/demandware.static/-/Sites-ninja-pt-Library/default/dw769584d4/images/logo.svg",
           "originalPrice": null,
           "cartPromo": null
@@ -97,7 +97,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/11262_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z",
+          "lastChecked": "2026-11-20T09:27:46.461Z",
           "originalPrice": null,
           "cartPromo": null
         },
@@ -113,7 +113,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9326_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z",
+          "lastChecked": "2026-11-20T09:27:46.461Z",
           "originalPrice": null,
           "cartPromo": null
         },
@@ -129,7 +129,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/8823_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z",
+          "lastChecked": "2026-11-20T09:27:46.461Z",
           "originalPrice": null,
           "cartPromo": null
         },
@@ -145,7 +145,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/7471_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z",
+          "lastChecked": "2026-11-20T09:27:46.461Z",
           "originalPrice": null,
           "cartPromo": null
         },
@@ -161,7 +161,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/12043_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z",
+          "lastChecked": "2026-11-20T09:27:46.461Z",
           "originalPrice": null,
           "cartPromo": null
         },
@@ -177,7 +177,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/50_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z",
+          "lastChecked": "2026-11-20T09:27:46.461Z",
           "originalPrice": null,
           "cartPromo": null
         }
@@ -187,9 +187,9 @@
         "currentLowestStore": "Kibo",
         "historicalLowestPrice": 172.8,
         "historicalHighestPrice": 635.01,
-        "sixMonthsAveragePrice": 388.32
+        "sixMonthsAveragePrice": 390.03
       },
-      "lastScanTime": "2026-11-20T08:56:29.443Z",
+      "lastScanTime": "2026-11-20T09:27:46.461Z",
       "model": "Ninja Woodfire Pro Connect XL (OG901EU)",
       "sku": "OG901EU",
       "asin": "B0CXDTMM28",
@@ -252,7 +252,7 @@
           "variantTitle": "Nintendo Switch 2 256GB Black",
           "url": "https://www.kuantokusta.pt/p/11716249/nintendo-switch-2-256gb-black",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_kk_12359986",
@@ -268,7 +268,7 @@
           "variantTitle": "Nintendo Switch 2 V2 256GB Black (Bateria Amovível)",
           "url": "https://www.kuantokusta.pt/p/12359986/nintendo-switch-2-v2-256gb-black-bateria-amovivel",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_pccomp_base",
@@ -284,7 +284,7 @@
           "variantTitle": "Consola Nintendo Switch 2 256GB Black",
           "url": "https://www.pccomponentes.pt/search/?query=nintendo+switch+2",
           "logo": "https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_kk_base",
@@ -300,7 +300,7 @@
           "variantTitle": "Nintendo Switch 2 256GB Black (Consola Base)",
           "url": "https://www.kuantokusta.pt/p/11716249/nintendo-switch-2-256gb-black",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_worten_base",
@@ -316,7 +316,7 @@
           "variantTitle": "Consola Nintendo Switch 2 256GB Standard",
           "url": "https://www.worten.pt/search?query=nintendo+switch+2",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_amazon_base",
@@ -332,7 +332,7 @@
           "variantTitle": "Nintendo Switch 2 - Versão Standard Europeia",
           "url": "https://www.amazon.es/s?k=nintendo+switch+2",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_fnac_base",
@@ -348,7 +348,7 @@
           "variantTitle": "Consola Nintendo Switch 2 256GB",
           "url": "https://www.fnac.pt/SearchResult/ResultList.aspx?Search=nintendo+switch+2",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fnac_Logo.svg/1200px-Fnac_Logo.svg.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_kk_12279146",
@@ -364,7 +364,7 @@
           "variantTitle": "Nintendo Switch 2 + Switch Sports Resort + 3 Meses Nintendo Switch Online",
           "url": "https://www.kuantokusta.pt/p/12279146/nintendo-switch-2-switch-sports-resort-3-meses-nintendo-switch-online",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_worten_bundle_pkmn",
@@ -380,7 +380,7 @@
           "variantTitle": "Pack Nintendo Switch 2 256GB + Pokémon Pokopia",
           "url": "https://www.kuantokusta.pt/p/12182806/nintendo-switch-2-256gb-black-pokemon-pokopia",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_kk_bundle_mk",
@@ -396,7 +396,7 @@
           "variantTitle": "Pack Nintendo Switch 2 256GB + Mario Kart World",
           "url": "https://www.kuantokusta.pt/p/11716250/nintendo-switch-2-256gb-black-mario-kart-world",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_kk_12377384",
@@ -412,7 +412,7 @@
           "variantTitle": "Nintendo Switch 2 256GB Black + Mario Kart World Digital + 3 Meses Nintendo Switch Online",
           "url": "https://www.kuantokusta.pt/p/12377384/nintendo-switch-2-256gb-black-mario-kart-world-digital-3-meses-nintendo-switch-online",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_kk_12182806",
@@ -428,7 +428,7 @@
           "variantTitle": "Nintendo Switch 2 256GB Black + Pokémon Pokopia",
           "url": "https://www.kuantokusta.pt/p/12182806/nintendo-switch-2-256gb-black-pokemon-pokopia",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_fnac_bundle_sports",
@@ -444,7 +444,7 @@
           "variantTitle": "Pack Nintendo Switch 2 + Switch Sports Resort + 3M Online",
           "url": "https://www.kuantokusta.pt/p/12279146/nintendo-switch-2-switch-sports-resort-3-meses-nintendo-switch-online",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fnac_Logo.svg/1200px-Fnac_Logo.svg.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_kk_12374353",
@@ -460,7 +460,7 @@
           "variantTitle": "Nintendo Switch 2 + Nintendo Switch Sports Resort + 3 Meses Nintendo Switch Online",
           "url": "https://www.kuantokusta.pt/p/12374353/nintendo-switch-2-nintendo-switch-sports-resort-3-meses-nintendo-switch-online",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "sw2_kk_11716250",
@@ -476,7 +476,7 @@
           "variantTitle": "Nintendo Switch 2 256GB Black + Mario Kart World Digital",
           "url": "https://www.kuantokusta.pt/p/11716250/nintendo-switch-2-256gb-black-mario-kart-world-digital",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         }
       ],
       "stats": {
@@ -484,9 +484,9 @@
         "currentLowestStore": "KuantoKusta (Consola Base)",
         "historicalLowestPrice": 437,
         "historicalHighestPrice": 964,
-        "sixMonthsAveragePrice": 483.93
+        "sixMonthsAveragePrice": 483.72
       },
-      "lastScanTime": "2026-11-20T08:56:29.443Z"
+      "lastScanTime": "2026-11-20T09:27:46.461Z"
     },
     "dryer-bosch-siemens": {
       "id": "dryer-bosch-siemens",
@@ -547,7 +547,7 @@
           "variantTitle": "Bosch Série 8 WTX88EH0ES 9Kg Classe A+++ Home Connect",
           "url": "https://www.elcorteingles.pt",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/El_Corte_Ingl%C3%A9s_logo.svg/1200px-El_Corte_Ingl%C3%A9s_logo.svg.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         }
       ],
       "stats": {
@@ -555,9 +555,9 @@
         "currentLowestStore": "El Corte Inglés Outlet",
         "historicalLowestPrice": 446.34,
         "historicalHighestPrice": 699.02,
-        "sixMonthsAveragePrice": 688.48
+        "sixMonthsAveragePrice": 688.53
       },
-      "lastScanTime": "2026-11-20T08:56:29.443Z"
+      "lastScanTime": "2026-11-20T09:27:46.461Z"
     },
     "tplink-deco-x50": {
       "id": "tplink-deco-x50",
@@ -614,7 +614,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/7831_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x50_amazon_es",
@@ -633,7 +633,7 @@
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.amazon.es/dp/B09LVFNMVJ",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/13157_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_novoatalho",
@@ -652,7 +652,36 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/50_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
+        },
+        {
+          "id": "deco_x55_radiopopular_pt",
+          "name": "Rádio Popular",
+          "seller": "Rádio Popular PT",
+          "model": "X55",
+          "price": 162.59,
+          "originalPrice": 199.99,
+          "cartPromo": {
+            "hasCartPromo": true,
+            "promoType": "talao_iva",
+            "promoLabel": "Oferta do IVA (Desconto em Talão)",
+            "badgeText": "🎟️ TALÃO IGUAL AO IVA",
+            "originalPrice": 199.99,
+            "effectivePrice": 162.59,
+            "discountAmount": 37.4,
+            "discountPercent": 18.7,
+            "note": "Desconto igual ao IVA em talão (37.40 €) para compras futuras."
+          },
+          "previousPrice": 162.59,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "🎟️ TALÃO IGUAL AO IVA (Talão 37.40 €)",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.radiopopular.pt/produto/sistema-mesh-tplink-deco-x55-ax3000",
+          "logo": "https://cdn.kuantokusta.pt/img_upload/logins/13019_1.png",
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_chip7",
@@ -671,7 +700,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/10526_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x50_pccomponentes_pt",
@@ -688,7 +717,7 @@
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.pccomponentes.pt/tp-link-deco-x50-ax3000-mesh-pack-2",
           "logo": "https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_servelec-electronica",
@@ -707,7 +736,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9731_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x50_chipman",
@@ -726,7 +755,7 @@
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/12416_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x50_techinn",
@@ -745,7 +774,7 @@
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/13192_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_pcbox",
@@ -764,7 +793,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/13098_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_chipman",
@@ -783,7 +812,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/12416_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x50_worten_pt",
@@ -800,7 +829,7 @@
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.worten.pt/search?query=tp-link%20deco%20x50",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_pccomponentes_pt",
@@ -819,7 +848,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9005_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_castro_pt",
@@ -838,7 +867,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/8823_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_hipermercado",
@@ -857,7 +886,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/11262_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_kibo",
@@ -876,7 +905,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9326_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_mhr",
@@ -895,7 +924,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/174_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_worten_pt",
@@ -914,7 +943,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.worten.pt/search?query=tp-link%20deco%20x55",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9839_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_darty",
@@ -933,7 +962,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/13327_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_el-corte-ingles",
@@ -952,7 +981,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/7037_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_fnac-portugal",
@@ -971,7 +1000,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9270_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x50_senetic",
@@ -990,7 +1019,7 @@
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9008_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_chipsite",
@@ -1009,7 +1038,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/3164_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x50_castro_pt",
@@ -1028,7 +1057,7 @@
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/8823_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_switch-technology",
@@ -1047,7 +1076,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/10897_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_coditek",
@@ -1066,7 +1095,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/121_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_lojabrother",
@@ -1085,7 +1114,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/13601_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_4gaming",
@@ -1104,7 +1133,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/13140_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_techinn",
@@ -1123,7 +1152,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/13192_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_aquario-electronica",
@@ -1142,7 +1171,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/8169_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_shopinpex",
@@ -1161,7 +1190,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/12911_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_on4tech",
@@ -1180,7 +1209,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9788_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_loja-web",
@@ -1199,7 +1228,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9650_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_mcservice",
@@ -1218,7 +1247,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/10312_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_senetic",
@@ -1237,7 +1266,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9008_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_alltech",
@@ -1256,7 +1285,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/13371_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_cabos360",
@@ -1275,7 +1304,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/13391_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         },
         {
           "id": "deco_x55_universo-da-informatica",
@@ -1294,7 +1323,7 @@
           "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/10271_1.png",
-          "lastChecked": "2026-11-20T08:56:29.443Z"
+          "lastChecked": "2026-11-20T09:27:46.461Z"
         }
       ],
       "stats": {
@@ -1302,12 +1331,30 @@
         "currentLowestStore": "You Get (X55)",
         "historicalLowestPrice": 149.99,
         "historicalHighestPrice": 255.54,
-        "sixMonthsAveragePrice": 187.29
+        "sixMonthsAveragePrice": 188.64
       },
-      "lastScanTime": "2026-11-20T08:56:29.443Z"
+      "lastScanTime": "2026-11-20T09:27:46.461Z"
     }
   },
   "checksLog": [
+    {
+      "timestamp": "2026-11-20T09:27:46.461Z",
+      "totalStoresChecked": 64,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 154.9
+    },
+    {
+      "timestamp": "2026-11-20T09:00:00.413Z",
+      "totalStoresChecked": 63,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 154.9
+    },
     {
       "timestamp": "2026-11-20T08:56:29.443Z",
       "totalStoresChecked": 63,
@@ -2161,22 +2208,6 @@
     },
     {
       "timestamp": "2026-11-16T11:00:00.685Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-16T10:00:00.098Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-16T09:00:00.167Z",
       "totalStoresChecked": 41,
       "priceDropsCount": 0,
       "ninjaLowest": 365.2,
@@ -4539,7 +4570,7 @@
       "date": "2026-10-05T02:00:00.886Z"
     }
   ],
-  "lastScanTime": "2026-11-20T08:56:29.443Z",
+  "lastScanTime": "2026-11-20T09:27:46.461Z",
   "lastDailyHeartbeatDate": "2026-11-20",
   "dailyHeartbeatsHistory": [
     {

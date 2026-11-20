@@ -96,20 +96,23 @@ function detectCartPromotion({ html = '', text = '', price = 0, storeKey = '', c
 
   // 2. Automated Regex Detection in HTML / Text
 
-  // 2.1 "Dias Sem IVA" / "Sem IVA no carrinho" / "Desconto igual ao IVA"
-  const semIvaPattern = /(dias\s+sem\s+iva|campanha\s+sem\s+iva|desconto\s+(equivalente|igual)\s+ao\s+iva|sem\s+iva\s+no\s+carrinho|valor\s+do\s+iva\s+oferecido|iva\s+zero)/i;
+  // 2.1 "Dias Sem IVA" / "Oferta do IVA" / "Chuva Sem IVA" / "Desconto em talão igual ao IVA"
+  const semIvaPattern = /(dias\s+sem\s+iva|campanha\s+sem\s+iva|oferta\s+(?:do\s+)?iva|chuva\s+sem\s+iva|desconto\s+(?:em\s+tal[aã]o\s+)?(?:equivalente|igual)\s+ao\s+iva|sem\s+iva\s+no\s+carrinho|valor\s+do\s+iva\s+oferecido|iva\s+zero)/i;
   if (semIvaPattern.test(combined)) {
+    const isTalao = /tal[aã]o/i.test(combined);
     const vatCalc = calculateWithoutVat(price);
     return {
       hasCartPromo: true,
-      promoType: 'sem_iva',
-      promoLabel: 'Campanha Dias Sem IVA',
-      badgeText: '🛒 SEM IVA NO CARRINHO',
+      promoType: isTalao ? 'talao_iva' : 'sem_iva',
+      promoLabel: isTalao ? 'Oferta do IVA (Desconto em Talão)' : 'Campanha Dias Sem IVA',
+      badgeText: isTalao ? '🎟️ TALÃO IGUAL AO IVA' : '🛒 SEM IVA NO CARRINHO',
       originalPrice: price,
       effectivePrice: vatCalc.effectivePrice,
       discountAmount: vatCalc.discountAmount,
       discountPercent: vatCalc.discountPercent,
-      note: 'Desconto equivalente ao valor do IVA deduzido no carrinho.'
+      note: isTalao 
+        ? `Desconto igual ao IVA em talão (${vatCalc.discountAmount.toFixed(2)} €) para compras futuras.`
+        : 'Desconto equivalente ao valor do IVA deduzido no carrinho.'
     };
   }
 

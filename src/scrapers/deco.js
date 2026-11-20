@@ -1,3 +1,4 @@
+const cheerio = require('cheerio');
 const { fetchWithRetry } = require('./fetcher');
 const { detectCartPromotion } = require('./promotions');
 const { getConfig } = require('../config');
@@ -9,6 +10,7 @@ const DECO_X55_KK_URL = 'https://www.kuantokusta.pt/p/8746477/tp-link-wireless-a
 const DECO_X50_AMAZON_URL = 'https://www.amazon.es/dp/B09LVFNMVJ';
 const DECO_X55_AMAZON_URL = 'https://www.amazon.es/s?k=tp-link+deco+x55+2-pack';
 const DECO_WORTEN_URL = 'https://www.worten.pt/search?query=tp-link%20deco%20x50';
+const DECO_RP_URL = 'https://www.radiopopular.pt/produto/sistema-mesh-tplink-deco-x55-ax3000';
 
 const defaultDecoStores = [
   {
@@ -60,6 +62,35 @@ const defaultDecoStores = [
     variantTitle: 'TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)',
     url: DECO_X55_KK_URL,
     logo: 'https://cdn.kuantokusta.pt/img/kk-logo.svg',
+    lastChecked: null
+  },
+  {
+    id: 'deco_x55_radiopopular_pt',
+    name: 'Rádio Popular',
+    seller: 'Rádio Popular PT',
+    model: 'X55',
+    price: 162.59,
+    originalPrice: 199.99,
+    cartPromo: {
+      hasCartPromo: true,
+      promoType: 'talao_iva',
+      promoLabel: 'Oferta do IVA (Desconto em Talão)',
+      badgeText: '🎟️ TALÃO IGUAL AO IVA',
+      originalPrice: 199.99,
+      effectivePrice: 162.59,
+      discountAmount: 37.40,
+      discountPercent: 18.7,
+      note: 'Desconto igual ao IVA em talão (37.40 €) para compras futuras.'
+    },
+    previousPrice: 162.59,
+    shippingCost: 0,
+    isFreeShipping: true,
+    shippingNote: '🎟️ TALÃO IGUAL AO IVA (Talão 37.40 €)',
+    inStock: true,
+    variantType: 'x55',
+    variantTitle: 'TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)',
+    url: DECO_RP_URL,
+    logo: 'https://cdn.kuantokusta.pt/img_upload/logins/13019_1.png',
     lastChecked: null
   },
   {
@@ -238,18 +269,70 @@ async function fetchOffersForModel(url, model, customCampaigns) {
   }
 }
 
+async function scrapeRadioPopularDeco(customCampaigns) {
+  try {
+    const res = await fetchWithRetry(DECO_RP_URL);
+    if (!res.ok) return null;
+    const html = await res.text();
+    const $ = cheerio.load(html);
+
+    const priceText = $('.price').first().text().trim();
+    if (!priceText) return null;
+
+    const cleanPrice = parseFloat(priceText.replace(/[^\d.,]/g, '').replace(',', '.'));
+    if (isNaN(cleanPrice) || cleanPrice <= 0) return null;
+
+    const pageText = $('body').text().replace(/\s+/g, ' ');
+    const promo = detectCartPromotion({
+      html,
+      text: pageText,
+      price: cleanPrice,
+      storeKey: 'radiopopular_pt',
+      customCampaigns
+    });
+
+    const now = new Date().toISOString();
+    return {
+      id: 'deco_x55_radiopopular_pt',
+      name: 'Rádio Popular',
+      seller: 'Rádio Popular PT',
+      model: 'X55',
+      price: promo ? promo.effectivePrice : cleanPrice,
+      originalPrice: promo ? cleanPrice : null,
+      cartPromo: promo || null,
+      previousPrice: promo ? promo.effectivePrice : cleanPrice,
+      shippingCost: 0,
+      isFreeShipping: true,
+      shippingNote: promo 
+        ? `${promo.badgeText} (Talão ${promo.discountAmount.toFixed(2)} €)`
+        : 'Entrega Grátis / Levantamento em Loja',
+      inStock: true,
+      variantType: 'x55',
+      variantTitle: 'TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)',
+      url: DECO_RP_URL,
+      logo: 'https://cdn.kuantokusta.pt/img_upload/logins/13019_1.png',
+      lastChecked: now
+    };
+  } catch (err) {
+    console.warn('⚠️ Falha ao obter cotação Deco X55 na Rádio Popular:', err.message);
+    return null;
+  }
+}
+
 async function scrapeDecoX50X55() {
-  console.log('📡 [TP-Link Deco X50 & X55] A verificar cotações para os Packs de 2...');
+  console.log('📡 [TP-Link Deco X50 & X55] A verificar cotações para os Packs de 2 (incl. Rádio Popular)...');
   const config = getConfig();
   const customCampaigns = config.customCampaigns || [];
 
   try {
-    const [x50Offers, x55Offers] = await Promise.all([
+    const [x50Offers, x55Offers, rpOffer] = await Promise.all([
       fetchOffersForModel(DECO_X50_KK_URL, 'X50', customCampaigns),
-      fetchOffersForModel(DECO_X55_KK_URL, 'X55', customCampaigns)
+      fetchOffersForModel(DECO_X55_KK_URL, 'X55', customCampaigns),
+      scrapeRadioPopularDeco(customCampaigns)
     ]);
 
     const parsedStores = [...x50Offers, ...x55Offers];
+    if (rpOffer) parsedStores.push(rpOffer);
 
     if (parsedStores.length === 0) {
       console.warn('⚠️ Nenhuma oferta encontrada no KuantoKusta para Deco X50/X55, a usar defaults.');
