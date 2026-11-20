@@ -1,5 +1,5 @@
 // Multi-Product Price Tracker - Frontend Logic
-let activeProductId = 'ninja-woodfire';
+let activeProductId = 'hard-drives';
 let allProducts = [];
 let currentStores = [];
 let fullHistoryData = null;
@@ -179,12 +179,12 @@ async function loadAllProducts(silent = false) {
     });
 
     // Update quick overview bar
-    const ninja = allProducts.find(p => p.id === 'ninja-woodfire');
-    if (ninja) {
-      const el = document.getElementById('ovPrice_ninja');
-      const targetVal = ninja.targetPrice || 340.00;
-      const isTarget = ninja.currentLowestPrice <= targetVal;
-      if (el) el.innerHTML = `${ninja.currentLowestPrice.toFixed(2)} € <small class="${isTarget ? 'text-green' : 'text-cyan'}">${isTarget ? '🎯 No Alvo (&le;340€)' : '⏳ Alvo: 340€'}</small>`;
+    const disks = allProducts.find(p => p.id === 'hard-drives');
+    if (disks) {
+      const el = document.getElementById('ovPrice_disks');
+      const targetVal = disks.targetPrice || 120.00;
+      const isTarget = disks.currentLowestPrice <= targetVal;
+      if (el) el.innerHTML = `${disks.currentLowestPrice.toFixed(2)} € <small class="${isTarget ? 'text-green' : 'text-cyan'}">${isTarget ? '🎯 No Alvo (&le;120€)' : '⏳ Alvo: <120€'}</small>`;
     }
 
     const sw = allProducts.find(p => p.id === 'nintendo-switch-2');
@@ -273,23 +273,23 @@ async function switchProduct(productId) {
 
 // 5. Setup Product Hero & Information
 function setupProductHero(productId) {
-  if (productId === 'ninja-woodfire') {
-    headerProductBadge.textContent = 'PROCONNECT XL';
-    headerProductSub.textContent = 'Ninja Woodfire OG901EU • Monitor de Preços';
-    productCategory.textContent = 'GRELHADOR ELÉTRICO DE EXTERIOR • DEFUMADOR • AIR FRY';
-    productTitle.innerHTML = 'NINJA WOODFIRE PRO CONNECT XL <span>OG901EU</span>';
-    productDesc.textContent = 'Capacidade XL para exterior, 7 funções em 1, resistência IPX4 às intempéries e conectividade total através da App Ninja para monitorização em tempo real.';
-    productImage.src = '/images/ninja-woodfire-og901.jpg';
+  if (productId === 'hard-drives') {
+    headerProductBadge.textContent = 'ARMAZENAMENTO HDD';
+    headerProductSub.textContent = 'Discos Rígidos Externos • Foco 5TB & 4-8TB';
+    productCategory.textContent = 'ARMAZENAMENTO EXTERNO • FOCO 5TB • 4TB / 6TB / 8TB';
+    productTitle.innerHTML = 'DISCOS RÍGIDOS <span>FOCO 5TB & GRANDES CAPACIDADES</span>';
+    productDesc.textContent = 'Monitorização de discos rígidos externos de 5TB (sweet spot preferencial) e grandes capacidades (4TB, 6TB, 8TB). Cálculo dinâmico do rácio Preço por Terabyte (€/TB) e deteção de campanhas de desconto direto no carrinho.';
+    productImage.src = 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80';
     productTechTags.innerHTML = `
-      <span class="tech-tag tech-flame"><i class="fa-solid fa-fire"></i> Pellets de Madeira Real</span>
-      <span class="tech-tag tech-wifi"><i class="fa-solid fa-wifi"></i> App ProConnect</span>
-      <span class="tech-tag tech-probe"><i class="fa-solid fa-temperature-high"></i> Sonda Digital</span>
+      <span class="tech-tag tech-flame"><i class="fa-solid fa-hard-drive"></i> Foco 5 TB Preferencial</span>
+      <span class="tech-tag tech-wifi"><i class="fa-solid fa-calculator"></i> Métrica €/TB Dinâmica</span>
+      <span class="tech-tag tech-probe"><i class="fa-solid fa-bullseye"></i> Alvo 5TB &lt; 120 €</span>
     `;
-    statHistLabel.textContent = 'Mínimo Histórico';
-    statTargetLabel.textContent = 'PREÇO ALVO / PVP';
-    tableSubTitle.textContent = 'Amazon.es, Worten, PcComponentes, Ninja Kitchen e principais lojas de referência com envio grátis para Portugal';
-    chartSubTitle.textContent = 'Comparativo detalhado estilo KuantoKusta no mercado português (Abril a Outubro de 2026)';
-    chartFooterText.innerHTML = '<strong>Análise Histórica:</strong> O valor mínimo absoluto foi registado a <strong>369,00 €</strong> em promoções de verão. Qualquer cotação abaixo dos <strong>390,00 €</strong> representa uma excelente oportunidade em Portugal.';
+    statHistLabel.textContent = 'Melhor Preço Registado';
+    statTargetLabel.textContent = 'PREÇO ALVO 5TB';
+    tableSubTitle.textContent = 'WD My Passport, Elements, Seagate Expansion/Basic, One Touch, Toshiba em Amazon.es, Worten e KuantoKusta';
+    chartSubTitle.textContent = 'Evolução de preços de discos rígidos externos em Portugal';
+    chartFooterText.innerHTML = '<strong>Análise Armazenamento:</strong> Discos de 5TB costumam rondar os <strong>160 € a 190 €</strong> (~33 € a 38 € / TB). Uma excelente promoção situa-se abaixo dos <strong>120 € (< 24 €/TB)</strong>.';
   } else if (productId === 'nintendo-switch-2') {
     headerProductBadge.textContent = 'NEXT-GEN';
     headerProductSub.textContent = 'Nintendo Switch 2 • Base & Bundles';
@@ -348,10 +348,13 @@ function setupProductHero(productId) {
 // 6. Setup Filter Buttons for Table
 function setupFilterTabs(productId) {
   let tabsHtml = '';
-  if (productId === 'ninja-woodfire') {
+  if (productId === 'hard-drives') {
     tabsHtml = `
-      <button class="tab-btn active" data-filter="all">Todas as Lojas (<span id="countAll">0</span>)</button>
-      <button class="tab-btn" data-filter="free"><i class="fa-solid fa-truck-fast"></i> Apenas Portes Grátis (<span id="countFree">0</span>)</button>
+      <button class="tab-btn active" data-filter="all">Todas as Ofertas (<span id="countAll">0</span>)</button>
+      <button class="tab-btn" data-filter="5tb"><i class="fa-solid fa-hard-drive"></i> Foco 5 TB (<span id="count5tb">0</span>)</button>
+      <button class="tab-btn" data-filter="4tb"><i class="fa-solid fa-database"></i> 4 TB (<span id="count4tb">0</span>)</button>
+      <button class="tab-btn" data-filter="6tb_plus"><i class="fa-solid fa-server"></i> 6 TB / 8 TB (<span id="count6tbPlus">0</span>)</button>
+      <button class="tab-btn" data-filter="free"><i class="fa-solid fa-truck-fast"></i> Portes Grátis (<span id="countFree">0</span>)</button>
     `;
   } else if (productId === 'nintendo-switch-2') {
     tabsHtml = `
@@ -473,15 +476,17 @@ function updateVerdictBanner(productId, stats) {
   const lowest = stats.currentLowestPrice;
   const avg = stats.sixMonthsAveragePrice;
 
-  if (productId === 'ninja-woodfire') {
-    if (lowest <= 340) {
-      verdictTitle.textContent = '🔥 EXCELENTE OPORTUNIDADE DE COMPRA';
-      verdictDesc.textContent = `O preço atual de ${lowest.toFixed(2)} € atingiu o teu preço-alvo (${340} €) e está ${(avg - lowest).toFixed(2)} € mais barato que a média histórica (${avg.toFixed(2)} €). Recomendado!`;
+  if (productId === 'hard-drives') {
+    if (lowest <= 120) {
+      verdictTitle.textContent = '🔥 EXCELENTE OPORTUNIDADE: DISCO 5TB < 120€!';
+      verdictDesc.textContent = `O preço atual de ${lowest.toFixed(2)} € atingiu o teu preço-alvo (< 120 €)! Oportunidade de topo para adquirir armazenamento de 5TB com rácio de excelência (< 24 €/TB).`;
       verdictBox.style.borderColor = 'rgba(0, 229, 255, 0.4)';
       verdictBox.style.background = 'rgba(0, 229, 255, 0.08)';
     } else {
-      verdictTitle.textContent = '⏳ PREÇO EM VIGILÂNCIA';
-      verdictDesc.textContent = `O grelhador está atualmente a ${lowest.toFixed(2)} €. O bot irá alertar-te no Telegram assim que baixar para o alvo de 340 €.`;
+      verdictTitle.textContent = '💾 VIGILÂNCIA DE DISCOS RÍGIDOS EXTERNOS (FOCO 5TB)';
+      verdictDesc.textContent = `Melhor cotação atual: ${lowest.toFixed(2)} € (${stats.currentLowestStore || 'Amazon / KuantoKusta'}). O bot irá disparar um alerta no Telegram assim que surgir uma baixa ou promoção abaixo de 120,00 €.`;
+      verdictBox.style.borderColor = 'rgba(59, 130, 246, 0.4)';
+      verdictBox.style.background = 'rgba(59, 130, 246, 0.08)';
     }
   } else if (productId === 'nintendo-switch-2') {
     verdictTitle.textContent = '🎮 CONSOLA BASE & BUNDLES SOB VIGILÂNCIA';
@@ -514,18 +519,30 @@ function renderStoresTable() {
   const countFreeEl = document.getElementById('countFree');
   const countX50El = document.getElementById('countX50');
   const countX55El = document.getElementById('countX55');
+  const count5tbEl = document.getElementById('count5tb');
+  const count4tbEl = document.getElementById('count4tb');
+  const count6tbPlusEl = document.getElementById('count6tbPlus');
   const freeShippingCount = currentStores.filter(s => s.isFreeShipping).length;
 
   if (countAllEl) countAllEl.textContent = currentStores.length;
   if (countFreeEl) countFreeEl.textContent = freeShippingCount;
   if (countX50El) countX50El.textContent = currentStores.filter(s => s.variantType === 'x50' || s.model === 'X50' || s.variantTitle?.includes('X50')).length;
   if (countX55El) countX55El.textContent = currentStores.filter(s => s.variantType === 'x55' || s.model === 'X55' || s.variantTitle?.includes('X55')).length;
+  if (count5tbEl) count5tbEl.textContent = currentStores.filter(s => s.variantType === '5tb' || s.capacity === 5).length;
+  if (count4tbEl) count4tbEl.textContent = currentStores.filter(s => s.variantType === '4tb' || s.capacity === 4).length;
+  if (count6tbPlusEl) count6tbPlusEl.textContent = currentStores.filter(s => s.variantType === '6tb_plus' || (s.capacity && s.capacity >= 6)).length;
 
   let displayList = [...currentStores];
 
   // Apply active filter
   if (activeFilter === 'free') {
     displayList = displayList.filter(s => s.isFreeShipping);
+  } else if (activeFilter === '5tb') {
+    displayList = displayList.filter(s => s.variantType === '5tb' || s.capacity === 5);
+  } else if (activeFilter === '4tb') {
+    displayList = displayList.filter(s => s.variantType === '4tb' || s.capacity === 4);
+  } else if (activeFilter === '6tb_plus') {
+    displayList = displayList.filter(s => s.variantType === '6tb_plus' || (s.capacity && s.capacity >= 6));
   } else if (activeFilter === 'base') {
     displayList = displayList.filter(s => s.variantType === 'base');
   } else if (activeFilter === 'bundle') {
@@ -578,6 +595,15 @@ function renderStoresTable() {
       variantBadgeHtml = `<span class="variant-tag variant-base" style="background:rgba(0, 229, 255, 0.15); color:var(--proconnect-cyan); border-color:rgba(0, 229, 255, 0.3);"><i class="fa-solid fa-wifi"></i> Deco X50</span>`;
     } else if (store.variantType === 'x55' || store.model === 'X55') {
       variantBadgeHtml = `<span class="variant-tag variant-bundle" style="background:rgba(168, 85, 247, 0.15); color:#c084fc; border-color:rgba(168, 85, 247, 0.3);"><i class="fa-solid fa-tower-broadcast"></i> Deco X55</span>`;
+    } else if (store.variantType === '5tb' || store.capacity === 5) {
+      const tbMetric = store.pricePerTb ? ` (${store.pricePerTb.toFixed(2)} €/TB)` : '';
+      variantBadgeHtml = `<span class="variant-tag" style="background:rgba(59,130,246,0.15); color:#60a5fa; border:1px solid rgba(59,130,246,0.3);"><i class="fa-solid fa-hard-drive"></i> 5 TB${tbMetric}</span>`;
+    } else if (store.variantType === '4tb' || store.capacity === 4) {
+      const tbMetric = store.pricePerTb ? ` (${store.pricePerTb.toFixed(2)} €/TB)` : '';
+      variantBadgeHtml = `<span class="variant-tag" style="background:rgba(16,185,129,0.15); color:#34d399; border:1px solid rgba(16,185,129,0.3);"><i class="fa-solid fa-database"></i> 4 TB${tbMetric}</span>`;
+    } else if (store.variantType === '6tb_plus' || (store.capacity && store.capacity >= 6)) {
+      const tbMetric = store.pricePerTb ? ` (${store.pricePerTb.toFixed(2)} €/TB)` : '';
+      variantBadgeHtml = `<span class="variant-tag" style="background:rgba(168,85,247,0.15); color:#c084fc; border:1px solid rgba(168,85,247,0.3);"><i class="fa-solid fa-server"></i> ${store.capacity || '6+'} TB${tbMetric}</span>`;
     }
 
     // Energy Rating Badge (Dryers)
@@ -869,9 +895,10 @@ async function loadLogs() {
             <span style="color: var(--text-dark);"> • ${c.totalStoresChecked || 0} ofertas verificadas</span>
           </div>
           <div>
-            Ninja: <strong class="text-cyan">${c.ninjaLowest ? c.ninjaLowest.toFixed(2) + ' €' : '--'}</strong> | 
+            Discos: <strong class="text-cyan">${(c.disksLowest || c.ninjaLowest) ? (c.disksLowest || c.ninjaLowest).toFixed(2) + ' €' : '--'}</strong> | 
             Switch 2: <strong class="text-cyan">${c.switchLowest ? c.switchLowest.toFixed(2) + ' €' : '--'}</strong> | 
-            Secador: <strong class="text-cyan">${c.dryerLowest ? c.dryerLowest.toFixed(2) + ' €' : '--'}</strong>
+            Secador: <strong class="text-cyan">${c.dryerLowest ? c.dryerLowest.toFixed(2) + ' €' : '--'}</strong> | 
+            Deco: <strong class="text-cyan">${c.decoLowest ? c.decoLowest.toFixed(2) + ' €' : '--'}</strong>
           </div>
         </li>
       `).join('');

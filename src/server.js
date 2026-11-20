@@ -41,7 +41,7 @@ app.get('/api/products', (req, res) => {
   });
 
   res.json({
-    activeProductId: db.activeProductId || 'ninja-woodfire',
+    activeProductId: db.activeProductId || 'hard-drives',
     products: productsList
   });
 });
@@ -52,8 +52,8 @@ app.get('/api/status', (req, res) => {
   const monitorStatus = getMonitorStatus();
   const config = getConfig();
 
-  const productId = req.query.product || db.activeProductId || 'ninja-woodfire';
-  const product = db.products[productId] || db.products['ninja-woodfire'];
+  const productId = req.query.product || db.activeProductId || 'hard-drives';
+  const product = db.products[productId] || db.products['hard-drives'] || db.products['ninja-woodfire'];
 
   res.json({
     activeProductId: productId,
@@ -72,20 +72,28 @@ app.get('/api/prices', (req, res) => {
   const db = getDatabase();
   const config = getConfig();
 
-  const productId = req.query.product || db.activeProductId || 'ninja-woodfire';
-  const product = db.products[productId] || db.products['ninja-woodfire'];
+  const productId = req.query.product || db.activeProductId || 'hard-drives';
+  const product = db.products[productId] || db.products['hard-drives'] || db.products['ninja-woodfire'];
   let stores = [...(product.stores || [])];
 
-  // Filter by variant (for Switch 2: base vs bundle; for Dryers: bosch vs siemens vs classA)
+  // Filter by variant
   if (req.query.variant && req.query.variant !== 'all') {
     const v = req.query.variant.toLowerCase();
-    if (productId === 'nintendo-switch-2') {
+    if (productId === 'hard-drives') {
+      if (v === '5tb' || v === '4tb' || v === '6tb_plus') {
+        stores = stores.filter(s => s.variantType === v);
+      }
+    } else if (productId === 'nintendo-switch-2') {
       stores = stores.filter(s => s.variantType === v);
     } else if (productId === 'dryer-bosch-siemens') {
       if (v === 'bosch' || v === 'siemens') {
         stores = stores.filter(s => s.variantType === v);
       } else if (v === 'classa') {
         stores = stores.filter(s => s.energyRating === 'A' || s.variantTitle?.includes('Classe A'));
+      }
+    } else if (productId === 'tplink-deco-x50') {
+      if (v === 'x50' || v === 'x55') {
+        stores = stores.filter(s => s.variantType === v || s.model === v.toUpperCase());
       }
     }
   }
@@ -109,7 +117,7 @@ app.get('/api/prices', (req, res) => {
 
 // 3. Histórico dos últimos 6 meses (suporta ?product=id)
 app.get('/api/history', (req, res) => {
-  const productId = req.query.product || 'ninja-woodfire';
+  const productId = req.query.product || 'hard-drives';
   const historyData = get6MonthHistory(productId);
   if (!historyData) {
     return res.status(404).json({ error: 'Histórico ainda não disponível.' });

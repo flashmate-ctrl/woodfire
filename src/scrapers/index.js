@@ -1,8 +1,4 @@
-const { scrapeKuantoKusta } = require('./kuantokusta');
-const { scrapeAmazon } = require('./amazon');
-const { scrapeWorten } = require('./worten');
-const { scrapePcComponentes } = require('./pccomponentes');
-const { scrapeNinjaOfficial } = require('./ninjakitchen');
+const { scrapeHardDrives } = require('./disks');
 const { scrapeSwitch2 } = require('./switch2');
 const { scrapeDryers } = require('./dryers');
 const { scrapeDecoX50 } = require('./deco');
@@ -14,7 +10,7 @@ const { getConfig } = require('../config');
 async function runPriceCheck(options = {}) {
   console.log('\n======================================================');
   console.log('🔍 A iniciar ronda de monitorização multi-produto...');
-  console.log('1. Ninja Woodfire XL | 2. Switch 2 | 3. Secadores Bosh S8 | 4. TP-Link Deco X50 / X55');
+  console.log('1. Discos Rígidos (5TB / 4-8TB) | 2. Switch 2 | 3. Secadores Bosch S8 | 4. TP-Link Deco X50 / X55');
   console.log('======================================================\n');
 
   const now = new Date().toISOString();
@@ -25,140 +21,76 @@ async function runPriceCheck(options = {}) {
   const minDropPercent = config.minPriceDropPercent ?? 5.0;
 
   // ==========================================
-  // 1. Monitorizar Ninja Woodfire OG901EU
+  // 1. Monitorizar Discos Rígidos (5TB / 4-8TB)
   // ==========================================
   try {
-    console.log('🥩 [Ninja Woodfire] A verificar cotações...');
-    const [kkResult, amazonResult, wortenResult, pccompResult, ninjaResult] = await Promise.all([
-      scrapeKuantoKusta(),
-      scrapeAmazon(),
-      scrapeWorten(),
-      scrapePcComponentes(),
-      scrapeNinjaOfficial()
-    ]);
+    console.log('💾 [Discos Rígidos] A verificar cotações e rácio €/TB...');
+    const diskRes = await scrapeHardDrives();
+    if (diskRes.success && diskRes.stores && diskRes.stores.length > 0) {
+      const diskProd = db.products['hard-drives'] || { stores: [] };
+      const oldStoresMap = new Map();
+      (diskProd.stores || []).forEach(s => oldStoresMap.set(s.id, s));
 
-    const ninjaProd = db.products['ninja-woodfire'];
-    const existingStoresMap = new Map();
-    (ninjaProd.stores || []).forEach(s => existingStoresMap.set(s.id, s));
+      const updatedDiskStores = diskRes.stores.map(store => {
+        const oldStore = oldStoresMap.get(store.id);
+        const oldPrice = oldStore ? oldStore.price : store.price;
 
-    const updatedNinjaStores = [];
+        if (store.price < oldPrice) {
+          const dropDiff = oldPrice - store.price;
+          const dropPercentVal = ((dropDiff / oldPrice) * 100);
+          const dropPercentStr = dropPercentVal.toFixed(1);
 
-    function processNinjaStore(id, name, seller, result, fallbackUrl, defaultShippingNote, logo = null) {
-      const existing = existingStoresMap.get(id) || {
-        id,
-        name,
-        seller,
-        price: result.price,
-        previousPrice: result.price,
-        shippingCost: result.shippingCost || 0,
-        isFreeShipping: result.isFreeShipping ?? true,
-        shippingNote: defaultShippingNote,
-        inStock: result.inStock ?? true,
-        url: result.url || fallbackUrl,
-        logo,
-        lastChecked: now
-      };
-
-      const oldPrice = existing.price;
-      const newPrice = result.price;
-
-      const storeEntry = {
-        ...existing,
-        name,
-        seller,
-        price: newPrice,
-        originalPrice: result.originalPrice || null,
-        cartPromo: result.cartPromo || null,
-        previousPrice: oldPrice,
-        shippingCost: result.shippingCost ?? existing.shippingCost,
-        isFreeShipping: result.isFreeShipping ?? existing.isFreeShipping,
-        shippingNote: result.shippingNote || existing.shippingNote || defaultShippingNote,
-        inStock: result.inStock ?? true,
-        url: result.url || fallbackUrl,
-        logo: logo || existing.logo || null,
-        lastChecked: now
-      };
-
-      if (newPrice < oldPrice) {
-        const dropDiff = oldPrice - newPrice;
-        const dropPercentVal = ((dropDiff / oldPrice) * 100);
-        const dropPercentStr = dropPercentVal.toFixed(1);
-
-        if (dropPercentVal > minDropPercent) {
-          console.log(`📉 [Ninja] Baixa em ${name}: ${oldPrice} € -> ${newPrice} € (-${dropPercentStr}%)`);
-          allPriceDrops.push({
-            productId: 'ninja-woodfire',
-            productName: ninjaProd.name,
-            productEmoji: '🥩',
-            storeId: id,
-            storeName: name,
-            oldPrice,
-            newPrice,
-            originalPrice: result.originalPrice || null,
-            cartPromo: result.cartPromo || null,
-            diff: dropDiff,
-            percent: dropPercentStr,
-            url: storeEntry.url,
-            shippingNote: storeEntry.shippingNote,
-            inStock: storeEntry.inStock,
-            date: now
-          });
-        } else {
-          console.log(`⏩ [Ninja Ignorado] Baixa em ${name}: ${oldPrice} € -> ${newPrice} € (-${dropPercentStr}%) é <= ${minDropPercent}%`);
+          if (dropPercentVal > minDropPercent) {
+            console.log(`📉 [Disco Rígido] Baixa em ${store.name} (${store.variantTitle}): ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%)`);
+            allPriceDrops.push({
+              productId: 'hard-drives',
+              productName: diskProd.name || 'Discos Rígidos (5TB / 4-8TB)',
+              productEmoji: '💾',
+              variantTitle: store.variantTitle,
+              storeId: store.id,
+              storeName: `${store.name} (${store.capacityLabel || 'HDD'})`,
+              oldPrice,
+              newPrice: store.price,
+              originalPrice: store.originalPrice || null,
+              cartPromo: store.cartPromo || null,
+              diff: dropDiff,
+              percent: dropPercentStr,
+              url: store.url,
+              shippingNote: store.shippingNote,
+              inStock: store.inStock,
+              date: now
+            });
+          } else {
+            console.log(`⏩ [Disco Ignorado] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%) é <= ${minDropPercent}%`);
+          }
         }
-      }
 
-      updatedNinjaStores.push(storeEntry);
-    }
-
-    processNinjaStore('amazon_es', 'Amazon.es', 'Amazon / Vendedor Certificado', amazonResult, 'https://www.amazon.es/dp/B0CXDTMM28', 'Grátis para Portugal (>35€ / Prime)', 'https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg');
-    processNinjaStore('worten_pt', 'Worten.pt', 'Worten / Marketplace Oficial', wortenResult, 'https://www.worten.pt/produtos/grelhador-ninja-og901eu-1700-w-preto-8022830', 'Grátis para Portugal em loja / campanhas', 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png');
-    processNinjaStore('pccomponentes_pt', 'PcComponentes.pt', 'PcComponentes', pccompResult, 'https://www.pccomponentes.pt/barbecue-ninja-woodfire-pro-connect-xl-og901eu-eletrica-sensor-digital-app-1700w', 'Envio para Portugal Continental', 'https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg');
-    processNinjaStore('ninjakitchen_pt', 'Ninja Kitchen Portugal', 'Ninja Oficial (Riverint)', ninjaResult, 'https://ninjakitchen.pt/produtos/grelhador-eletrico-de-exterior-e-fumador-ninja-woodfire-pro-connect-xl-og901eu-zidOG901EU', 'Grátis para Portugal Continental (>50€)', 'https://ninjakitchen.pt/on/demandware.static/-/Sites-ninja-pt-Library/default/dw769584d4/images/logo.svg');
-
-    if (kkResult.success && kkResult.offers && kkResult.offers.length > 0) {
-      const freeShippingOffers = kkResult.offers.filter(o => o.isFreeShipping);
-      const topOffers = (freeShippingOffers.length > 0 ? freeShippingOffers : kkResult.offers).slice(0, 6);
-
-      topOffers.forEach((offer) => {
-        const storeSlug = offer.storeSlug || offer.storeName.toLowerCase().replace(/[^a-z0-9]/g, '_');
-        const storeId = `kk_${storeSlug}`;
-        if (['amazon', 'worten', 'pccomponentes'].some(k => storeSlug.includes(k))) return;
-
-        processNinjaStore(
-          storeId,
-          offer.storeName,
-          `${offer.storeName} (via KuantoKusta)`,
-          {
-            price: offer.price,
-            shippingCost: offer.shippingPrice,
-            isFreeShipping: offer.isFreeShipping,
-            inStock: offer.inStock,
-            url: 'https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo'
-          },
-          'https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo',
-          offer.isFreeShipping ? 'Grátis para Portugal' : `Portes: ${offer.shippingPrice} €`,
-          offer.logo || null
-        );
+        return {
+          ...store,
+          previousPrice: oldPrice,
+          lastChecked: now
+        };
       });
+
+      const allDiskPrices = updatedDiskStores.map(s => s.price).filter(p => p > 0);
+      const minDiskPrice = Math.min(...allDiskPrices);
+      const bestStoreObj = updatedDiskStores.find(s => s.price === minDiskPrice);
+      const minDiskStore = bestStoreObj ? `${bestStoreObj.name} (${bestStoreObj.capacityLabel || ''})` : 'KuantoKusta';
+      const avgDiskPrice = allDiskPrices.reduce((a, b) => a + b, 0) / allDiskPrices.length;
+
+      diskProd.stores = updatedDiskStores;
+      diskProd.lastScanTime = now;
+      diskProd.stats = {
+        currentLowestPrice: parseFloat(minDiskPrice.toFixed(2)),
+        currentLowestStore: minDiskStore,
+        historicalLowestPrice: Math.min(diskProd.stats?.historicalLowestPrice || 119.99, minDiskPrice),
+        historicalHighestPrice: Math.max(diskProd.stats?.historicalHighestPrice || 199.99, ...allDiskPrices),
+        sixMonthsAveragePrice: parseFloat(((diskProd.stats?.sixMonthsAveragePrice || 168.50) * 0.95 + avgDiskPrice * 0.05).toFixed(2))
+      };
+      db.products['hard-drives'] = diskProd;
     }
-
-    const allPrices = updatedNinjaStores.map(s => s.price).filter(p => p > 0);
-    const lowestPrice = Math.min(...allPrices);
-    const lowestStore = updatedNinjaStores.find(s => s.price === lowestPrice)?.name || 'Desconhecido';
-    const averagePrice = allPrices.reduce((a, b) => a + b, 0) / allPrices.length;
-
-    ninjaProd.stores = updatedNinjaStores;
-    ninjaProd.lastScanTime = now;
-    ninjaProd.stats = {
-      currentLowestPrice: parseFloat(lowestPrice.toFixed(2)),
-      currentLowestStore: lowestStore,
-      historicalLowestPrice: Math.min(ninjaProd.stats?.historicalLowestPrice || 369.00, lowestPrice),
-      historicalHighestPrice: Math.max(ninjaProd.stats?.historicalHighestPrice || 488.64, ...allPrices),
-      sixMonthsAveragePrice: parseFloat(((ninjaProd.stats?.sixMonthsAveragePrice || 411.64) * 0.95 + averagePrice * 0.05).toFixed(2))
-    };
   } catch (err) {
-    console.error('❌ Erro na monitorização Ninja Woodfire:', err.message);
+    console.error('❌ Erro na monitorização Discos Rígidos:', err.message);
   }
 
   // ==========================================
@@ -382,7 +314,7 @@ async function runPriceCheck(options = {}) {
     timestamp: now,
     totalStoresChecked: totalStores,
     priceDropsCount: allPriceDrops.length,
-    ninjaLowest: db.products['ninja-woodfire']?.stats?.currentLowestPrice,
+    disksLowest: db.products['hard-drives']?.stats?.currentLowestPrice,
     switchLowest: db.products['nintendo-switch-2']?.stats?.currentLowestPrice,
     dryerLowest: db.products['dryer-bosch-siemens']?.stats?.currentLowestPrice,
     decoLowest: db.products['tplink-deco-x50']?.stats?.currentLowestPrice
@@ -432,7 +364,7 @@ async function runPriceCheck(options = {}) {
           db.dailyHeartbeatsHistory.unshift({
             date: todayStr,
             timestamp: now,
-            ninjaLowest: db.products['ninja-woodfire']?.stats?.currentLowestPrice,
+            disksLowest: db.products['hard-drives']?.stats?.currentLowestPrice,
             switchLowest: db.products['nintendo-switch-2']?.stats?.currentLowestPrice,
             dryerLowest: db.products['dryer-bosch-siemens']?.stats?.currentLowestPrice,
             decoLowest: db.products['tplink-deco-x50']?.stats?.currentLowestPrice

@@ -254,31 +254,175 @@ function generatePointsForDryers(endDate, daysTotal) {
   };
 }
 
+function generatePointsForDisks(endDate, daysTotal) {
+  const points = [];
+  for (let i = daysTotal; i >= 0; i -= 2) {
+    const d = new Date(endDate.getTime() - i * 24 * 60 * 60 * 1000);
+    const dateStr = d.toISOString().split('T')[0];
+
+    let baseLowest, baseAvg, amazonPrice, wortenPrice, kkPrice;
+
+    if (i > 120) {
+      baseLowest = 172.00 + Math.sin(i * 0.1) * 4;
+      baseAvg = 184.00 + Math.cos(i * 0.1) * 3;
+      amazonPrice = 174.50;
+      wortenPrice = 189.99;
+      kkPrice = 172.00;
+    } else if (i > 60) {
+      baseLowest = 168.00 + Math.sin(i * 0.2) * 5;
+      baseAvg = 179.00 + Math.cos(i * 0.2) * 4;
+      amazonPrice = 169.90;
+      wortenPrice = 184.90;
+      kkPrice = 168.00;
+    } else {
+      const progress = (60 - i) / 60;
+      baseLowest = 168.00 - progress * (168.00 - 166.46) + Math.sin(i) * 1.5;
+      baseAvg = 178.00 - progress * (178.00 - 168.50);
+      amazonPrice = 166.46;
+      wortenPrice = 177.99;
+      kkPrice = 169.90;
+    }
+
+    points.push({
+      date: dateStr,
+      lowestPrice: parseFloat(Math.min(baseLowest, amazonPrice, kkPrice).toFixed(2)),
+      averagePrice: parseFloat(baseAvg.toFixed(2)),
+      amazon: parseFloat(amazonPrice.toFixed(2)),
+      worten: parseFloat(wortenPrice.toFixed(2)),
+      kuantokusta: parseFloat(kkPrice.toFixed(2))
+    });
+  }
+
+  points[points.length - 1] = {
+    date: '2026-10-01',
+    lowestPrice: 166.46,
+    averagePrice: 168.50,
+    amazon: 166.46,
+    worten: 177.99,
+    kuantokusta: 169.90
+  };
+
+  return {
+    productId: 'hard-drives',
+    model: 'Discos Rígidos Externos (Foco 5TB & 4-8TB)',
+    period: 'Últimos 6 Meses',
+    storesKeys: [
+      { key: 'lowestPrice', label: 'Menor Preço (5TB)', color: '#00e5ff' },
+      { key: 'averagePrice', label: 'Preço Médio Mercado', color: '#a855f7' },
+      { key: 'amazon', label: 'Amazon.es (Seagate 5TB)', color: '#ff6a00' },
+      { key: 'worten', label: 'Worten.pt (WD 5TB)', color: '#ef4444' },
+      { key: 'kuantokusta', label: 'KuantoKusta Best', color: '#10b981' }
+    ],
+    summary: {
+      allTimeLowest: 119.99,
+      allTimeLowestDate: '2026-07-10',
+      allTimeHighest: 199.99,
+      sixMonthsAverage: 168.50,
+      currentLowest: 166.46,
+      targetPrice: 120.00,
+      currentSavingsVsRrp: (179.99 - 166.46).toFixed(2),
+      discountPercentage: (((179.99 - 166.46) / 179.99) * 100).toFixed(1)
+    },
+    history: points
+  };
+}
+
+function generatePointsForDeco(endDate, daysTotal) {
+  const points = [];
+  for (let i = daysTotal; i >= 0; i -= 2) {
+    const d = new Date(endDate.getTime() - i * 24 * 60 * 60 * 1000);
+    const dateStr = d.toISOString().split('T')[0];
+
+    let baseLowest, baseAvg, amazonPrice, yougetPrice, wortPrice;
+
+    if (i > 100) {
+      baseLowest = 169.90 + Math.sin(i * 0.1) * 5;
+      baseAvg = 188.00 + Math.cos(i * 0.1) * 4;
+      amazonPrice = 175.00;
+      yougetPrice = 169.90;
+      wortPrice = 189.99;
+    } else {
+      const progress = (100 - i) / 100;
+      baseLowest = 169.90 - progress * (169.90 - 154.90) + Math.sin(i) * 2;
+      baseAvg = 185.00 - progress * (185.00 - 178.50);
+      amazonPrice = 158.57;
+      yougetPrice = 154.90;
+      wortPrice = 179.99;
+    }
+
+    points.push({
+      date: dateStr,
+      lowestPrice: parseFloat(Math.min(baseLowest, yougetPrice, amazonPrice).toFixed(2)),
+      averagePrice: parseFloat(baseAvg.toFixed(2)),
+      youget: parseFloat(yougetPrice.toFixed(2)),
+      amazon: parseFloat(amazonPrice.toFixed(2)),
+      worten: parseFloat(wortPrice.toFixed(2))
+    });
+  }
+
+  points[points.length - 1] = {
+    date: '2026-10-01',
+    lowestPrice: 154.90,
+    averagePrice: 178.50,
+    youget: 154.90,
+    amazon: 158.57,
+    worten: 179.99
+  };
+
+  return {
+    productId: 'tplink-deco-x50',
+    model: 'TP-Link Deco X50 / X55 Wi-Fi 6 Mesh (Pack 2)',
+    period: 'Últimos 6 Meses',
+    storesKeys: [
+      { key: 'lowestPrice', label: 'Menor Preço (Pack 2)', color: '#00e5ff' },
+      { key: 'averagePrice', label: 'Média de Mercado', color: '#a855f7' },
+      { key: 'youget', label: 'You Get (Deco X55)', color: '#10b981' },
+      { key: 'amazon', label: 'Amazon.es (Deco X50)', color: '#ff6a00' },
+      { key: 'worten', label: 'Worten.pt', color: '#ef4444' }
+    ],
+    summary: {
+      allTimeLowest: 149.99,
+      allTimeLowestDate: '2026-08-20',
+      allTimeHighest: 219.99,
+      sixMonthsAverage: 178.50,
+      currentLowest: 154.90,
+      targetPrice: 130.00,
+      currentSavingsVsRrp: (219.99 - 154.90).toFixed(2),
+      discountPercentage: (((219.99 - 154.90) / 219.99) * 100).toFixed(1)
+    },
+    history: points
+  };
+}
+
 function generate6MonthHistory() {
   const endDate = new Date('2026-10-01T00:00:00Z');
   const daysTotal = 180;
 
-  const ninjaHistory = generatePointsForNinja(endDate, daysTotal);
+  const diskHistory = generatePointsForDisks(endDate, daysTotal);
   const switchHistory = generatePointsForSwitch2(endDate, daysTotal);
   const dryerHistory = generatePointsForDryers(endDate, daysTotal);
+  const decoHistory = generatePointsForDeco(endDate, daysTotal);
+  const ninjaHistory = generatePointsForNinja(endDate, daysTotal);
 
   const payload = {
-    // Legacy support for direct calls expecting ninja history at root
-    model: ninjaHistory.model,
-    period: ninjaHistory.period,
-    summary: ninjaHistory.summary,
-    history: ninjaHistory.history,
-    storesKeys: ninjaHistory.storesKeys,
+    // Default product at root
+    model: diskHistory.model,
+    period: diskHistory.period,
+    summary: diskHistory.summary,
+    history: diskHistory.history,
+    storesKeys: diskHistory.storesKeys,
     // Multi-product structure
     products: {
-      'ninja-woodfire': ninjaHistory,
+      'hard-drives': diskHistory,
       'nintendo-switch-2': switchHistory,
-      'dryer-bosch-siemens': dryerHistory
+      'dryer-bosch-siemens': dryerHistory,
+      'tplink-deco-x50': decoHistory,
+      'ninja-woodfire': ninjaHistory
     }
   };
 
   save6MonthHistory(payload);
-  console.log('✅ Histórico de 6 meses gerado com sucesso para os 3 produtos (Ninja Woodfire, Switch 2, Secador Bosch/Siemens).');
+  console.log('✅ Histórico de 6 meses gerado com sucesso para os 4 produtos ativos (Discos Rígidos, Switch 2, Secador Bosch/Siemens, TP-Link Deco X50/X55).');
   return payload;
 }
 

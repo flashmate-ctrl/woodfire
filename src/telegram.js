@@ -146,7 +146,7 @@ async function sendTestNotification() {
 
 Olá! O teu sistema de vigilância está ativo e a monitorizar:
 
-🥩 <b>1. Ninja Woodfire Pro Connect XL (OG901EU)</b>
+💾 <b>1. Discos Rígidos Externos (Foco 5TB &amp; Grandes Capacidades &lt; 120€)</b>
 🎮 <b>2. Nintendo Switch 2 (Consola Base &amp; Bundles)</b>
 🧺 <b>3. Máquinas de Secar Roupa Bosch &amp; Siemens (Bomba de Calor &lt; 700€)</b>
 📡 <b>4. TP-Link Deco X50 / X55 (Pack 2 Mesh &lt; 130€)</b>
@@ -166,14 +166,19 @@ async function sendDailyHeartbeat({ productsData }) {
   const now = new Date().toLocaleString('pt-PT', { timeZone: 'Europe/Lisbon' });
   const todayFormatted = new Date().toLocaleDateString('pt-PT', { timeZone: 'Europe/Lisbon' });
 
-  // 1. Ninja Woodfire
-  const ninja = productsData['ninja-woodfire'] || {};
-  const ninjaPrice = ninja.stats?.currentLowestPrice || 380.95;
-  const ninjaStore = ninja.stats?.currentLowestStore || 'KuantoKusta';
-  const ninjaTarget = ninja.targetPrice || 340.00;
-  const ninjaStatus = ninjaPrice <= ninjaTarget 
-    ? `🎯 <b>No Alvo!</b> (${ninjaPrice.toFixed(2)} € &le; ${ninjaTarget.toFixed(2)} €)`
-    : `⏳ A +${(ninjaPrice - ninjaTarget).toFixed(2)} € do alvo (${ninjaTarget.toFixed(2)} €)`;
+  // 1. Hard Drives (Discos Rígidos Externos)
+  const disks = productsData['hard-drives'] || {};
+  const diskPrice = disks.stats?.currentLowestPrice || 166.46;
+  const diskStore = disks.stats?.currentLowestStore || 'Amazon.es (Seagate 5TB)';
+  const diskTarget = disks.targetPrice || 120.00;
+  const diskStatus = diskPrice <= diskTarget 
+    ? `🎯 <b>No Alvo!</b> (${diskPrice.toFixed(2)} € &le; ${diskTarget.toFixed(2)} €)`
+    : `⏳ A +${(diskPrice - diskTarget).toFixed(2)} € do alvo (${diskTarget.toFixed(2)} €)`;
+
+  // Find lowest 5TB offer and calculate €/TB
+  const best5tb = (disks.stores || []).find(s => s.variantType === '5tb' && s.price === diskPrice) 
+    || (disks.stores || []).find(s => s.variantType === '5tb');
+  const best5tbPerTb = best5tb && best5tb.pricePerTb ? ` (${best5tb.pricePerTb.toFixed(2)} €/TB)` : '';
 
   // 2. Nintendo Switch 2
   const sw2 = productsData['nintendo-switch-2'] || {};
@@ -215,10 +220,10 @@ async function sendDailyHeartbeat({ productsData }) {
 O monitor está <b>100% ativo</b> a verificar o mercado de hora a hora (24/7, 24 rondas/dia) e o radar de Outlet.
 Resumo das melhores cotações com envio para Portugal:
 
-🥩 <b>NINJA WOODFIRE PRO CONNECT XL</b>
-• <b>Melhor Preço:</b> <b>${ninjaPrice.toFixed(2)} €</b> na loja <i>${ninjaStore}</i>
-• <b>Situação:</b> ${ninjaStatus}
-• <b>Média 6 Meses:</b> ${ninja.stats?.sixMonthsAveragePrice || 411.64} €
+💾 <b>DISCOS RÍGIDOS EXTERNOS (FOCO 5TB &amp; GRANDES CAPACIDADES)</b>
+• <b>Melhor Preço (5TB):</b> <b>${diskPrice.toFixed(2)} €</b>${best5tbPerTb} na loja <i>${diskStore}</i>
+• <b>Situação:</b> ${diskStatus}
+• <b>Média de Mercado:</b> ${disks.stats?.sixMonthsAveragePrice || 168.50} € (Alvo: &lt; ${diskTarget.toFixed(2)} €)
 
 🎮 <b>NINTENDO SWITCH 2 (CONSOLA &amp; BUNDLES)</b>
 • <b>Consola Base:</b> <b>${sw2BestBase.toFixed(2)} €</b> na loja <i>${sw2BestBaseStore}</i>

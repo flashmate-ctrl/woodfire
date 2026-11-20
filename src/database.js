@@ -3,6 +3,7 @@ const path = require('path');
 const { defaultSwitchStores } = require('./scrapers/switch2');
 const { defaultDryerStores } = require('./scrapers/dryers');
 const { defaultDecoStores } = require('./scrapers/deco');
+const { defaultDiskStores } = require('./scrapers/disks');
 
 const DATA_DIR = path.join(__dirname, '..', 'data');
 const DB_PATH = path.join(DATA_DIR, 'database.json');
@@ -103,32 +104,39 @@ const defaultNinjaStores = [
 
 function buildInitialProducts() {
   return {
-    'ninja-woodfire': {
-      id: 'ninja-woodfire',
-      name: 'Ninja Woodfire Pro Connect XL (OG901EU)',
-      shortName: 'Ninja Woodfire XL',
-      badge: 'PROCONNECT XL',
-      emoji: '🥩',
-      icon: 'fa-solid fa-fire-burner',
-      category: 'Grelhador Elétrico de Exterior & Defumador',
-      targetPrice: 340.00,
-      officialRrp: 449.99,
-      imageUrl: '/images/ninja-woodfire-og901.jpg',
-      description: 'Capacidade XL para exterior, 7 funções em 1, resistência IPX4 às intempéries e conectividade total através da App Ninja para monitorização em tempo real.',
+    'hard-drives': {
+      id: 'hard-drives',
+      name: 'Discos Rígidos Externos & Armazenamento (Foco 5TB)',
+      shortName: 'Discos Rígidos (5TB / 4-8TB)',
+      badge: 'ARMAZENAMENTO HDD',
+      emoji: '💾',
+      icon: 'fa-solid fa-hard-drive',
+      category: 'Armazenamento & Discos Rígidos Externos (Foco 5TB)',
+      targetPrice: 120.00,
+      officialRrp: 179.99,
+      imageUrl: 'https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80',
+      description: 'Vigilância contínua de cotações para discos rígidos externos de 5TB (sweet spot preferencial) e grandes capacidades (4TB, 6TB, 8TB). Cálculo dinâmico de custo por Terabyte (€/TB) e deteção de campanhas/descontos no carrinho.',
       specs: [
-        '7 Funções: Grelhador, Defumador Pellets, Air Fry, Assar, Cozer, Reaquecer, Desidratar',
-        'Pellets de madeira natural 100% autênticos',
-        'Sonda digital de temperatura integrada',
-        'Resistente a intempéries IPX4',
-        'Grelha antiaderente XL (45 x 31 cm)'
+        'Foco Principal: Discos externos de 5TB (WD My Passport, Elements, Seagate Expansion/Basic, One Touch)',
+        'Grandes Capacidades: Vigilância de 4TB, 6TB e 8TB para máxima flexibilidade',
+        'Métrica de Valor: Rácio Preço por Terabyte (€/TB) calculado em tempo real',
+        'Preço-Alvo Preferencial: < 120.00 € para 5TB (< 24.00 €/TB)',
+        'Formatos: Discos portáteis de 2.5" (alimentados por USB) e desktop de 3.5"'
       ],
-      stores: defaultNinjaStores,
+      filterVariants: [
+        { id: 'all', label: 'Todas as Ofertas' },
+        { id: '5tb', label: 'Foco 5 TB (Preferencial)' },
+        { id: '4tb', label: '4 TB' },
+        { id: '6tb_plus', label: '6 TB / 8 TB' },
+        { id: 'free', label: 'Portes Grátis' }
+      ],
+      stores: defaultDiskStores,
       stats: {
-        currentLowestPrice: 380.95,
-        currentLowestStore: 'Hipermercado (via KuantoKusta)',
-        historicalLowestPrice: 369.00,
-        historicalHighestPrice: 488.64,
-        sixMonthsAveragePrice: 411.64
+        currentLowestPrice: 166.46,
+        currentLowestStore: 'Amazon.es (Seagate 5TB)',
+        historicalLowestPrice: 119.99,
+        historicalHighestPrice: 199.99,
+        sixMonthsAveragePrice: 168.50
       },
       lastScanTime: null
     },
@@ -246,7 +254,7 @@ function getDatabase() {
 
   if (!fs.existsSync(DB_PATH)) {
     db = {
-      activeProductId: 'ninja-woodfire',
+      activeProductId: 'hard-drives',
       products: buildInitialProducts(),
       checksLog: [],
       alertsHistory: [],
@@ -268,18 +276,8 @@ function getDatabase() {
   // Ensure products structure exists
   if (!db.products) {
     db.products = buildInitialProducts();
-    // If old db had stores, copy them to ninja-woodfire
-    if (db.stores) {
-      db.products['ninja-woodfire'].stores = db.stores;
-    }
-    if (db.stats) {
-      db.products['ninja-woodfire'].stats = db.stats;
-    }
-    if (db.product) {
-      db.products['ninja-woodfire'] = { ...db.products['ninja-woodfire'], ...db.product };
-    }
   } else {
-    // Ensure all 3 products are populated
+    // Ensure all products are populated
     const initial = buildInitialProducts();
     for (const [key, prod] of Object.entries(initial)) {
       if (!db.products[key]) {
@@ -289,10 +287,10 @@ function getDatabase() {
   }
 
   // Backward compatibility getters for legacy code
-  const ninja = db.products['ninja-woodfire'] || {};
-  db.product = ninja;
-  db.stores = ninja.stores || defaultNinjaStores;
-  db.stats = ninja.stats || {};
+  const mainProd = db.products['hard-drives'] || db.products['ninja-woodfire'] || {};
+  db.product = mainProd;
+  db.stores = mainProd.stores || defaultDiskStores;
+  db.stats = mainProd.stats || {};
 
   return db;
 }
@@ -301,7 +299,7 @@ function saveDatabase(data) {
   ensureDataDir();
   // Clean circular or cloned references before saving
   const toSave = {
-    activeProductId: data.activeProductId || 'ninja-woodfire',
+    activeProductId: data.activeProductId || 'hard-drives',
     products: data.products,
     checksLog: data.checksLog || [],
     alertsHistory: data.alertsHistory || [],
@@ -313,7 +311,7 @@ function saveDatabase(data) {
   fs.writeFileSync(DB_PATH, JSON.stringify(toSave, null, 2), 'utf8');
 }
 
-function get6MonthHistory(productId = 'ninja-woodfire') {
+function get6MonthHistory(productId = 'hard-drives') {
   ensureDataDir();
   if (fs.existsSync(HISTORY_PATH)) {
     try {
@@ -339,6 +337,7 @@ module.exports = {
   saveDatabase,
   get6MonthHistory,
   save6MonthHistory,
+  defaultDiskStores,
   defaultNinjaStores,
-  defaultStores: defaultNinjaStores
+  defaultStores: defaultDiskStores
 };
