@@ -14,7 +14,7 @@ const { getConfig } = require('../config');
 async function runPriceCheck(options = {}) {
   console.log('\n======================================================');
   console.log('🔍 A iniciar ronda de monitorização multi-produto...');
-  console.log('1. Ninja Woodfire XL | 2. Switch 2 | 3. Secadores Bosh S8 | 4. TP-Link Deco X50');
+  console.log('1. Ninja Woodfire XL | 2. Switch 2 | 3. Secadores Bosh S8 | 4. TP-Link Deco X50 / X55');
   console.log('======================================================\n');
 
   const now = new Date().toISOString();
@@ -302,7 +302,7 @@ async function runPriceCheck(options = {}) {
   }
 
   // ==========================================
-  // 4. Monitorizar TP-Link Deco X50 (Pack 2)
+  // 4. Monitorizar TP-Link Deco X50 & X55 (Pack 2)
   // ==========================================
   try {
     const decoRes = await scrapeDecoX50();
@@ -321,14 +321,14 @@ async function runPriceCheck(options = {}) {
           const dropPercentStr = dropPercentVal.toFixed(1);
 
           if (dropPercentVal > minDropPercent) {
-            console.log(`📉 [Deco X50] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%)`);
+            console.log(`📉 [Deco ${store.model || 'X50/X55'}] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%)`);
             allPriceDrops.push({
               productId: 'tplink-deco-x50',
-              productName: decoProd.name || 'TP-Link Deco X50 (Pack de 2)',
+              productName: decoProd.name || 'TP-Link Deco X50 / X55 (Pack de 2)',
               productEmoji: '📡',
               variantTitle: store.variantTitle,
               storeId: store.id,
-              storeName: store.name,
+              storeName: `${store.name} (${store.model || 'Mesh'})`,
               oldPrice,
               newPrice: store.price,
               originalPrice: store.originalPrice || null,
@@ -341,7 +341,7 @@ async function runPriceCheck(options = {}) {
               date: now
             });
           } else {
-            console.log(`⏩ [Deco X50 Ignorado] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%) é <= ${minDropPercent}%`);
+            console.log(`⏩ [Deco ${store.model || 'X50/X55'} Ignorado] Baixa em ${store.name}: ${oldPrice} € -> ${store.price} € (-${dropPercentStr}%) é <= ${minDropPercent}%`);
           }
         }
 
@@ -354,7 +354,8 @@ async function runPriceCheck(options = {}) {
 
       const allDecoPrices = updatedDecoStores.map(s => s.price).filter(p => p > 0);
       const minDecoPrice = Math.min(...allDecoPrices);
-      const minDecoStore = updatedDecoStores.find(s => s.price === minDecoPrice)?.name || 'Amazon.es';
+      const bestStoreObj = updatedDecoStores.find(s => s.price === minDecoPrice);
+      const minDecoStore = bestStoreObj ? `${bestStoreObj.name} (${bestStoreObj.model || 'Deco'})` : 'You Get (X55)';
       const avgDecoPrice = allDecoPrices.reduce((a, b) => a + b, 0) / allDecoPrices.length;
 
       decoProd.stores = updatedDecoStores;
@@ -364,12 +365,12 @@ async function runPriceCheck(options = {}) {
         currentLowestStore: minDecoStore,
         historicalLowestPrice: Math.min(decoProd.stats?.historicalLowestPrice || 149.99, minDecoPrice),
         historicalHighestPrice: Math.max(decoProd.stats?.historicalHighestPrice || 219.99, ...allDecoPrices),
-        sixMonthsAveragePrice: parseFloat(((decoProd.stats?.sixMonthsAveragePrice || 179.90) * 0.95 + avgDecoPrice * 0.05).toFixed(2))
+        sixMonthsAveragePrice: parseFloat(((decoProd.stats?.sixMonthsAveragePrice || 178.50) * 0.95 + avgDecoPrice * 0.05).toFixed(2))
       };
       db.products['tplink-deco-x50'] = decoProd;
     }
   } catch (err) {
-    console.error('❌ Erro na monitorização TP-Link Deco X50:', err.message);
+    console.error('❌ Erro na monitorização TP-Link Deco X50/X55:', err.message);
   }
 
   // Update global properties

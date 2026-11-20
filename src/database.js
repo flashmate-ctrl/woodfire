@@ -204,8 +204,8 @@ function buildInitialProducts() {
     },
     'tplink-deco-x50': {
       id: 'tplink-deco-x50',
-      name: 'TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)',
-      shortName: 'TP-Link Deco X50 (Pack 2)',
+      name: 'TP-Link Deco X50 / X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)',
+      shortName: 'TP-Link Deco X50 / X55 (Pack 2)',
       badge: 'WI-FI 6 MESH',
       emoji: '📡',
       icon: 'fa-solid fa-wifi',
@@ -213,25 +213,27 @@ function buildInitialProducts() {
       targetPrice: 130.00,
       officialRrp: 219.99,
       imageUrl: 'https://s1.kuantokusta.pt/img_upload/produtos_informatica/920953_3_tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox50-2-pack.jpg',
-      description: 'Sistema Wi-Fi 6 Mesh TP-Link Deco X50 Dual-Band AX3000 (Pack de 2 unidades). 3 portas Gigabit por unidade, roaming AI inteligente, canais de 160 MHz e cobertura até 420 m² com teto de compra < 130 €.',
+      description: 'Sistema Wi-Fi 6 Mesh TP-Link Deco X50 e Deco X55 Dual-Band AX3000 (Pack de 2 unidades). Modelos 100% idênticos em especificações técnicas: 3 portas Gigabit por unidade, roaming AI inteligente, canais de 160 MHz e cobertura até 420 m² com teto de compra < 130 €.',
       specs: [
+        'Modelos equivalentes monitorizados: Deco X50 & Deco X55 (Pack 2)',
         'Tecnologia Wi-Fi 6 Dual-Band AX3000 (2402 Mbps em 5GHz + 574 Mbps em 2.4GHz)',
         'Pack de 2 unidades para cobertura até 420 m²',
         '3 Portas Gigabit por unidade com deteção automática WAN/LAN',
-        'Suporte a canais de 160 MHz, OFDMA e 1024-QAM',
         'Roaming AI inteligente com perfil de rede único e gestão via App Deco'
       ],
       filterVariants: [
-        { id: 'all', label: 'Todas as Lojas (< 130€)' },
-        { id: 'pack2', label: 'Pack de 2 Unidades' }
+        { id: 'all', label: 'Todas as Ofertas (< 130€)' },
+        { id: 'x50', label: 'Deco X50' },
+        { id: 'x55', label: 'Deco X55' },
+        { id: 'free', label: 'Portes Grátis' }
       ],
       stores: defaultDecoStores,
       stats: {
-        currentLowestPrice: 158.57,
-        currentLowestStore: 'Amazon Spain (via KuantoKusta)',
+        currentLowestPrice: 154.90,
+        currentLowestStore: 'You Get (Deco X55)',
         historicalLowestPrice: 149.99,
         historicalHighestPrice: 219.99,
-        sixMonthsAveragePrice: 179.90
+        sixMonthsAveragePrice: 178.50
       },
       lastScanTime: null
     }

@@ -40,20 +40,26 @@ async function scrapeAmazon() {
       }
 
       const $ = cheerio.load(html);
+      const isUnavailable = html.includes('Não disponível') ||
+                            html.includes('No disponible') ||
+                            html.includes('Currently unavailable') ||
+                            $('#outOfStock').length > 0;
 
-      // Price selectors on Amazon.es
-      let priceText = $('.a-price .a-offscreen').first().text().trim() ||
+      // Targeted price selectors on Amazon.es (strictly within buybox / main product area)
+      let priceText = $('#corePriceDisplay_desktop_feature_div .a-price .a-offscreen').first().text().trim() ||
+                      $('#corePrice_feature_div .a-price .a-offscreen').first().text().trim() ||
+                      $('#apex_desktop .a-price .a-offscreen').first().text().trim() ||
+                      $('#price_inside_buybox').text().trim() ||
                       $('#priceblock_ourprice').text().trim() ||
-                      $('#priceblock_dealprice').text().trim() ||
-                      $('.apexPriceToPay .a-offscreen').first().text().trim();
+                      $('#priceblock_dealprice').text().trim();
 
-      if (priceText) {
+      if (priceText && !isUnavailable) {
         // e.g. "456,42 €" or "456.42"
         const cleanPrice = priceText.replace(/[^\d.,]/g, '').replace(',', '.');
         const price = parseFloat(cleanPrice);
 
-        if (!isNaN(price) && price > 100) {
-          const inStock = !html.includes('No disponible') && !html.includes('Currently unavailable');
+        if (!isNaN(price) && price > 200) {
+          const inStock = true;
           const promo = detectCartPromotion({ html, price, storeKey: 'amazon_es', customCampaigns });
           return {
             success: true,
@@ -67,6 +73,22 @@ async function scrapeAmazon() {
             url: AMAZON_URL
           };
         }
+      }
+
+      if (isUnavailable) {
+        console.warn('⚠️ Amazon.es indica artigo temporariamente esgotado, a manter cotação de referência sem stock.');
+        const fallbackBase = 456.42;
+        return {
+          success: true,
+          price: fallbackBase,
+          originalPrice: null,
+          cartPromo: null,
+          shippingCost: 0,
+          isFreeShipping: true,
+          shippingNote: 'Temporariamente Esgotado na Amazon.es',
+          inStock: false,
+          url: AMAZON_URL
+        };
       }
     }
 

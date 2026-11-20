@@ -309,21 +309,22 @@ function setupProductHero(productId) {
     chartFooterText.innerHTML = '<strong>Análise Switch 2:</strong> A consola base está posicionada nos <strong>449,99 €</strong> oficiais, surgindo pontualmente a <strong>448,50 € / 439,90 €</strong>. Os bundles com jogos variam entre <strong>488,00 € e 529,99 €</strong>.';
   } else if (productId === 'tplink-deco-x50') {
     headerProductBadge.textContent = 'WI-FI 6 MESH';
-    headerProductSub.textContent = 'TP-Link Deco X50 (Pack 2) • Wi-Fi 6 AX3000';
+    headerProductSub.textContent = 'TP-Link Deco X50 & X55 (Pack 2) • Wi-Fi 6 AX3000';
     productCategory.textContent = 'REDES & CONECTIVIDADE • SISTEMA MESH GIGABIT AX3000';
-    productTitle.innerHTML = 'TP-LINK DECO X50 <span>WI-FI 6 (PACK 2)</span>';
-    productDesc.textContent = 'Sistema Wi-Fi 6 Mesh TP-Link Deco X50 Dual-Band AX3000 (Pack de 2 unidades). 3 portas Gigabit por unidade, roaming AI inteligente, canais de 160 MHz e cobertura até 420 m² com teto de compra < 130 €. Vigilância de campanhas e descontos no carrinho.';
+    productTitle.innerHTML = 'TP-LINK DECO X50 / X55 <span>WI-FI 6 (PACK 2)</span>';
+    productDesc.textContent = 'Sistema Wi-Fi 6 Mesh TP-Link Deco X50 e Deco X55 Dual-Band AX3000 (Pack de 2 unidades). Modelos 100% equivalentes com especificações idênticas: 3 portas Gigabit por unidade, roaming AI inteligente, canais de 160 MHz e cobertura até 420 m² com teto de compra < 130 €. Vigilância de campanhas e descontos no carrinho.';
     productImage.src = 'https://s1.kuantokusta.pt/img_upload/produtos_informatica/920953_3_tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox50-2-pack.jpg';
     productTechTags.innerHTML = `
       <span class="tech-tag tech-wifi"><i class="fa-solid fa-wifi"></i> Wi-Fi 6 AX3000</span>
       <span class="tech-tag tech-probe"><i class="fa-solid fa-network-wired"></i> 3x Portas Gigabit</span>
+      <span class="tech-tag tech-flame"><i class="fa-solid fa-layer-group"></i> X50 &amp; X55 Equivalentes</span>
       <span class="tech-tag tech-flame"><i class="fa-solid fa-bullseye"></i> Alvo &lt; 130 €</span>
     `;
     statHistLabel.textContent = 'Mínimo Registado';
     statTargetLabel.textContent = 'PREÇO ALVO';
-    tableSubTitle.textContent = 'Amazon.es, Worten, PcComponentes, Castro Electrónica e KuantoKusta - Pack de 2 Unidades';
-    chartSubTitle.textContent = 'Evolução de preços do pack de 2 TP-Link Deco X50 em Portugal';
-    chartFooterText.innerHTML = '<strong>Análise Deco X50:</strong> O PVP de lançamento ronda os <strong>219,99 €</strong>. Atualmente na Amazon ronda os <strong>158,57 €</strong>. O bot avisar-te-á no Telegram assim que surgir uma campanha Black Friday ou corte de preço que o coloque <strong>abaixo dos 130 €</strong>.';
+    tableSubTitle.textContent = 'Amazon.es, You Get, NovoAtalho, PcComponentes, Worten, Castro Electrónica e KuantoKusta - Deco X50 & X55';
+    chartSubTitle.textContent = 'Evolução de preços dos modelos TP-Link Deco X50 e X55 (Pack 2) em Portugal';
+    chartFooterText.innerHTML = '<strong>Análise Deco X50 / X55:</strong> Os modelos X50 e X55 são tecnicamente idênticos (AX3000, 3x GbE, cobertura 420m²). O PVP ronda os <strong>219,99 €</strong>. Atualmente os melhores valores começam nos <strong>154,90 € (X55 na You Get)</strong> e <strong>158,57 € (X50 na Amazon)</strong>. O bot avisar-te-á no Telegram assim que qualquer um deles baixar dos <strong>130 €</strong>.';
   } else if (productId === 'dryer-bosch-siemens') {
     headerProductBadge.textContent = 'SÉRIE 8 • ≥ 9KG';
     headerProductSub.textContent = 'Bosch (Série 8) & Siemens (iQ700/800) • < 700€';
@@ -369,7 +370,8 @@ function setupFilterTabs(productId) {
   } else if (productId === 'tplink-deco-x50') {
     tabsHtml = `
       <button class="tab-btn active" data-filter="all">Todas as Ofertas (<span id="countAll">0</span>)</button>
-      <button class="tab-btn" data-filter="pack2"><i class="fa-solid fa-layer-group"></i> Pack de 2 Unidades</button>
+      <button class="tab-btn" data-filter="x50"><i class="fa-solid fa-wifi"></i> Deco X50 (<span id="countX50">0</span>)</button>
+      <button class="tab-btn" data-filter="x55"><i class="fa-solid fa-tower-broadcast"></i> Deco X55 (<span id="countX55">0</span>)</button>
       <button class="tab-btn" data-filter="free"><i class="fa-solid fa-truck-fast"></i> Portes Grátis (<span id="countFree">0</span>)</button>
     `;
   }
@@ -493,13 +495,13 @@ function updateVerdictBanner(productId, stats) {
     verdictBox.style.background = 'rgba(16, 185, 129, 0.08)';
   } else if (productId === 'tplink-deco-x50') {
     if (lowest <= 130) {
-      verdictTitle.textContent = '🔥 ALVO ATINGIDO: PACK 2 DECO X50 < 130€!';
+      verdictTitle.textContent = '🔥 ALVO ATINGIDO: PACK 2 DECO X50/X55 < 130€!';
       verdictDesc.textContent = `O preço do pack de 2 unidades baixou para ${lowest.toFixed(2)} € (alvo < 130 €). Excelente oportunidade para Wi-Fi 6 Mesh Gigabit!`;
       verdictBox.style.borderColor = 'rgba(0, 229, 255, 0.4)';
       verdictBox.style.background = 'rgba(0, 229, 255, 0.08)';
     } else {
-      verdictTitle.textContent = '⏳ WI-FI 6 MESH SOB VIGILÂNCIA DE PREÇO';
-      verdictDesc.textContent = `Melhor cotação atual: ${lowest.toFixed(2)} €. O bot irá disparar um alerta no Telegram assim que surgir uma descida ou campanha Black Friday abaixo de 130,00 €.`;
+      verdictTitle.textContent = '⏳ WI-FI 6 MESH SOB VIGILÂNCIA DE PREÇO (X50 & X55)';
+      verdictDesc.textContent = `Melhor cotação atual: ${lowest.toFixed(2)} € (${stats.currentLowestStore || 'Deco X50/X55'}). O bot irá disparar um alerta no Telegram assim que surgir uma descida ou campanha Black Friday abaixo de 130,00 €.`;
       verdictBox.style.borderColor = 'rgba(59, 130, 246, 0.4)';
       verdictBox.style.background = 'rgba(59, 130, 246, 0.08)';
     }
@@ -510,10 +512,14 @@ function updateVerdictBanner(productId, stats) {
 function renderStoresTable() {
   const countAllEl = document.getElementById('countAll');
   const countFreeEl = document.getElementById('countFree');
+  const countX50El = document.getElementById('countX50');
+  const countX55El = document.getElementById('countX55');
   const freeShippingCount = currentStores.filter(s => s.isFreeShipping).length;
 
   if (countAllEl) countAllEl.textContent = currentStores.length;
   if (countFreeEl) countFreeEl.textContent = freeShippingCount;
+  if (countX50El) countX50El.textContent = currentStores.filter(s => s.variantType === 'x50' || s.model === 'X50' || s.variantTitle?.includes('X50')).length;
+  if (countX55El) countX55El.textContent = currentStores.filter(s => s.variantType === 'x55' || s.model === 'X55' || s.variantTitle?.includes('X55')).length;
 
   let displayList = [...currentStores];
 
@@ -530,6 +536,10 @@ function renderStoresTable() {
     displayList = displayList.filter(s => s.variantType === 'siemens' || s.brand?.toLowerCase() === 'siemens');
   } else if (activeFilter === 'classA') {
     displayList = displayList.filter(s => s.energyRating === 'A' || s.variantTitle?.includes('Classe A'));
+  } else if (activeFilter === 'x50') {
+    displayList = displayList.filter(s => s.variantType === 'x50' || s.model === 'X50' || s.variantTitle?.includes('X50'));
+  } else if (activeFilter === 'x55') {
+    displayList = displayList.filter(s => s.variantType === 'x55' || s.model === 'X55' || s.variantTitle?.includes('X55'));
   }
 
   if (displayList.length === 0) {
@@ -564,6 +574,10 @@ function renderStoresTable() {
       variantBadgeHtml = `<span class="variant-tag variant-bosch"><i class="fa-solid fa-circle-dot"></i> Bosch</span>`;
     } else if (store.variantType === 'siemens') {
       variantBadgeHtml = `<span class="variant-tag variant-siemens"><i class="fa-solid fa-circle-dot"></i> Siemens</span>`;
+    } else if (store.variantType === 'x50' || store.model === 'X50') {
+      variantBadgeHtml = `<span class="variant-tag variant-base" style="background:rgba(0, 229, 255, 0.15); color:var(--proconnect-cyan); border-color:rgba(0, 229, 255, 0.3);"><i class="fa-solid fa-wifi"></i> Deco X50</span>`;
+    } else if (store.variantType === 'x55' || store.model === 'X55') {
+      variantBadgeHtml = `<span class="variant-tag variant-bundle" style="background:rgba(168, 85, 247, 0.15); color:#c084fc; border-color:rgba(168, 85, 247, 0.3);"><i class="fa-solid fa-tower-broadcast"></i> Deco X55</span>`;
     }
 
     // Energy Rating Badge (Dryers)

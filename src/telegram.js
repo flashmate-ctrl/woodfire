@@ -149,7 +149,7 @@ Olá! O teu sistema de vigilância está ativo e a monitorizar:
 🥩 <b>1. Ninja Woodfire Pro Connect XL (OG901EU)</b>
 🎮 <b>2. Nintendo Switch 2 (Consola Base &amp; Bundles)</b>
 🧺 <b>3. Máquinas de Secar Roupa Bosch &amp; Siemens (Bomba de Calor &lt; 700€)</b>
-📡 <b>4. TP-Link Deco X50 (Pack 2 Mesh &lt; 130€)</b>
+📡 <b>4. TP-Link Deco X50 / X55 (Pack 2 Mesh &lt; 130€)</b>
 
 ⏰ <b>Frequência:</b> De hora a hora (24 rondas diárias, 24/7)
 🏬 <b>Lojas:</b> Amazon.es, Worten, PcComponentes, FNAC, Ninja Oficial e lojas KuantoKusta com envio grátis para Portugal.
@@ -199,10 +199,10 @@ async function sendDailyHeartbeat({ productsData }) {
     ? `• <b>Modelo / Série:</b> ${topDryer.price.toFixed(2)} € (${topDryer.variantTitle})`
     : `• <b>Filtro Estrito:</b> Apenas Bosch Série 8 & Siemens iQ700/800 (≥ 9Kg)`;
 
-  // 4. TP-Link Deco X50 (Pack de 2)
+  // 4. TP-Link Deco X50 & X55 (Pack de 2)
   const deco = productsData['tplink-deco-x50'] || {};
-  const decoPrice = deco.stats?.currentLowestPrice || 158.57;
-  const decoStore = deco.stats?.currentLowestStore || 'Amazon Spain';
+  const decoPrice = deco.stats?.currentLowestPrice || 154.90;
+  const decoStore = deco.stats?.currentLowestStore || 'You Get (Deco X55)';
   const decoTarget = deco.targetPrice || 130.00;
   const decoStatus = decoPrice <= decoTarget
     ? `🎯 <b>No Alvo!</b> (${decoPrice.toFixed(2)} € &le; ${decoTarget.toFixed(2)} €)`
@@ -230,7 +230,7 @@ Resumo das melhores cotações com envio para Portugal:
 ${topDryerText}
 • <b>Teto Orçamental:</b> &lt; 700.00 € (✅ <b>-${(700 - dryerLowest).toFixed(2)} €</b> abaixo do limite máximo)
 
-📡 <b>TP-LINK DECO X50 WI-FI 6 MESH (PACK 2)</b>
+📡 <b>TP-LINK DECO X50 / X55 WI-FI 6 MESH (PACK 2)</b>
 • <b>Melhor Preço:</b> <b>${decoPrice.toFixed(2)} €</b> na loja <i>${decoStore}</i>
 • <b>Situação:</b> ${decoStatus}
 • <b>PVP Oficial:</b> ${deco.officialRrp || 219.99} € (Alvo: &lt; ${decoTarget.toFixed(2)} €)

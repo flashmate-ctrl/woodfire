@@ -25,14 +25,14 @@
           "id": "amazon_es",
           "name": "Amazon.es",
           "seller": "Amazon / Vendedor Certificado",
-          "price": 436.1,
-          "previousPrice": 436.1,
+          "price": 456.42,
+          "previousPrice": 172.8,
           "shippingCost": 0,
           "isFreeShipping": true,
-          "shippingNote": "Grátis para Portugal (>35€ / Prime)",
+          "shippingNote": "Temporariamente Esgotado na Amazon.es",
           "inStock": false,
           "url": "https://www.amazon.es/dp/B0CXDTMM28",
-          "lastChecked": "2026-11-17T09:44:08.717Z",
+          "lastChecked": "2026-11-20T08:56:29.443Z",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
           "originalPrice": null,
           "cartPromo": null
@@ -48,7 +48,7 @@
           "shippingNote": "Grátis para Portugal em loja / campanhas",
           "inStock": true,
           "url": "https://www.worten.pt/produtos/grelhador-ninja-og901eu-1700-w-preto-8022830",
-          "lastChecked": "2026-11-17T09:44:08.717Z",
+          "lastChecked": "2026-11-20T08:56:29.443Z",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
           "originalPrice": null,
           "cartPromo": null
@@ -64,7 +64,7 @@
           "shippingNote": "Envio para Portugal Continental",
           "inStock": true,
           "url": "https://www.pccomponentes.pt/barbecue-ninja-woodfire-pro-connect-xl-og901eu-eletrica-sensor-digital-app-1700w",
-          "lastChecked": "2026-11-17T09:44:08.717Z",
+          "lastChecked": "2026-11-20T08:56:29.443Z",
           "logo": "https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg",
           "originalPrice": null,
           "cartPromo": null
@@ -80,7 +80,7 @@
           "shippingNote": "Grátis para Portugal Continental (>50€)",
           "inStock": true,
           "url": "https://ninjakitchen.pt/produtos/grelhador-eletrico-de-exterior-e-fumador-ninja-woodfire-pro-connect-xl-og901eu-zidOG901EU",
-          "lastChecked": "2026-11-17T09:44:08.717Z",
+          "lastChecked": "2026-11-20T08:56:29.443Z",
           "logo": "https://ninjakitchen.pt/on/demandware.static/-/Sites-ninja-pt-Library/default/dw769584d4/images/logo.svg",
           "originalPrice": null,
           "cartPromo": null
@@ -97,7 +97,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/11262_1.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z",
+          "lastChecked": "2026-11-20T08:56:29.443Z",
           "originalPrice": null,
           "cartPromo": null
         },
@@ -113,7 +113,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/9326_1.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z",
+          "lastChecked": "2026-11-20T08:56:29.443Z",
           "originalPrice": null,
           "cartPromo": null
         },
@@ -129,7 +129,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/8823_1.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z",
+          "lastChecked": "2026-11-20T08:56:29.443Z",
           "originalPrice": null,
           "cartPromo": null
         },
@@ -145,7 +145,7 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/7471_1.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z",
+          "lastChecked": "2026-11-20T08:56:29.443Z",
           "originalPrice": null,
           "cartPromo": null
         },
@@ -161,7 +161,23 @@
           "inStock": true,
           "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/12043_1.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z",
+          "lastChecked": "2026-11-20T08:56:29.443Z",
+          "originalPrice": null,
+          "cartPromo": null
+        },
+        {
+          "id": "kk_novoatalho",
+          "name": "NovoAtalho",
+          "seller": "NovoAtalho (via KuantoKusta)",
+          "price": 389.9,
+          "previousPrice": 389.9,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Grátis para Portugal",
+          "inStock": true,
+          "url": "https://www.kuantokusta.pt/p/11427572/ninja-og901eu-eletrico-de-exterior-fritadeira-soleo",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/50_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z",
           "originalPrice": null,
           "cartPromo": null
         }
@@ -169,11 +185,11 @@
       "stats": {
         "currentLowestPrice": 365.2,
         "currentLowestStore": "Kibo",
-        "historicalLowestPrice": 222.62,
+        "historicalLowestPrice": 172.8,
         "historicalHighestPrice": 635.01,
-        "sixMonthsAveragePrice": 405.5
+        "sixMonthsAveragePrice": 388.32
       },
-      "lastScanTime": "2026-11-17T09:44:08.717Z",
+      "lastScanTime": "2026-11-20T08:56:29.443Z",
       "model": "Ninja Woodfire Pro Connect XL (OG901EU)",
       "sku": "OG901EU",
       "asin": "B0CXDTMM28",
@@ -223,6 +239,38 @@
       ],
       "stores": [
         {
+          "id": "sw2_kk_11716249",
+          "name": "KuantoKusta (Consola Base)",
+          "seller": "15 lojas via KuantoKusta",
+          "price": 437,
+          "previousPrice": 437,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal Continental",
+          "inStock": true,
+          "variantType": "base",
+          "variantTitle": "Nintendo Switch 2 256GB Black",
+          "url": "https://www.kuantokusta.pt/p/11716249/nintendo-switch-2-256gb-black",
+          "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "sw2_kk_12359986",
+          "name": "KuantoKusta (Consola Base)",
+          "seller": "16 lojas via KuantoKusta",
+          "price": 446.26,
+          "previousPrice": 446.26,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal Continental",
+          "inStock": true,
+          "variantType": "base",
+          "variantTitle": "Nintendo Switch 2 V2 256GB Black (Bateria Amovível)",
+          "url": "https://www.kuantokusta.pt/p/12359986/nintendo-switch-2-v2-256gb-black-bateria-amovivel",
+          "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
           "id": "sw2_pccomp_base",
           "name": "PcComponentes.pt",
           "seller": "PcComponentes",
@@ -236,23 +284,7 @@
           "variantTitle": "Consola Nintendo Switch 2 256GB Black",
           "url": "https://www.pccomponentes.pt/search/?query=nintendo+switch+2",
           "logo": "https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
-        },
-        {
-          "id": "sw2_kk_11716249",
-          "name": "KuantoKusta (Consola Base)",
-          "seller": "18 lojas via KuantoKusta",
-          "price": 449,
-          "previousPrice": 449,
-          "shippingCost": 0,
-          "isFreeShipping": true,
-          "shippingNote": "Portes Grátis para Portugal Continental",
-          "inStock": true,
-          "variantType": "base",
-          "variantTitle": "Nintendo Switch 2 256GB Black",
-          "url": "https://www.kuantokusta.pt/p/11716249/nintendo-switch-2-256gb-black",
-          "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
           "id": "sw2_kk_base",
@@ -268,7 +300,7 @@
           "variantTitle": "Nintendo Switch 2 256GB Black (Consola Base)",
           "url": "https://www.kuantokusta.pt/p/11716249/nintendo-switch-2-256gb-black",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
           "id": "sw2_worten_base",
@@ -284,7 +316,7 @@
           "variantTitle": "Consola Nintendo Switch 2 256GB Standard",
           "url": "https://www.worten.pt/search?query=nintendo+switch+2",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
           "id": "sw2_amazon_base",
@@ -300,7 +332,7 @@
           "variantTitle": "Nintendo Switch 2 - Versão Standard Europeia",
           "url": "https://www.amazon.es/s?k=nintendo+switch+2",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
           "id": "sw2_fnac_base",
@@ -316,23 +348,23 @@
           "variantTitle": "Consola Nintendo Switch 2 256GB",
           "url": "https://www.fnac.pt/SearchResult/ResultList.aspx?Search=nintendo+switch+2",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fnac_Logo.svg/1200px-Fnac_Logo.svg.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
-          "id": "sw2_kk_12359986",
-          "name": "KuantoKusta (Consola Base)",
-          "seller": "14 lojas via KuantoKusta",
-          "price": 459.9,
-          "previousPrice": 459.9,
+          "id": "sw2_kk_12279146",
+          "name": "KuantoKusta (Bundle)",
+          "seller": "15 lojas via KuantoKusta",
+          "price": 476.75,
+          "previousPrice": 476.75,
           "shippingCost": 0,
           "isFreeShipping": true,
           "shippingNote": "Portes Grátis para Portugal Continental",
           "inStock": true,
-          "variantType": "base",
-          "variantTitle": "Nintendo Switch 2 V2 256GB Black (Bateria Amovível)",
-          "url": "https://www.kuantokusta.pt/p/12359986/nintendo-switch-2-v2-256gb-black-bateria-amovivel",
+          "variantType": "bundle",
+          "variantTitle": "Nintendo Switch 2 + Switch Sports Resort + 3 Meses Nintendo Switch Online",
+          "url": "https://www.kuantokusta.pt/p/12279146/nintendo-switch-2-switch-sports-resort-3-meses-nintendo-switch-online",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
           "id": "sw2_worten_bundle_pkmn",
@@ -348,7 +380,7 @@
           "variantTitle": "Pack Nintendo Switch 2 256GB + Pokémon Pokopia",
           "url": "https://www.kuantokusta.pt/p/12182806/nintendo-switch-2-256gb-black-pokemon-pokopia",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
           "id": "sw2_kk_bundle_mk",
@@ -364,12 +396,12 @@
           "variantTitle": "Pack Nintendo Switch 2 256GB + Mario Kart World",
           "url": "https://www.kuantokusta.pt/p/11716250/nintendo-switch-2-256gb-black-mario-kart-world",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
-          "id": "sw2_kk_11716250",
+          "id": "sw2_kk_12377384",
           "name": "KuantoKusta (Bundle)",
-          "seller": "15 lojas via KuantoKusta",
+          "seller": "11 lojas via KuantoKusta",
           "price": 499.99,
           "previousPrice": 499.99,
           "shippingCost": 0,
@@ -377,26 +409,10 @@
           "shippingNote": "Portes Grátis para Portugal Continental",
           "inStock": true,
           "variantType": "bundle",
-          "variantTitle": "Nintendo Switch 2 256GB Black + Mario Kart World",
-          "url": "https://www.kuantokusta.pt/p/11716250/nintendo-switch-2-256gb-black-mario-kart-world",
+          "variantTitle": "Nintendo Switch 2 256GB Black + Mario Kart World Digital + 3 Meses Nintendo Switch Online",
+          "url": "https://www.kuantokusta.pt/p/12377384/nintendo-switch-2-256gb-black-mario-kart-world-digital-3-meses-nintendo-switch-online",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
-        },
-        {
-          "id": "sw2_kk_12279146",
-          "name": "KuantoKusta (Bundle)",
-          "seller": "14 lojas via KuantoKusta",
-          "price": 527.57,
-          "previousPrice": 527.57,
-          "shippingCost": 0,
-          "isFreeShipping": true,
-          "shippingNote": "Portes Grátis para Portugal Continental",
-          "inStock": true,
-          "variantType": "bundle",
-          "variantTitle": "Nintendo Switch 2 + Switch Sports Resort + 3 Meses Nintendo Switch Online",
-          "url": "https://www.kuantokusta.pt/p/12279146/nintendo-switch-2-switch-sports-resort-3-meses-nintendo-switch-online",
-          "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
           "id": "sw2_kk_12182806",
@@ -412,7 +428,7 @@
           "variantTitle": "Nintendo Switch 2 256GB Black + Pokémon Pokopia",
           "url": "https://www.kuantokusta.pt/p/12182806/nintendo-switch-2-256gb-black-pokemon-pokopia",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
           "id": "sw2_fnac_bundle_sports",
@@ -428,12 +444,12 @@
           "variantTitle": "Pack Nintendo Switch 2 + Switch Sports Resort + 3M Online",
           "url": "https://www.kuantokusta.pt/p/12279146/nintendo-switch-2-switch-sports-resort-3-meses-nintendo-switch-online",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Fnac_Logo.svg/1200px-Fnac_Logo.svg.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
           "id": "sw2_kk_12374353",
           "name": "KuantoKusta (Bundle)",
-          "seller": "6 lojas via KuantoKusta",
+          "seller": "8 lojas via KuantoKusta",
           "price": 529.99,
           "previousPrice": 529.99,
           "shippingCost": 0,
@@ -444,33 +460,33 @@
           "variantTitle": "Nintendo Switch 2 + Nintendo Switch Sports Resort + 3 Meses Nintendo Switch Online",
           "url": "https://www.kuantokusta.pt/p/12374353/nintendo-switch-2-nintendo-switch-sports-resort-3-meses-nintendo-switch-online",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
-          "id": "sw2_kk_12327667",
+          "id": "sw2_kk_11716250",
           "name": "KuantoKusta (Bundle)",
-          "seller": "3 lojas via KuantoKusta",
-          "price": 749,
-          "previousPrice": 749,
+          "seller": "7 lojas via KuantoKusta",
+          "price": 539.9,
+          "previousPrice": 539.9,
           "shippingCost": 0,
           "isFreeShipping": true,
           "shippingNote": "Portes Grátis para Portugal Continental",
           "inStock": true,
           "variantType": "bundle",
-          "variantTitle": "Nintendo Switch 2 256GB The Legend of Zelda 40th Anniversary Edition Pré-Venda",
-          "url": "https://www.kuantokusta.pt/p/12327667/nintendo-switch-2-256gb-the-legend-of-zelda-40th-anniversary-edition-pre-venda",
+          "variantTitle": "Nintendo Switch 2 256GB Black + Mario Kart World Digital",
+          "url": "https://www.kuantokusta.pt/p/11716250/nintendo-switch-2-256gb-black-mario-kart-world-digital",
           "logo": "https://cdn.kuantokusta.pt/img/kk-logo.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         }
       ],
       "stats": {
-        "currentLowestPrice": 448.5,
-        "currentLowestStore": "PcComponentes.pt",
-        "historicalLowestPrice": 439.9,
-        "historicalHighestPrice": 937,
-        "sixMonthsAveragePrice": 500.68
+        "currentLowestPrice": 437,
+        "currentLowestStore": "KuantoKusta (Consola Base)",
+        "historicalLowestPrice": 437,
+        "historicalHighestPrice": 964,
+        "sixMonthsAveragePrice": 483.93
       },
-      "lastScanTime": "2026-11-17T09:44:08.717Z"
+      "lastScanTime": "2026-11-20T08:56:29.443Z"
     },
     "dryer-bosch-siemens": {
       "id": "dryer-bosch-siemens",
@@ -531,7 +547,7 @@
           "variantTitle": "Bosch Série 8 WTX88EH0ES 9Kg Classe A+++ Home Connect",
           "url": "https://www.elcorteingles.pt",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/El_Corte_Ingl%C3%A9s_logo.svg/1200px-El_Corte_Ingl%C3%A9s_logo.svg.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         }
       ],
       "stats": {
@@ -539,14 +555,14 @@
         "currentLowestStore": "El Corte Inglés Outlet",
         "historicalLowestPrice": 446.34,
         "historicalHighestPrice": 699.02,
-        "sixMonthsAveragePrice": 667.96
+        "sixMonthsAveragePrice": 688.48
       },
-      "lastScanTime": "2026-11-17T09:44:08.717Z"
+      "lastScanTime": "2026-11-20T08:56:29.443Z"
     },
     "tplink-deco-x50": {
       "id": "tplink-deco-x50",
-      "name": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
-      "shortName": "TP-Link Deco X50 (Pack 2)",
+      "name": "TP-Link Deco X50 / X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+      "shortName": "TP-Link Deco X50 / X55 (Pack 2)",
       "badge": "WI-FI 6 MESH",
       "emoji": "📡",
       "icon": "fa-solid fa-wifi",
@@ -554,29 +570,57 @@
       "targetPrice": 130,
       "officialRrp": 219.99,
       "imageUrl": "https://s1.kuantokusta.pt/img_upload/produtos_informatica/920953_3_tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox50-2-pack.jpg",
-      "description": "Sistema Wi-Fi 6 Mesh TP-Link Deco X50 Dual-Band AX3000 (Pack de 2 unidades). 3 portas Gigabit por unidade, roaming AI inteligente, canais de 160 MHz e cobertura até 420 m² com teto de compra < 130 €.",
+      "description": "Sistema Wi-Fi 6 Mesh TP-Link Deco X50 e Deco X55 Dual-Band AX3000 (Pack de 2 unidades). Modelos 100% idênticos em especificações técnicas: 3 portas Gigabit por unidade, roaming AI inteligente, canais de 160 MHz e cobertura até 420 m² com teto de compra < 130 €.",
       "specs": [
+        "Modelos equivalentes monitorizados: Deco X50 & Deco X55 (Pack 2)",
         "Tecnologia Wi-Fi 6 Dual-Band AX3000 (2402 Mbps em 5GHz + 574 Mbps em 2.4GHz)",
         "Pack de 2 unidades para cobertura até 420 m²",
         "3 Portas Gigabit por unidade com deteção automática WAN/LAN",
-        "Suporte a canais de 160 MHz, OFDMA e 1024-QAM",
         "Roaming AI inteligente com perfil de rede único e gestão via App Deco"
       ],
       "filterVariants": [
         {
           "id": "all",
-          "label": "Todas as Lojas (< 130€)"
+          "label": "Todas as Ofertas (< 130€)"
         },
         {
-          "id": "pack2",
-          "label": "Pack de 2 Unidades"
+          "id": "x50",
+          "label": "Deco X50"
+        },
+        {
+          "id": "x55",
+          "label": "Deco X55"
+        },
+        {
+          "id": "free",
+          "label": "Portes Grátis"
         }
       ],
       "stores": [
         {
-          "id": "deco_amazon_es",
+          "id": "deco_x55_youget",
+          "name": "You Get",
+          "seller": "You Get",
+          "model": "X55",
+          "price": 154.9,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 154.9,
+          "shippingCost": 3.9,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 3.90 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/7831_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x50_amazon_es",
           "name": "Amazon Spain",
           "seller": "Amazon Spain",
+          "model": "X50",
           "price": 158.57,
           "originalPrice": null,
           "cartPromo": null,
@@ -585,128 +629,1333 @@
           "isFreeShipping": true,
           "shippingNote": "Portes Grátis para Portugal",
           "inStock": true,
-          "variantType": "pack2",
+          "variantType": "x50",
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.amazon.es/dp/B09LVFNMVJ",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/13157_1.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
-          "id": "deco_pccomponentes_pt",
+          "id": "deco_x55_novoatalho",
+          "name": "NovoAtalho",
+          "seller": "NovoAtalho",
+          "model": "X55",
+          "price": 159.9,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 159.9,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/50_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_chip7",
+          "name": "CHIP7",
+          "seller": "CHIP7",
+          "model": "X55",
+          "price": 169.9,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 169.9,
+          "shippingCost": 3.99,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 3.99 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/10526_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x50_pccomponentes_pt",
           "name": "PcComponentes.pt",
           "seller": "PcComponentes PT",
+          "model": "X50",
           "price": 169.9,
           "previousPrice": 169.9,
           "shippingCost": 0,
           "isFreeShipping": true,
           "shippingNote": "Envio para Portugal Continental",
           "inStock": true,
-          "variantType": "pack2",
+          "variantType": "x50",
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.pccomponentes.pt/tp-link-deco-x50-ax3000-mesh-pack-2",
           "logo": "https://cdn.pccomponentes.com/img/logos/logo-pccomponentes.svg",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
-          "id": "deco_chipman",
-          "name": "Chipman",
-          "seller": "Chipman",
-          "price": 174.9,
+          "id": "deco_x55_servelec-electronica",
+          "name": "Servelec Electrónica",
+          "seller": "Servelec Electrónica",
+          "model": "X55",
+          "price": 176.02,
           "originalPrice": null,
           "cartPromo": null,
-          "previousPrice": 174.9,
+          "previousPrice": 176.02,
+          "shippingCost": 4.99,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 4.99 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/9731_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x50_chipman",
+          "name": "Chipman",
+          "seller": "Chipman",
+          "model": "X50",
+          "price": 178.9,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 178.9,
           "shippingCost": 3.99,
           "isFreeShipping": false,
           "shippingNote": "Envio: 3.99 €",
           "inStock": true,
-          "variantType": "pack2",
+          "variantType": "x50",
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/12416_1.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
-          "id": "deco_worten_pt",
+          "id": "deco_x50_techinn",
+          "name": "TechInn",
+          "seller": "TechInn",
+          "model": "X50",
+          "price": 179.99,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 179.99,
+          "shippingCost": 2.99,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 2.99 €",
+          "inStock": true,
+          "variantType": "x50",
+          "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/13192_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_pcbox",
+          "name": "PCBOX",
+          "seller": "PCBOX",
+          "model": "X55",
+          "price": 185.26,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 185.26,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/13098_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_chipman",
+          "name": "Chipman",
+          "seller": "Chipman",
+          "model": "X55",
+          "price": 188.01,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 188.01,
+          "shippingCost": 3.99,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 3.99 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/12416_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x50_worten_pt",
           "name": "Worten.pt",
           "seller": "Worten PT",
+          "model": "X50",
           "price": 189.99,
           "previousPrice": 189.99,
           "shippingCost": 0,
           "isFreeShipping": true,
           "shippingNote": "Grátis em loja / campanhas",
           "inStock": true,
-          "variantType": "pack2",
+          "variantType": "x50",
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.worten.pt/search?query=tp-link%20deco%20x50",
           "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c2/Worten_Logo.svg/1200px-Worten_Logo.svg.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         },
         {
-          "id": "deco_techinn",
-          "name": "TechInn",
-          "seller": "TechInn",
-          "price": 196.99,
+          "id": "deco_x55_pccomponentes_pt",
+          "name": "Pc Componentes",
+          "seller": "Pc Componentes",
+          "model": "X55",
+          "price": 189.99,
           "originalPrice": null,
           "cartPromo": null,
-          "previousPrice": 196.99,
-          "shippingCost": 2.99,
-          "isFreeShipping": false,
-          "shippingNote": "Envio: 2.99 €",
-          "inStock": true,
-          "variantType": "pack2",
-          "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
-          "url": "https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack",
-          "logo": "https://s1.kuantokusta.pt/img_upload/logins/13192_1.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
-        },
-        {
-          "id": "deco_senetic",
-          "name": "Senetic",
-          "seller": "Senetic",
-          "price": 204.18,
-          "originalPrice": null,
-          "cartPromo": null,
-          "previousPrice": 204.18,
-          "shippingCost": 25.89,
-          "isFreeShipping": false,
-          "shippingNote": "Envio: 25.89 €",
-          "inStock": true,
-          "variantType": "pack2",
-          "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
-          "url": "https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack",
-          "logo": "https://s1.kuantokusta.pt/img_upload/logins/9008_1.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
-        },
-        {
-          "id": "deco_castro_pt",
-          "name": "Castro Electrónica",
-          "seller": "Castro Electrónica",
-          "price": 208.59,
-          "originalPrice": null,
-          "cartPromo": null,
-          "previousPrice": 208.59,
+          "previousPrice": 189.99,
           "shippingCost": 0,
           "isFreeShipping": true,
           "shippingNote": "Portes Grátis para Portugal",
           "inStock": true,
-          "variantType": "pack2",
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/9005_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_castro_pt",
+          "name": "Castro Electrónica",
+          "seller": "Castro Electrónica",
+          "model": "X55",
+          "price": 195.49,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 195.49,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/8823_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_hipermercado",
+          "name": "Hipermercado",
+          "seller": "Hipermercado",
+          "model": "X55",
+          "price": 195.82,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 195.82,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/11262_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_kibo",
+          "name": "Kibo",
+          "seller": "Kibo",
+          "model": "X55",
+          "price": 198.37,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 198.37,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/9326_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_mhr",
+          "name": "MHR",
+          "seller": "MHR",
+          "model": "X55",
+          "price": 198.9,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 198.9,
+          "shippingCost": 7.9,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 7.90 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/174_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_worten_pt",
+          "name": "Worten",
+          "seller": "Worten",
+          "model": "X55",
+          "price": 199.99,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 199.99,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.worten.pt/search?query=tp-link%20deco%20x55",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/9839_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_darty",
+          "name": "DARTY",
+          "seller": "DARTY",
+          "model": "X55",
+          "price": 199.99,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 199.99,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/13327_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_el-corte-ingles",
+          "name": "El Corte Inglés",
+          "seller": "El Corte Inglés",
+          "model": "X55",
+          "price": 199.99,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 199.99,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/7037_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_fnac-portugal",
+          "name": "Fnac Portugal",
+          "seller": "Fnac Portugal",
+          "model": "X55",
+          "price": 199.99,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 199.99,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/9270_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x50_senetic",
+          "name": "Senetic",
+          "seller": "Senetic",
+          "model": "X50",
+          "price": 200.49,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 200.49,
+          "shippingCost": 25.89,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 25.89 €",
+          "inStock": true,
+          "variantType": "x50",
+          "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/9008_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_chipsite",
+          "name": "Chipsite",
+          "seller": "Chipsite",
+          "model": "X55",
+          "price": 206.9,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 206.9,
+          "shippingCost": 4.9,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 4.90 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/3164_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x50_castro_pt",
+          "name": "Castro Electrónica",
+          "seller": "Castro Electrónica",
+          "model": "X50",
+          "price": 208.19,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 208.19,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x50",
           "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
           "url": "https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack",
           "logo": "https://s1.kuantokusta.pt/img_upload/logins/8823_1.png",
-          "lastChecked": "2026-11-17T09:44:08.717Z"
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_switch-technology",
+          "name": "Switch Technology",
+          "seller": "Switch Technology",
+          "model": "X55",
+          "price": 209.9,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 209.9,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/10897_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_coditek",
+          "name": "Coditek",
+          "seller": "Coditek",
+          "model": "X55",
+          "price": 214,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 214,
+          "shippingCost": 5.5,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 5.50 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/121_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_lojabrother",
+          "name": "Lojabrother",
+          "seller": "Lojabrother",
+          "model": "X55",
+          "price": 217.5,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 217.5,
+          "shippingCost": 3.95,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 3.95 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/13601_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_4gaming",
+          "name": "4Gaming",
+          "seller": "4Gaming",
+          "model": "X55",
+          "price": 218.72,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 218.72,
+          "shippingCost": 4.99,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 4.99 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/13140_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_techinn",
+          "name": "TechInn",
+          "seller": "TechInn",
+          "model": "X55",
+          "price": 218.99,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 218.99,
+          "shippingCost": 2.99,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 2.99 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/13192_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_aquario-electronica",
+          "name": "Aquário Electrónica",
+          "seller": "Aquário Electrónica",
+          "model": "X55",
+          "price": 219.04,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 219.04,
+          "shippingCost": 3.99,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 3.99 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/8169_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_shopinpex",
+          "name": "Shopinpex",
+          "seller": "Shopinpex",
+          "model": "X55",
+          "price": 219.82,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 219.82,
+          "shippingCost": 7,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 7.00 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/12911_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_on4tech",
+          "name": "On4tech",
+          "seller": "On4tech",
+          "model": "X55",
+          "price": 220,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 220,
+          "shippingCost": 0,
+          "isFreeShipping": true,
+          "shippingNote": "Portes Grátis para Portugal",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/9788_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_loja-web",
+          "name": "Loja Web",
+          "seller": "Loja Web",
+          "model": "X55",
+          "price": 220.02,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 220.02,
+          "shippingCost": 6.9,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 6.90 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/9650_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_mcservice",
+          "name": "mcservice",
+          "seller": "mcservice",
+          "model": "X55",
+          "price": 222.2,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 222.2,
+          "shippingCost": 6,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 6.00 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/10312_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_senetic",
+          "name": "Senetic",
+          "seller": "Senetic",
+          "model": "X55",
+          "price": 229.4,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 229.4,
+          "shippingCost": 25.89,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 25.89 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/9008_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_alltech",
+          "name": "ALLTECH",
+          "seller": "ALLTECH",
+          "model": "X55",
+          "price": 243.76,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 243.76,
+          "shippingCost": 6,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 6.00 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/13371_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_cabos360",
+          "name": "Cabos360",
+          "seller": "Cabos360",
+          "model": "X55",
+          "price": 245.5,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 245.5,
+          "shippingCost": 9,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 9.00 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/13391_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
+        },
+        {
+          "id": "deco_x55_universo-da-informatica",
+          "name": "Universo da Informática",
+          "seller": "Universo da Informática",
+          "model": "X55",
+          "price": 255.54,
+          "originalPrice": null,
+          "cartPromo": null,
+          "previousPrice": 255.54,
+          "shippingCost": 4.99,
+          "isFreeShipping": false,
+          "shippingNote": "Envio: 4.99 €",
+          "inStock": true,
+          "variantType": "x55",
+          "variantTitle": "TP-Link Deco X55 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+          "url": "https://www.kuantokusta.pt/p/8746477/tp-link-wireless-ax3000-deco-x55-whole-mesh-dual-band-wifi-6-gigabit-2-pack",
+          "logo": "https://s1.kuantokusta.pt/img_upload/logins/10271_1.png",
+          "lastChecked": "2026-11-20T08:56:29.443Z"
         }
       ],
       "stats": {
-        "currentLowestPrice": 158.57,
-        "currentLowestStore": "Amazon Spain",
+        "currentLowestPrice": 154.9,
+        "currentLowestStore": "You Get (X55)",
         "historicalLowestPrice": 149.99,
-        "historicalHighestPrice": 219.99,
-        "sixMonthsAveragePrice": 180.21
+        "historicalHighestPrice": 255.54,
+        "sixMonthsAveragePrice": 187.29
       },
-      "lastScanTime": "2026-11-17T09:44:08.717Z"
+      "lastScanTime": "2026-11-20T08:56:29.443Z"
     }
   },
   "checksLog": [
+    {
+      "timestamp": "2026-11-20T08:56:29.443Z",
+      "totalStoresChecked": 63,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 154.9
+    },
+    {
+      "timestamp": "2026-11-20T08:53:30.637Z",
+      "totalStoresChecked": 63,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 154.9
+    },
+    {
+      "timestamp": "2026-11-20T08:00:00.920Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-20T07:00:00.415Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-20T06:00:00.520Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 1,
+      "ninjaLowest": 172.8,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-20T05:00:00.791Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-20T04:00:00.101Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-20T03:00:00.185Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-20T02:00:00.709Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-20T01:00:00.860Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-20T00:00:00.294Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 446.26,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T23:00:00.891Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 446.26,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T22:00:00.918Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 446.26,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T21:00:00.138Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 446.26,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T20:00:00.780Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 1,
+      "ninjaLowest": 172.8,
+      "switchLowest": 446.26,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T19:00:00.541Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 447.26,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T18:00:00.113Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 447.26,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T17:00:00.756Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 447.26,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T16:00:00.483Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 172.8,
+      "switchLowest": 447.26,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T15:00:00.384Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 1,
+      "ninjaLowest": 172.8,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T14:00:00.638Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T13:00:00.731Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T12:00:00.145Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T11:00:00.298Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 1,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T10:00:00.429Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T09:00:00.241Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T08:00:00.300Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T07:00:00.424Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T06:00:00.321Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T05:00:00.414Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T04:00:00.565Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 1,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T03:00:00.552Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T02:00:00.570Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T01:00:00.652Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-19T00:00:00.427Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T23:00:00.206Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T22:00:00.842Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T21:00:00.336Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T20:00:00.368Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T19:00:00.809Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T18:00:00.574Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T17:00:00.637Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T16:00:00.593Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T15:00:00.734Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T14:00:00.855Z",
+      "totalStoresChecked": 31,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T12:00:00.964Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T11:00:00.687Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T10:00:00.396Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T09:00:00.749Z",
+      "totalStoresChecked": 31,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T08:00:00.593Z",
+      "totalStoresChecked": 31,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T07:00:00.420Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T06:00:00.234Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T05:00:00.763Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T04:00:00.389Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T03:00:00.997Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T02:00:00.387Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T01:00:00.745Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-18T00:00:00.969Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T23:00:00.500Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T22:00:00.097Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T21:00:00.735Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T20:00:00.729Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T19:00:00.074Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T18:00:00.198Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T17:00:00.044Z",
+      "totalStoresChecked": 33,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T16:00:00.048Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T15:00:00.273Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T14:00:00.151Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T13:00:00.368Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 448.5,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T12:00:00.727Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 448.5,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T11:00:00.243Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 448.5,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "timestamp": "2026-11-17T10:00:00.494Z",
+      "totalStoresChecked": 32,
+      "priceDropsCount": 0,
+      "ninjaLowest": 365.2,
+      "switchLowest": 448.5,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
     {
       "timestamp": "2026-11-17T09:44:08.717Z",
       "totalStoresChecked": 32,
@@ -933,585 +2182,93 @@
       "ninjaLowest": 365.2,
       "switchLowest": 448.5,
       "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-16T08:00:00.781Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-16T07:00:00.330Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-16T06:00:00.014Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-16T05:00:00.334Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-16T04:00:00.096Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-16T03:00:00.561Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-16T02:00:00.019Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-16T01:00:00.470Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-16T00:00:00.298Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T23:00:00.371Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T22:00:00.786Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T21:00:00.596Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T20:00:00.814Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T19:00:00.134Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T18:00:00.649Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T17:00:00.184Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T16:00:00.981Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T15:00:00.351Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T14:00:00.165Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T13:00:00.465Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T12:00:00.336Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T11:00:00.733Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T10:00:00.904Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T09:00:00.397Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T08:00:00.552Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T07:00:00.716Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T06:00:00.367Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T05:00:00.596Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T04:00:00.955Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T03:00:00.076Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T02:00:00.876Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T01:00:00.988Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-15T00:00:00.198Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T23:00:00.640Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T22:00:00.464Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T21:00:00.365Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T20:00:00.616Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T19:00:00.064Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T18:00:00.385Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T17:00:01.000Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T16:00:00.023Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T15:00:00.391Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T14:00:00.671Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T13:00:00.751Z",
-      "totalStoresChecked": 41,
-      "priceDropsCount": 1,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T12:00:00.180Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T11:00:00.532Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T10:00:00.855Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T09:00:00.744Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T08:00:00.770Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T07:00:00.319Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T06:00:00.635Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T05:00:00.492Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T04:00:00.350Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T03:00:00.147Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T02:00:00.948Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T01:00:00.138Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-14T00:00:00.488Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T23:00:00.302Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T22:00:00.523Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T21:00:00.927Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T20:00:00.417Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T19:00:00.887Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T17:00:00.287Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T16:00:00.804Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T15:00:00.210Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T14:00:00.779Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T13:00:00.130Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T12:00:00.551Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T11:00:00.647Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T10:00:00.205Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T09:00:00.591Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
-    },
-    {
-      "timestamp": "2026-11-13T08:00:00.161Z",
-      "totalStoresChecked": 40,
-      "priceDropsCount": 0,
-      "ninjaLowest": 365.2,
-      "switchLowest": 448.5,
-      "dryerLowest": 521.9
     }
   ],
   "alertsHistory": [
+    {
+      "productId": "tplink-deco-x50",
+      "productName": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+      "productEmoji": "📡",
+      "variantTitle": "TP-Link Deco X50 Whole Mesh Wi-Fi 6 AX3000 (Pack de 2)",
+      "storeId": "deco_techinn",
+      "storeName": "TechInn",
+      "oldPrice": 196.99,
+      "newPrice": 179.99,
+      "originalPrice": null,
+      "cartPromo": null,
+      "diff": 17,
+      "percent": "8.6",
+      "url": "https://www.kuantokusta.pt/p/10175391/tp-link-router-wireless-ax3000-deco-x50-whole-mesh-dual-band-wifi-6-gigabit-pack2-decox502-pack",
+      "shippingNote": "Envio: 2.99 €",
+      "inStock": true,
+      "date": "2026-11-20T06:00:00.520Z"
+    },
+    {
+      "productId": "nintendo-switch-2",
+      "productName": "Nintendo Switch 2 (Consola & Bundles)",
+      "productEmoji": "🎮",
+      "variantTitle": "Nintendo Switch 2 + Switch Sports Resort + 3 Meses Nintendo Switch Online",
+      "storeId": "sw2_kk_12279146",
+      "storeName": "KuantoKusta (Bundle)",
+      "oldPrice": 507.25,
+      "newPrice": 476.75,
+      "diff": 30.5,
+      "percent": "6.0",
+      "url": "https://www.kuantokusta.pt/p/12279146/nintendo-switch-2-switch-sports-resort-3-meses-nintendo-switch-online",
+      "shippingNote": "Portes Grátis para Portugal Continental",
+      "inStock": true,
+      "date": "2026-11-19T20:00:00.780Z"
+    },
+    {
+      "productId": "ninja-woodfire",
+      "productName": "Grelhador Elétrico de Exterior e Fumador Ninja Woodfire Pro Connect XL OG901EU",
+      "productEmoji": "🥩",
+      "storeId": "amazon_es",
+      "storeName": "Amazon.es",
+      "oldPrice": 377.2,
+      "newPrice": 172.8,
+      "originalPrice": null,
+      "cartPromo": null,
+      "diff": 204.39999999999998,
+      "percent": "54.2",
+      "url": "https://www.amazon.es/dp/B0CXDTMM28",
+      "shippingNote": "Grátis para Portugal (>35€ / Prime)",
+      "inStock": false,
+      "date": "2026-11-19T15:00:00.384Z"
+    },
+    {
+      "productId": "ninja-woodfire",
+      "productName": "Grelhador Elétrico de Exterior e Fumador Ninja Woodfire Pro Connect XL OG901EU",
+      "productEmoji": "🥩",
+      "storeId": "amazon_es",
+      "storeName": "Amazon.es",
+      "oldPrice": 456.42,
+      "newPrice": 377.2,
+      "originalPrice": null,
+      "cartPromo": null,
+      "diff": 79.22000000000003,
+      "percent": "17.4",
+      "url": "https://www.amazon.es/dp/B0CXDTMM28",
+      "shippingNote": "Grátis para Portugal (>35€ / Prime)",
+      "inStock": false,
+      "date": "2026-11-19T11:00:00.298Z"
+    },
+    {
+      "productId": "nintendo-switch-2",
+      "productName": "Nintendo Switch 2 (Consola & Bundles)",
+      "productEmoji": "🎮",
+      "variantTitle": "Nintendo Switch 2 + Nintendo Switch Sports Resort + 3 Meses Nintendo Switch Online",
+      "storeId": "sw2_kk_12374353",
+      "storeName": "KuantoKusta (Bundle)",
+      "oldPrice": 529.99,
+      "newPrice": 487.92,
+      "diff": 42.06999999999999,
+      "percent": "7.9",
+      "url": "https://www.kuantokusta.pt/p/12374353/nintendo-switch-2-nintendo-switch-sports-resort-3-meses-nintendo-switch-online",
+      "shippingNote": "Portes Grátis para Portugal Continental",
+      "inStock": true,
+      "date": "2026-11-19T04:00:00.565Z"
+    },
     {
       "productId": "nintendo-switch-2",
       "productName": "Nintendo Switch 2 (Consola & Bundles)",
@@ -3782,9 +4539,25 @@
       "date": "2026-10-05T02:00:00.886Z"
     }
   ],
-  "lastScanTime": "2026-11-17T09:44:08.717Z",
-  "lastDailyHeartbeatDate": "2026-11-16",
+  "lastScanTime": "2026-11-20T08:56:29.443Z",
+  "lastDailyHeartbeatDate": "2026-11-20",
   "dailyHeartbeatsHistory": [
+    {
+      "date": "2026-11-18",
+      "timestamp": "2026-11-18T12:00:00.964Z",
+      "ninjaLowest": 365.2,
+      "switchLowest": 437,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
+    {
+      "date": "2026-11-17",
+      "timestamp": "2026-11-17T12:00:00.727Z",
+      "ninjaLowest": 365.2,
+      "switchLowest": 448.5,
+      "dryerLowest": 689,
+      "decoLowest": 158.57
+    },
     {
       "date": "2026-11-16",
       "timestamp": "2026-11-16T12:00:00.485Z",
